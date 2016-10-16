@@ -12,7 +12,7 @@ Requires At Least: 3.1
 Tested Up To: 4.6.1
 Stable Tag: 1.0.0-1
 
-WPSSO extension to remove outdated template Schema Microdata and leave Schema JSON-LD markup untouched for Google and Bing.
+WPSSO extension to remove outdated Schema Microdata and leave the better Schema JSON-LD markup untouched for Google and Bing.
 
 == Description ==
 
@@ -20,9 +20,9 @@ WPSSO extension to remove outdated template Schema Microdata and leave Schema JS
 
 <p><strong>Do you prefer using the latest (and much better) Schema JSON-LD markup standard?</strong></p>
 
-<p><strong>Would you like to remove Schema Microdata markup added by other plugins to your content?</strong></p>
+<p><strong>Do you want to remove Schema Microdata markup added by 3rd party plugins?</strong></p>
 
-<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a> (recommended), and would like to <em>cleanup</em> the Schema Microdata from your theme?</strong></p>
+<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a> (recommended) and would like to <em>cleanup</em> the Schema Microdata from your theme templates?</strong></p>
 
 <p>The WPSSO Remove Schema Microdata (WPSSO RSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO RSM filters the webpage content dynamically, allowing you to activate/deactivate the plugin to enable/disable the removal of Schema Microdata.</p>
 
