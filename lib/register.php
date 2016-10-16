@@ -8,14 +8,14 @@
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
 
-if ( ! class_exists( 'WpssoRsmRegister' ) ) {
+if ( ! class_exists( 'WpssoSsmRegister' ) ) {
 
-	class WpssoRsmRegister {
+	class WpssoSsmRegister {
 
 		public function __construct() {
 
-			register_activation_hook( WPSSORSM_FILEPATH, array( &$this, 'network_activate' ) );
-			//register_deactivation_hook( WPSSORSM_FILEPATH, array( &$this, 'network_deactivate' ) );
+			register_activation_hook( WPSSOSSM_FILEPATH, array( &$this, 'network_activate' ) );
+			//register_deactivation_hook( WPSSOSSM_FILEPATH, array( &$this, 'network_deactivate' ) );
 
 			if ( is_multisite() ) {
 				add_action( 'wpmu_new_blog', array( &$this, 'wpmu_new_blog' ), 10, 6 );
@@ -67,11 +67,11 @@ if ( ! class_exists( 'WpssoRsmRegister' ) ) {
 		}
 
 		private function activate_plugin() {
-			$lca = 'wpssorsm';
-			$version = WpssoRsmConfig::$cf['plugin'][$lca]['version'];	// only our config
+			$lca = 'wpssossm';
+			$version = WpssoSsmConfig::$cf['plugin'][$lca]['version'];	// only our config
 			if ( class_exists( 'WpssoUtil' ) )
 				WpssoUtil::save_all_times( $lca, $version );
-			else WpssoRsm::required_notice( true );			// $deactivate = true
+			else WpssoSsm::required_notice( true );			// $deactivate = true
 		}
 
 		private function deactivate_plugin() {

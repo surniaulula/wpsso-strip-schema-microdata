@@ -8,9 +8,9 @@
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
 
-if ( ! class_exists( 'WpssoRsmFilters' ) ) {
+if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
-	class WpssoRsmFilters {
+	class WpssoSsmFilters {
 
 		protected $p;
 
@@ -27,7 +27,7 @@ if ( ! class_exists( 'WpssoRsmFilters' ) ) {
 		public function output_buffer_start() {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->log( 'output buffering started' );
-			ob_start( array( 'WpssoRsmFilters', 'remove_schema_microdata' ) );
+			ob_start( array( 'WpssoSsmFilters', 'remove_schema_microdata' ) );
 		}
 
 		public static function remove_schema_microdata( $buffer ) {
