@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoRsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssorsm' => array(
-					'version' => '1.0.0',		// plugin version
+					'version' => '1.0.0-1',		// plugin version
 					'opt_version' => '1',		// increment when changing default options
 					'short' => 'WPSSO RSM',		// short plugin name
 					'name' => 'WPSSO Remove Schema Microdata (WPSSO RSM)',
