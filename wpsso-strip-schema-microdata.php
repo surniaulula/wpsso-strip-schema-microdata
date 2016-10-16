@@ -1,11 +1,11 @@
 <?php
 /*
- * Plugin Name: WPSSO Remove Schema Microdata (WPSSO RSM)
- * Plugin Slug: wpsso-remove-schema-microdata
- * Text Domain: wpsso-remove-schema-microdata
+ * Plugin Name: WPSSO Strip Schema Microdata (WPSSO SSM)
+ * Plugin Slug: wpsso-strip-schema-microdata
+ * Text Domain: wpsso-strip-schema-microdata
  * Domain Path: /languages
- * Plugin URI: http://surniaulula.com/extend/plugins/wpsso-remove-schema-microdata/
- * Assets URI: https://surniaulula.github.io/wpsso-remove-schema-microdata/assets/
+ * Plugin URI: http://surniaulula.com/extend/plugins/wpsso-strip-schema-microdata/
+ * Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
  * Author: JS Morisset
  * Author URI: http://surniaulula.com/
  * License: GPLv3
@@ -28,13 +28,13 @@
 if ( ! defined( 'ABSPATH' ) ) 
 	die( 'These aren\'t the droids you\'re looking for...' );
 
-if ( ! class_exists( 'WpssoRsm' ) ) {
+if ( ! class_exists( 'WpssoSsm' ) ) {
 
-	class WpssoRsm {
+	class WpssoSsm {
 
 		public $p;			// Wpsso
-		public $reg;			// WpssoRsmRegister
-		public $filters;		// WpssoRsmFilters
+		public $reg;			// WpssoSsmRegister
+		public $filters;		// WpssoSsmFilters
 
 		private static $instance = null;
 		private static $req_short = 'WPSSO';
@@ -51,12 +51,12 @@ if ( ! class_exists( 'WpssoRsm' ) ) {
 		public function __construct() {
 
 			require_once ( dirname( __FILE__ ).'/lib/config.php' );
-			WpssoRsmConfig::set_constants( __FILE__ );
-			WpssoRsmConfig::require_libs( __FILE__ );	// includes the register.php class library
-			$this->reg = new WpssoRsmRegister();		// activate, deactivate, uninstall hooks
+			WpssoSsmConfig::set_constants( __FILE__ );
+			WpssoSsmConfig::require_libs( __FILE__ );	// includes the register.php class library
+			$this->reg = new WpssoSsmRegister();		// activate, deactivate, uninstall hooks
 
 			if ( is_admin() ) {
-				load_plugin_textdomain( 'wpsso-remove-schema-microdata', false, 'wpsso-remove-schema-microdata/languages/' );
+				load_plugin_textdomain( 'wpsso-strip-schema-microdata', false, 'wpsso-strip-schema-microdata/languages/' );
 				add_action( 'admin_init', array( &$this, 'required_check' ) );
 			}
 
@@ -72,15 +72,15 @@ if ( ! class_exists( 'WpssoRsm' ) ) {
 		}
 
 		public static function required_notice( $deactivate = false ) {
-			$info = WpssoRsmConfig::$cf['plugin']['wpssorsm'];
+			$info = WpssoSsmConfig::$cf['plugin']['wpssossm'];
 
 			if ( $deactivate === true ) {
 				require_once( ABSPATH.'wp-admin/includes/plugin.php' );
 				deactivate_plugins( $info['base'] );
 
-				wp_die( '<p>'.sprintf( __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin before trying to re-activate the %4$s extension.', 'wpsso-remove-schema-microdata' ), $info['name'], self::$req_name, self::$req_short, $info['short'] ).'</p>' );
+				wp_die( '<p>'.sprintf( __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin before trying to re-activate the %4$s extension.', 'wpsso-strip-schema-microdata' ), $info['name'], self::$req_name, self::$req_short, $info['short'] ).'</p>' );
 
-			} else echo '<div class="error"><p>'.sprintf( __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin.', 'wpsso-remove-schema-microdata' ), $info['name'], self::$req_name, self::$req_short ).'</p></div>';
+			} else echo '<div class="error"><p>'.sprintf( __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin.', 'wpsso-strip-schema-microdata' ), $info['name'], self::$req_name, self::$req_short ).'</p></div>';
 		}
 
 		public function wpsso_get_config( $cf, $plugin_version = 0 ) {
@@ -88,7 +88,7 @@ if ( ! class_exists( 'WpssoRsm' ) ) {
 				self::$req_has_min_ver = false;
 				return $cf;
 			}
-			return SucomUtil::array_merge_recursive_distinct( $cf, WpssoRsmConfig::$cf );
+			return SucomUtil::array_merge_recursive_distinct( $cf, WpssoSsmConfig::$cf );
 		}
 
 		public function wpsso_init_options() {
@@ -102,7 +102,7 @@ if ( ! class_exists( 'WpssoRsm' ) ) {
 			if ( self::$req_has_min_ver === false )
 				return;		// stop here
 
-			$this->p->is_avail['rsm'] = true;
+			$this->p->is_avail['ssm'] = true;
 		}
 
 		public function wpsso_init_objects() {
@@ -112,7 +112,7 @@ if ( ! class_exists( 'WpssoRsm' ) ) {
 			if ( self::$req_has_min_ver === false )
 				return;		// stop here
 
-			$this->filters = new WpssoRsmFilters( $this->p );
+			$this->filters = new WpssoSsmFilters( $this->p );
 		}
 
 		public function wpsso_init_plugin() {
@@ -124,7 +124,7 @@ if ( ! class_exists( 'WpssoRsm' ) ) {
 		}
 
 		private function min_version_notice() {
-			$info = WpssoRsmConfig::$cf['plugin']['wpssorsm'];
+			$info = WpssoSsmConfig::$cf['plugin']['wpssossm'];
 			$have_version = $this->p->cf['plugin']['wpsso']['version'];
 
 			if ( $this->p->debug->enabled )
@@ -132,12 +132,12 @@ if ( ! class_exists( 'WpssoRsm' ) ) {
 					self::$req_min_version.' or newer ('.$have_version.' installed)' );
 
 			if ( is_admin() )
-				$this->p->notice->err( sprintf( __( 'The %1$s extension version %2$s requires the use of %3$s version %4$s or newer (version %5$s is currently installed).', 'wpsso-remove-schema-microdata' ), $info['name'], $info['version'], self::$req_short, self::$req_min_version, $have_version ) );
+				$this->p->notice->err( sprintf( __( 'The %1$s extension version %2$s requires the use of %3$s version %4$s or newer (version %5$s is currently installed).', 'wpsso-strip-schema-microdata' ), $info['name'], $info['version'], self::$req_short, self::$req_min_version, $have_version ) );
 		}
 	}
 
-        global $wpssorsm;
-	$wpssorsm =& WpssoRsm::get_instance();
+        global $wpssossm;
+	$wpssossm =& WpssoSsm::get_instance();
 }
 
 ?>
