@@ -16,7 +16,7 @@ WPSSO extension to remove outdated Schema Microdata and leave the better Schema 
 
 == Description ==
 
-<p><strong>Does your theme include outdated, innacurate, or incomplete Schema Microdata?</strong></p>
+<p><img src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Does your theme include outdated, innacurate, or incomplete Schema Microdata?</strong></p>
 
 <p><strong>Do you prefer using the latest (and much better) Schema JSON-LD markup standard?</strong></p>
 

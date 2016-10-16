@@ -13,7 +13,7 @@
 
 <h2>Description</h2>
 
-<p><strong>Does your theme include outdated, innacurate, or incomplete Schema Microdata?</strong></p>
+<p align="center"><img src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png" width="256" height="256" /></p><p><strong>Does your theme include outdated, innacurate, or incomplete Schema Microdata?</strong></p>
 
 <p><strong>Do you prefer using the latest (and much better) Schema JSON-LD markup standard?</strong></p>
 
