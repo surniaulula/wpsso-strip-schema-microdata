@@ -57,7 +57,7 @@ WPSSO extension to remove outdated template Schema Microdata and leave Schema JS
 
 = Changelog / Release Notes =
 
-**Version 1.0.0-1 (TBD)**
+**Version 1.0.0-1 (2016/10/16)**
 
 Official announcement: N/A
 
@@ -74,5 +74,5 @@ Official announcement: N/A
 
 = 1.0.0-1 =
 
-(TBD) Initial release.
+(2016/10/16) Initial release.
 
