@@ -18,7 +18,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'version' => '1.0.0-1',		// plugin version
 					'opt_version' => '1',		// increment when changing default options
 					'short' => 'WPSSO SSM',		// short plugin name
-					'name' => 'WPSSO Remove Schema Microdata (WPSSO SSM)',
+					'name' => 'WPSSO Strip Schema Microdata (WPSSO SSM)',
 					'desc' => 'WPSSO extension to remove outdated Schema Microdata and leave the better Schema JSON-LD markup untouched for Google and Bing.',
 					'slug' => 'wpsso-strip-schema-microdata',
 					'base' => 'wpsso-strip-schema-microdata/wpsso-strip-schema-microdata.php',
