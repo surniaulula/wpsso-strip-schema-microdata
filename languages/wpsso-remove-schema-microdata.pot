@@ -16,7 +16,7 @@ msgstr ""
 #: lib/config-gettext-extract.php:3
 msgctxt "plugin description"
 msgid ""
-"WPSSO extension to remove outdated template Schema Microdata and leave "
+"WPSSO extension to remove outdated Schema Microdata and leave the better "
 "Schema JSON-LD markup untouched for Google and Bing."
 msgstr ""
 
@@ -48,7 +48,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO extension to remove outdated template Schema Microdata and leave "
+"WPSSO extension to remove outdated Schema Microdata and leave the better "
 "Schema JSON-LD markup untouched for Google and Bing."
 msgstr ""
 

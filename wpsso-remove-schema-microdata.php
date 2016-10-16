@@ -10,7 +10,7 @@
  * Author URI: http://surniaulula.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO extension to remove outdated template Schema Microdata and leave Schema JSON-LD markup untouched for Google and Bing.
+ * Description: WPSSO extension to remove outdated Schema Microdata and leave the better Schema JSON-LD markup untouched for Google and Bing.
  * Requires At Least: 3.1
  * Tested Up To: 4.6.1
  * Version: 1.0.0-1
