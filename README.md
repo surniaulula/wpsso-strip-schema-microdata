@@ -19,7 +19,7 @@
 
 <p><strong>Would you like to remove Schema Microdata markup added by other plugins to your content?</strong></p>
 
-<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a> (recommended), and would like to <em>cleanup</em> left-over Schema Microdata from your theme?</strong></p>
+<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a> (recommended), and would like to <em>cleanup</em> the Schema Microdata from your theme?</strong></p>
 
 <p>The WPSSO Remove Schema Microdata (WPSSO RSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO RSM filters the webpage content dynamically, allowing you to activate/deactivate the plugin to enable/disable the removal of Schema Microdata.</p>
 
