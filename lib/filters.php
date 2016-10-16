@@ -54,17 +54,19 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 				// recurse to remove multiple attributes from the same HTML tag
 				$total_count = 0;
+				$loop_iter = 0;
 				do {
 					$doc_body = preg_replace( $pattern, $replace, $doc_body, -1, $count );
 					$total_count += $count;
-				} while ( $count > 0 );
+					$loop_iter++;
+				} while ( $count > 0 && $loop_iter < 100 );	// max 100 loops, just in case
 
 				$time_stop = microtime( true );
 				$time_diff = $time_stop - $time_start;
 
 				// recombine and add timing stats
-				return $doc_head.$doc_body.'<!-- '.__METHOD__.' = '.$total_count.
-					' matches removed in '.sprintf( '%f secs', $time_diff ).' -->';
+				return $doc_head.$doc_body.'<!-- '.__METHOD__.' = '.$total_count.' matches removed in '.
+					$loop_iter.' interations and '.sprintf( '%f secs', $time_diff ).' -->';
 
 			} else return $buffer.'<!-- '.__METHOD__.' = '.$total_count.' body HTML tag not found -->';
 		}
