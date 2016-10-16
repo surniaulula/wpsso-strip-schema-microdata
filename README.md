@@ -1,0 +1,1 @@
+# wpsso-remove-schema-microdata
