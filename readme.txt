@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
-Tags: wpsso, schema, microdata, remove, strip, fix
+Tags: wpsso, schema, microdata, remove, strip, fix, json-ld, ld+json, json, markup
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6.1
@@ -41,6 +41,9 @@ WPSSO extension to remove outdated Schema Microdata and leave the better Schema 
 == Installation ==
 
 = Install and Uninstall =
+
+* [Install the Plugin](https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/)
+* [Uninstall the Plugin](https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 

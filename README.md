@@ -8,7 +8,7 @@
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.6.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
-<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, schema, microdata, remove, strip, fix</td></tr>
+<tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>wpsso, schema, microdata, remove, strip, fix, json-ld, ld+json, json, markup</td></tr>
 </table>
 
 <h2>Description</h2>
@@ -39,6 +39,11 @@
 <h2>Installation</h2>
 
 <h4>Install and Uninstall</h4>
+
+<ul>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/">Install the Plugin</a></li>
+<li><a href="https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/">Uninstall the Plugin</a></li>
+</ul>
 
 
 <h2>Frequently Asked Questions</h2>
