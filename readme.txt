@@ -1,4 +1,4 @@
-=== WPSSO Strip Schema Microdata ===
+=== WPSSO Strip Schema Microdata for Better Google Schema JSON-LD Markup ===
 Plugin Name: WPSSO Strip Schema Microdata (WPSSO SSM)
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
