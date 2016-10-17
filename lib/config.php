@@ -38,11 +38,11 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						// surniaulula
 						'update' => '',
 						'purchase' => '',
-						'changelog' => 'http://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/changelog/',
-						'codex' => 'http://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/',
-						'faq' => 'http://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/faq/',
+						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/changelog/',
+						'codex' => 'https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/',
+						'faq' => 'https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/faq/',
 						'notes' => '',
-						'feed' => 'http://wpsso.com/category/application/wordpress/wp-plugins/wpsso-strip-schema-microdata/feed/',
+						'feed' => 'https://wpsso.com/category/application/wordpress/wp-plugins/wpsso-strip-schema-microdata/feed/',
 						'pro_support' => '',
 					),
 					'lib' => array(
