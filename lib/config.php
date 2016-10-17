@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(
-					'version' => '1.0.0-1',		// plugin version
+					'version' => '1.0.1-1',		// plugin version
 					'opt_version' => '1',		// increment when changing default options
 					'short' => 'WPSSO SSM',		// short plugin name
 					'name' => 'WPSSO Strip Schema Microdata (WPSSO SSM)',
@@ -36,11 +36,12 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						'readme' => 'https://plugins.svn.wordpress.org/wpsso-strip-schema-microdata/trunk/readme.txt',
 						'wp_support' => 'https://wordpress.org/support/plugin/wpsso-strip-schema-microdata',
 						// surniaulula
-						'update' => '',
+						'latest_zip' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/latest/',
+						'update' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/update/',
 						'purchase' => '',
 						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/changelog/',
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/',
-						'faq' => 'https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/faq/',
+						'faq' => '',
 						'notes' => '',
 						'feed' => 'https://wpsso.com/category/application/wordpress/wp-plugins/wpsso-strip-schema-microdata/feed/',
 						'pro_support' => '',
