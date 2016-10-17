@@ -26,6 +26,14 @@ WPSSO extension to remove outdated Schema Microdata and leave the better Schema 
 
 <p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the plugin to enable / disable the removal of Schema Microdata.</p>
 
+= Is it working? =
+
+<p>WPSSO SSM does not have any settings &mdash; it removes Schema Microdata markup from the webpage body and includes an activity summary at the bottom:</p>
+
+<pre>
+&lt;!-- WpssoSsmFilters::remove_schema_microdata = 41 matches removed in 4 interations and 0.001799 secs --&gt;
+</pre>
+
 <blockquote>
 <p><strong>Prerequisite</strong> &mdash; WPSSO Strip Schema Microdata (WPSSO SSM) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization (WPSSO)</a> plugin, which <em>automatically</em> creates complete and accurate meta tags and Schema markup for Social Sharing Optimization (SSO) and SEO.</p>
 </blockquote>
