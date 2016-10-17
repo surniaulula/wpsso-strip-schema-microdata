@@ -28,7 +28,7 @@ WPSSO extension to remove outdated Schema Microdata and leave the better Schema 
 
 = Is it working? =
 
-<p>WPSSO SSM does not have any settings &mdash; it removes Schema Microdata markup from the webpage body and includes an activity summary at the bottom:</p>
+<p>The WPSSO SSM extension does not have any settings &mdash; it removes Schema Microdata markup automatically from the webpage body, and adds an informational activity summary at the bottom:</p>
 
 <pre>
 &lt;!-- WpssoSsmFilters::remove_schema_microdata = 41 matches removed in 4 interations and 0.001799 secs --&gt;
