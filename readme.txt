@@ -6,11 +6,11 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
-Tags: wpsso, schema, microdata, remove, strip, fix, json-ld, ld+json, json, markup
+Tags: wpsso, schema.org, schema, microdata, remove, strip, fix, json-ld, ld+json, json, markup
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6.1
-Stable Tag: 1.0.0-1
+Stable Tag: 1.0.1-1
 
 WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google and Bing.
 
@@ -22,7 +22,7 @@ WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema
 
 <p><strong>Do you want to remove Schema Microdata markup added by 3rd party plugins?</strong></p>
 
-<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a> (recommended) and would like to <em>cleanup</em> the Schema Microdata from your theme templates?</strong></p>
+<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a> (recommended) and would like to remove incorrect Schema Microdata from your theme templates?</strong></p>
 
 <p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the plugin to enable / disable the removal of Schema Microdata.</p>
 
