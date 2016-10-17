@@ -43,7 +43,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/',
 						'faq' => '',
 						'notes' => '',
-						'feed' => 'https://wpsso.com/category/application/wordpress/wp-plugins/wpsso-strip-schema-microdata/feed/',
+						'feed' => 'https://wpsso.com/category/application/wordpress/wp-plugins/wpsso-ssm/feed/',
 						'pro_support' => '',
 					),
 					'lib' => array(
