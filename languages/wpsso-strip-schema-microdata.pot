@@ -43,7 +43,7 @@ msgid "WPSSO Strip Schema Microdata (WPSSO SSM)"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://surniaulula.com/extend/plugins/wpsso-strip-schema-microdata/"
+msgid "https://surniaulula.com/extend/plugins/wpsso-strip-schema-microdata/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -57,5 +57,5 @@ msgid "JS Morisset"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://surniaulula.com/"
+msgid "https://surniaulula.com/"
 msgstr ""
