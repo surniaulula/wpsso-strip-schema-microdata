@@ -1,4 +1,4 @@
-=== WPSSO Strip Schema Microdata for Better Google / Bing Schema JSON-LD Markup ===
+=== WPSSO Strip Schema Microdata for Superior Google Schema JSON-LD Markup ===
 Plugin Name: WPSSO Strip Schema Microdata (WPSSO SSM)
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
@@ -6,13 +6,13 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
-Tags: wpsso, schema.org, schema, microdata, remove, strip, fix, json-ld, ld+json, json, markup
+Tags: wpsso, schema.org, schema, microdata, remove, strip, fix, json-ld, ld+json, json, markup, google
 Contributors: jsmoriss
 Requires At Least: 3.1
 Tested Up To: 4.6.1
 Stable Tag: 1.0.1-1
 
-WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google and Bing.
+WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google.
 
 == Description ==
 
