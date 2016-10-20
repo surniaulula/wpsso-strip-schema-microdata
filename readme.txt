@@ -70,12 +70,12 @@ WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema
 
 **Version 1.0.1-1 (2016/10/17)**
 
-Official announcement: N/A
+Official announcement: [New Plugin — WPSSO Strip Schema Microdata](http://surniaulula.com/2016/10/17/new-plugin-wpsso-strip-schema-microdata/)
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added a maximum iterations count of 20, just in case.
+	* Added a maximum iterations count of 20.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -85,5 +85,5 @@ Official announcement: N/A
 
 = 1.0.1-1 =
 
-(2016/10/17) Added a maximum iterations count of 20, just in case.
+(2016/10/17) Added a maximum iterations count of 20.
 
