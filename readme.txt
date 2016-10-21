@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
 Tags: wpsso, schema.org, schema, microdata, remove, strip, fix, json-ld, ld+json, json, markup, google
 Contributors: jsmoriss
-Requires At Least: 3.1
+Requires At Least: 3.5
 Tested Up To: 4.6.1
 Stable Tag: 1.0.1-1
 
