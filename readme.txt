@@ -10,7 +10,7 @@ Tags: wpsso, schema.org, schema, microdata, remove, strip, fix, json-ld, ld+json
 Contributors: jsmoriss
 Requires At Least: 3.5
 Tested Up To: 4.6.1
-Stable Tag: 1.0.1-1
+Stable Tag: 1.0.2-1
 
 WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google.
 
@@ -88,7 +88,7 @@ Official announcement: [New Plugin — WPSSO Strip Schema Microdata](http://surn
 * *New Features*
 	* None
 * *Improvements*
-	* Added a maximum iterations count  20 tag attributes.
+	* Added an iteration count to check for a maximum of 20 tag attributes (just in case).
 * *Bugfixes*
 	* None
 * *Developer Notes*
