@@ -68,6 +68,19 @@ WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema
 
 = Changelog / Release Notes =
 
+**Version 1.0.2-1 (2016/10/25)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a check to skip filtering when the the DOING_AJAX constant is true.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.0.1-1 (2016/10/17)**
 
 Official announcement: [New Plugin — WPSSO Strip Schema Microdata](http://surniaulula.com/2016/10/17/new-plugin-wpsso-strip-schema-microdata/)
@@ -75,7 +88,7 @@ Official announcement: [New Plugin — WPSSO Strip Schema Microdata](http://surn
 * *New Features*
 	* None
 * *Improvements*
-	* Added a maximum iterations count of 20.
+	* Added a maximum iterations count  20 tag attributes.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -83,7 +96,7 @@ Official announcement: [New Plugin — WPSSO Strip Schema Microdata](http://surn
 
 == Upgrade Notice ==
 
-= 1.0.1-1 =
+= 1.0.2-1 =
 
-(2016/10/17) Added a maximum iterations count of 20.
+(2016/10/25) Added a check to skip filtering when the the DOING_AJAX constant is true.
 
