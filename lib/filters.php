@@ -19,9 +19,13 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( $this->p->debug->enabled )
-				$this->p->debug->log( 'adding template_redirect action for output_buffer_start' );
-			add_action( 'template_redirect', array( &$this, 'output_buffer_start' ), -900000 );
+			if ( SucomUtil::get_const( 'DOING_AJAX' ) ) {
+				// nothing to do
+			} else {
+				if ( $this->p->debug->enabled )
+					$this->p->debug->log( 'adding template_redirect action for output_buffer_start' );
+				add_action( 'template_redirect', array( &$this, 'output_buffer_start' ), -900000 );
+			}
 		}
 
 		public function output_buffer_start() {
