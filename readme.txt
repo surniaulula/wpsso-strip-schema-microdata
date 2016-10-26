@@ -75,7 +75,7 @@ Official announcement: N/A
 * *New Features*
 	* None
 * *Improvements*
-	* Added a check to skip filtering when the the DOING_AJAX constant is true.
+	* Added a check to skip filtering when the DOING_AJAX constant is true.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -98,5 +98,5 @@ Official announcement: [New Plugin — WPSSO Strip Schema Microdata](http://surn
 
 = 1.0.2-1 =
 
-(2016/10/25) Added a check to skip filtering when the the DOING_AJAX constant is true.
+(2016/10/25) Added a check to skip filtering when the DOING_AJAX constant is true.
 
