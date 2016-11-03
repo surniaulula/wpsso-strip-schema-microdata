@@ -32,19 +32,17 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'url' => array(
 						// wordpress
 						'download' => 'https://wordpress.org/plugins/wpsso-strip-schema-microdata/',
+						'forum' => 'https://wordpress.org/support/plugin/wpsso-strip-schema-microdata',
 						'review' => 'https://wordpress.org/support/view/plugin-reviews/wpsso-strip-schema-microdata?filter=5&rate=5#postform',
-						'readme' => 'https://plugins.svn.wordpress.org/wpsso-strip-schema-microdata/trunk/readme.txt',
-						'wp_support' => 'https://wordpress.org/support/plugin/wpsso-strip-schema-microdata',
-						// surniaulula
-						'latest_zip' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/latest/',
+						// github
+						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-strip-schema-microdata/master/readme.txt',
+						// wpsso
+						'latest' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/latest/',
 						'update' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/update/',
-						'purchase' => '',
 						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/changelog/',
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/',
 						'faq' => '',
 						'notes' => '',
-						'feed' => 'https://wpsso.com/category/application/wordpress/wp-plugins/wpsso-ssm/feed/',
-						'pro_support' => '',
 					),
 					'lib' => array(
 						// submenu items must have unique keys
