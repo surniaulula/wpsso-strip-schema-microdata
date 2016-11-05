@@ -20,19 +20,19 @@ msgid ""
 "Schema JSON-LD markup untouched for Google and Bing."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:81
+#: wpsso-strip-schema-microdata.php:83
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin before trying to re-activate the %4$s extension."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:83
+#: wpsso-strip-schema-microdata.php:85
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:135
+#: wpsso-strip-schema-microdata.php:137
 msgid ""
 "The %1$s extension version %2$s requires the use of %3$s version %4$s or "
 "newer (version %5$s is currently installed)."
