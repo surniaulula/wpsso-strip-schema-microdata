@@ -4,7 +4,7 @@
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Strip Schema Microdata (WPSSO SSM)</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.0.2-1</td></tr>
-<tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.5</td></tr>
+<tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.7</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.6.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
