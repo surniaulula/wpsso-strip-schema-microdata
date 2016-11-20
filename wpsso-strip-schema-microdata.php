@@ -13,7 +13,7 @@
  * Description: WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google and Bing.
  * Requires At Least: 3.7
  * Tested Up To: 4.6.1
- * Version: 1.0.2-1
+ * Version: 1.0.3-dev1
  * 
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -39,10 +39,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		public $filters;		// WpssoSsmFilters
 
 		private static $instance = null;
-		private static $req_short = 'WPSSO';
-		private static $req_name = 'WordPress Social Sharing Optimization (WPSSO)';
-		private static $req_min_version = '3.36.0-1';
-		private static $req_has_min_ver = true;
+		private static $have_min = true;
 
 		public static function &get_instance() {
 			if ( self::$instance === null )
@@ -79,17 +76,20 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			if ( $deactivate === true ) {
 				require_once( ABSPATH.'wp-admin/includes/plugin.php' );
 				deactivate_plugins( $info['base'] );
-
-				wp_die( '<p>'.sprintf( __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin before trying to re-activate the %4$s extension.', 'wpsso-strip-schema-microdata' ), $info['name'], self::$req_name, self::$req_short, $info['short'] ).'</p>' );
-
-			} else echo '<div class="error"><p>'.sprintf( __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin.', 'wpsso-strip-schema-microdata' ), $info['name'], self::$req_name, self::$req_short ).'</p></div>';
+				wp_die( '<p>'.sprintf( __( '%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating the %4$s extension.', 'wpsso-strip-schema-microdata' ), $info['name'], $info['req']['name'], $info['req']['short'], $info['short'] ).'</p>' );
+			} else echo '<div class="notice notice-error error"><p>'.
+				sprintf( __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin.',
+					'wpsso-strip-schema-microdata' ), $info['name'], $info['req']['name'], $info['req']['short'] ).'</p></div>';
 		}
 
 		public function wpsso_get_config( $cf, $plugin_version = 0 ) {
-			if ( version_compare( $plugin_version, self::$req_min_version, '<' ) ) {
-				self::$req_has_min_ver = false;
+			$info = WpssoSsmConfig::$cf['plugin']['wpssossm'];
+
+			if ( version_compare( $plugin_version, $info['req']['min_version'], '<' ) ) {
+				self::$have_min = false;
 				return $cf;
 			}
+
 			return SucomUtil::array_merge_recursive_distinct( $cf, WpssoSsmConfig::$cf );
 		}
 
@@ -101,7 +101,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( self::$req_has_min_ver === false )
+			if ( self::$have_min === false )
 				return;		// stop here
 
 			$this->p->is_avail['ssm'] = true;
@@ -111,7 +111,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( self::$req_has_min_ver === false )
+			if ( self::$have_min === false )
 				return;		// stop here
 
 			$this->filters = new WpssoSsmFilters( $this->p );
@@ -121,20 +121,24 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			if ( $this->p->debug->enabled )
 				$this->p->debug->mark();
 
-			if ( self::$req_has_min_ver === false )
+			if ( self::$have_min === false )
 				return $this->min_version_notice();
 		}
 
 		private function min_version_notice() {
 			$info = WpssoSsmConfig::$cf['plugin']['wpssossm'];
-			$have_version = $this->p->cf['plugin']['wpsso']['version'];
+			$wpsso_version = WpssoConfig::get_version();
 
-			if ( $this->p->debug->enabled )
-				$this->p->debug->log( $info['name'].' requires '.self::$req_short.' version '.
-					self::$req_min_version.' or newer ('.$have_version.' installed)' );
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->log( $info['name'].' requires '.$info['req']['short'].' v'.
+					$info['req']['min_version'].' or newer ('.$wpsso_version.' installed)' );
+			}
 
-			if ( is_admin() )
-				$this->p->notice->err( sprintf( __( 'The %1$s extension version %2$s requires the use of %3$s version %4$s or newer (version %5$s is currently installed).', 'wpsso-strip-schema-microdata' ), $info['name'], $info['version'], self::$req_short, self::$req_min_version, $have_version ) );
+			if ( is_admin() ) {
+				$this->p->notice->err( sprintf( __( 'The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently installed).',
+					'wpsso-strip-schema-microdata' ), $info['name'], $info['version'], $info['req']['short'],
+						$info['req']['min_version'], $wpsso_version ) );
+			}
 		}
 	}
 
