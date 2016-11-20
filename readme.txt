@@ -79,6 +79,19 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.0.3-dev1 (2016/11/20)**
+
+Official announcement: N/A
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Refactored the min_version_notice() method and moved variables to config class.
+
 **Version 1.0.2-1 (2016/10/25)**
 
 Official announcement: N/A
@@ -106,6 +119,10 @@ Official announcement: [New Plugin — WPSSO Strip Schema Microdata](http://surn
 	* None
 
 == Upgrade Notice ==
+
+= 1.0.3-dev1 =
+
+(2016/11/20) Refactored the min_version_notice() method.
 
 = 1.0.2-1 =
 
