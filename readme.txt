@@ -10,7 +10,7 @@ Tags: wpsso, schema.org, schema, microdata, remove, strip, fix, json-ld, ld+json
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.6.1
-Stable Tag: 1.0.2-1
+Stable Tag: 1.0.3-1
 
 WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google.
 
@@ -79,7 +79,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.0.3-rc2 (2016/11/25)**
+**Version 1.0.3-1 (2016/11/25)**
 
 Official announcement: N/A
 
@@ -92,39 +92,9 @@ Official announcement: N/A
 * *Developer Notes*
 	* Refactored the min_version_notice() method and moved variables to config class.
 
-**Version 1.0.2-1 (2016/10/25)**
-
-Official announcement: N/A
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added a check to skip filtering when the DOING_AJAX constant is true.
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
-**Version 1.0.1-1 (2016/10/17)**
-
-Official announcement: [New Plugin — WPSSO Strip Schema Microdata](http://surniaulula.com/2016/10/17/new-plugin-wpsso-strip-schema-microdata/)
-
-* *New Features*
-	* None
-* *Improvements*
-	* Added an iteration count to check for a maximum of 20 tag attributes (just in case).
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
 
-= 1.0.3-rc2 =
+= 1.0.3-1 =
 
 (2016/11/25) Refactored the min_version_notice() method.
-
-= 1.0.2-1 =
-
-(2016/10/25) Added a check to skip filtering when the DOING_AJAX constant is true.
 
