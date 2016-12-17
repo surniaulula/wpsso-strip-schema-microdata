@@ -82,8 +82,6 @@ Note that the production stage level can be incremented on occasion for simple t
 
 **Version 1.0.3-1 (2016/11/25)**
 
-Official announcement: N/A
-
 * *New Features*
 	* None
 * *Improvements*
