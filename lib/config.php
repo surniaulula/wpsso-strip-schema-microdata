@@ -55,6 +55,8 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						),
 						'gpl' => array(
 						),
+						'pro' => array(
+						),
 					),
 				),
 			),
