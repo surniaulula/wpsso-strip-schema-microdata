@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Strip Schema Microdata (WPSSO SSM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.0.3-1\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.0.4-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -20,19 +20,19 @@ msgid ""
 "Schema JSON-LD markup untouched for Google and Bing."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:79
+#: wpsso-strip-schema-microdata.php:83
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating the %4$s extension."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:81
+#: wpsso-strip-schema-microdata.php:85
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:138
+#: wpsso-strip-schema-microdata.php:142
 msgid ""
 "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently "
 "installed)."

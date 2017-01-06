@@ -13,7 +13,7 @@
  * Description: WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google and Bing.
  * Requires At Least: 3.7
  * Tested Up To: 4.7
- * Version: 1.0.3-1
+ * Version: 1.0.4-dev1
  * 
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -49,7 +49,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			$this->reg = new WpssoSsmRegister();		// activate, deactivate, uninstall hooks
 
 			if ( is_admin() ) {
-				load_plugin_textdomain( 'wpsso-strip-schema-microdata', false, 'wpsso-strip-schema-microdata/languages/' );
+				add_action( 'plugins_loaded', array( __CLASS__, 'load_textdomain' ) );
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
 			}
 
@@ -63,6 +63,10 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			if ( ! isset( self::$instance ) )
 				self::$instance = new self;
 			return self::$instance;
+		}
+
+		public static function load_textdomain() {
+			load_plugin_textdomain( 'wpsso-strip-schema-microdata', false, 'wpsso-strip-schema-microdata/languages/' );
 		}
 
 		public static function required_check() {
