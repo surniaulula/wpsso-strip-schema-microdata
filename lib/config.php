@@ -48,6 +48,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/',
 						'faq' => '',
 						'notes' => '',
+						'support' => '',
 					),
 					'lib' => array(
 						// submenu items must have unique keys
