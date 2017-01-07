@@ -11,7 +11,7 @@ Tags: schema.org, schema, microdata, remove, strip, fix, json-ld, ld+json, json,
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7
-Stable Tag: 1.0.3-1
+Stable Tag: 1.0.4-1
 
 WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google.
 
