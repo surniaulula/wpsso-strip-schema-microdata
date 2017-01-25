@@ -38,7 +38,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						// wordpress
 						'download' => 'https://wordpress.org/plugins/wpsso-strip-schema-microdata/',
 						'forum' => 'https://wordpress.org/support/plugin/wpsso-strip-schema-microdata',
-						'review' => 'https://wordpress.org/support/view/plugin-reviews/wpsso-strip-schema-microdata?filter=5&rate=5#postform',
+						'review' => 'https://wordpress.org/support/plugin/wpsso-strip-schema-microdata/reviews/?rate=5#new-post',
 						// github
 						'readme_txt' => 'https://raw.githubusercontent.com/SurniaUlula/wpsso-strip-schema-microdata/master/readme.txt',
 						// wpsso
