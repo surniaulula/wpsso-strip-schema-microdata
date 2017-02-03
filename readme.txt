@@ -9,7 +9,7 @@ Donate Link: https://www.paypal.me/surniaulula
 Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
 Tags: schema.org, schema, microdata, remove, strip, fix, json-ld, ld+json, json, markup, google
 Contributors: jsmoriss
-Requires At Least: 3.7
+Requires At Least: 3.8
 Tested Up To: 4.7.2
 Stable Tag: 1.0.4-1
 
