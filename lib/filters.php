@@ -47,11 +47,13 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				$doc_body = substr( $buffer, $body_pos );
 
 				$pattern = array(
+					'/<script type="application/ld+json">.*<\/script>/Uim',	// ungreedy
 					'/[\s\n]*<(link|meta)(\s|[^>]+\s)itemprop=[\'"][^\'"]*[\'"][^>]*>[\s\n]*/im',
 					'/(<[^>]*)\sitem(scope|type|prop)(=[\'"][^\'"]*[\'"])?([^>]*>)/im',
 				);
 
 				$replace = array(
+					'',
 					'',
 					'$1$4',
 				);
