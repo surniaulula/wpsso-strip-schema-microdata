@@ -80,7 +80,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.0.5-1 (2017/03/01)**
+**Version 1.0.6-1 (2017/03/01)**
 
 * *New Features*
 	* None
@@ -91,39 +91,9 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Developer Notes*
 	* None
 
-**Version 1.0.4-1 (2017/01/08)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Added a 'plugins_loaded' action hook to load the plugin text domain.
-
-**Version 1.0.3-1 (2016/11/25)**
-
-* *New Features*
-	* None
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* Refactored the min_version_notice() method and moved variables to config class.
-
 == Upgrade Notice ==
 
-= 1.0.5-1 =
+= 1.0.6-1 =
 
 (2017/03/01) Added removal of ld+json scripts from the webpage body.
-
-= 1.0.4-1 =
-
-(2017/01/08) Added a 'plugins_loaded' action hook to load the plugin text domain.
-
-= 1.0.3-1 =
-
-(2016/11/25) Refactored the min_version_notice() method.
 
