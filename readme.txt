@@ -80,6 +80,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.0.5-1 (2017/03/01)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added removal of ld+json scripts from the webpage body.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.0.4-1 (2017/01/08)**
 
 * *New Features*
@@ -103,6 +114,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* Refactored the min_version_notice() method and moved variables to config class.
 
 == Upgrade Notice ==
+
+= 1.0.5-1 =
+
+(2017/03/01) Added removal of ld+json scripts from the webpage body.
 
 = 1.0.4-1 =
 
