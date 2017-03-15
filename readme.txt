@@ -19,17 +19,17 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 
 <p><img src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Does your theme include outdated, innacurate, or incomplete Schema Microdata?</strong></p>
 
-<p><strong>Do you prefer using the latest <em>Google recommended</em> Schema JSON-LD markup standard?</strong></p>
+<p><strong>Do you want to remove the Schema Microdata markup added by 3rd party plugins?</strong></p>
 
-<p><strong>Do you want to remove Schema Microdata markup added by 3rd party plugins?</strong></p>
+<p><strong>Do you prefer to use the latest <em>Google recommended</em> Schema JSON-LD markup standard?</strong></p>
 
-<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a> (recommended) and would like to remove incorrect Schema Microdata from your theme templates?</strong></p>
+<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a></strong> (recommended) and would like to remove incorrect or duplicate Schema Microdata from your theme templates?</p>
 
-<p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the plugin to enable / disable the removal of Schema Microdata. A simple settings page also allows you to enable the removal of duplicate / conflicting meta tags from the webpage head and/or body sections.</p>
+<p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content <em>dynamically</em>, allowing you to activate / deactivate the plugin as desired to enable / disable the removal of Schema Microdata. A "Strip Schema" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head and/or body sections as well (disabled by default).</p>
 
 = Is it working? =
 
-<p>WPSSO SSM removes Schema Microdata markup automatically from the webpage body and includes an activity summary at the bottom (as a hidden HTML comment):</p>
+<p>WPSSO SSM includes an activity summary (as a hidden HTML comment) at the bottom of each webpage:</p>
 
 <pre>
 &lt;!-- WpssoSsmFilters::remove_schema_microdata = 41 matches removed in 4 interations and 0.001799 secs --&gt;
@@ -60,6 +60,8 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 
 == Screenshots ==
 
+01. Strip Schema Microdata settings page &mdash; manage options for the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
+
 == Changelog ==
 
 = Free / Basic Version Repository =
@@ -83,7 +85,7 @@ Note that the production stage level can be incremented on occasion for simple t
 **Version 1.1.0-dev1 (2017/03/15)**
 
 * *New Features*
-	* Added a new "Strip Schema" settings page with options to manage the removal of duplicate / conflicting meta tags, ld+json scripts, and Schema HTML attributes.
+	* Added a new "Strip Schema" settings page with options to manage the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
 * *Improvements*
 	* None
 * *Bugfixes*
@@ -96,7 +98,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *New Features*
 	* None
 * *Improvements*
-	* Added removal of ld+json scripts from the webpage body.
+	* Added removal of application/ld+json scripts from the webpage body.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -106,9 +108,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 1.1.0-dev1 =
 
-(2017/03/15) Added a new "Strip Schema" settings page with options to manage the removal of duplicate / conflicting meta tags, ld+json scripts, and Schema HTML attributes.
+(2017/03/15) Added a new "Strip Schema" settings page with options to manage the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
 
 = 1.0.6-1 =
 
-(2017/03/01) Added removal of ld+json scripts from the webpage body.
+(2017/03/01) Added removal of application/ld+json scripts from the webpage body.
 
