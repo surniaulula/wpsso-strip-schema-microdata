@@ -32,7 +32,7 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 <p>WPSSO SSM includes an activity summary (as a hidden HTML comment) at the bottom of each webpage:</p>
 
 <pre>
-&lt;!-- WpssoSsmFilters::remove_schema_microdata = 41 matches removed in 4 interations and 0.001799 secs --&gt;
+&lt;!-- WpssoSsmFilters::strip_schema_microdata = 41 matches removed in 4 interations and 0.001799 secs --&gt;
 </pre>
 
 <blockquote>
@@ -91,7 +91,7 @@ Note that the production stage level can be incremented on occasion for simple t
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Refactored the WpssoSsmFilters remove_schema_microdata() method and added support for the removal of duplicate / conflicting meta tags.
+	* Refactored the WpssoSsmFilters strip_schema_microdata() method and added support for the removal of duplicate / conflicting meta tags.
 
 **Version 1.0.6-1 (2017/03/01)**
 
