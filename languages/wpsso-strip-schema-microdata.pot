@@ -64,7 +64,7 @@ msgstr ""
 
 #: lib/submenu/ssm-general.php:65
 msgctxt "option label"
-msgid "Application LD+JSON Scripts"
+msgid "Application/LD+JSON Scripts"
 msgstr ""
 
 #: lib/submenu/ssm-general.php:69

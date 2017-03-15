@@ -62,7 +62,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_body_meta_tags' ).
 					'<td>'.$this->form->get_checkbox( 'ssm_body_meta_tags' ).'</td>';
 
-					$table_rows[] = $this->form->get_th_html( _x( 'Application LD+JSON Scripts',
+					$table_rows[] = $this->form->get_th_html( _x( 'Application/LD+JSON Scripts',
 						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_body_json_scripts' ).
 					'<td>'.$this->form->get_checkbox( 'ssm_body_json_scripts' ).'</td>';
 
