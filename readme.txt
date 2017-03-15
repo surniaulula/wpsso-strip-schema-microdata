@@ -80,6 +80,17 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
+**Version 1.1.0-dev1 (TBD)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.0.6-1 (2017/03/01)**
 
 * *New Features*
@@ -92,6 +103,10 @@ Note that the production stage level can be incremented on occasion for simple t
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.0-dev1 =
+
+(TBD) None.
 
 = 1.0.6-1 =
 
