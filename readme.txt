@@ -19,17 +19,17 @@ WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema
 
 <p><img src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png" width="256" height="256" style="width:33%;min-width:128px;max-width:256px;float:left;margin:0 40px 20px 0;" /><strong>Does your theme include outdated, innacurate, or incomplete Schema Microdata?</strong></p>
 
-<p><strong>Do you prefer using the latest (and much better) Schema JSON-LD markup standard?</strong></p>
+<p><strong>Do you prefer using the latest <em>Google recommended</em> Schema JSON-LD markup standard?</strong></p>
 
 <p><strong>Do you want to remove Schema Microdata markup added by 3rd party plugins?</strong></p>
 
 <p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a> (recommended) and would like to remove incorrect Schema Microdata from your theme templates?</strong></p>
 
-<p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the plugin to enable / disable the removal of Schema Microdata.</p>
+<p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the plugin to enable / disable the removal of Schema Microdata. A simple settings page also allows you to enable the removal of duplicate / conflicting meta tags from the webpage head and/or body sections.</p>
 
 = Is it working? =
 
-<p>The WPSSO SSM extension does not have any settings &mdash; it removes Schema Microdata markup automatically from the webpage body and includes an activity summary at the bottom (as a hidden HTML comment):</p>
+<p>WPSSO SSM removes Schema Microdata markup automatically from the webpage body and includes an activity summary at the bottom (as a hidden HTML comment):</p>
 
 <pre>
 &lt;!-- WpssoSsmFilters::remove_schema_microdata = 41 matches removed in 4 interations and 0.001799 secs --&gt;
@@ -80,16 +80,16 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.1.0-dev1 (TBD)**
+**Version 1.1.0-dev1 (2017/03/15)**
 
 * *New Features*
-	* None
+	* Added a new "Strip Schema" settings page with options to manage the removal of duplicate / conflicting meta tags, ld+json scripts, and Schema HTML attributes.
 * *Improvements*
 	* None
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Refactored the WpssoSsmFilters remove_schema_microdata() method and added support for the removal of duplicate / conflicting meta tags.
 
 **Version 1.0.6-1 (2017/03/01)**
 
@@ -106,7 +106,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 1.1.0-dev1 =
 
-(TBD) None.
+(2017/03/15) Added a new "Strip Schema" settings page with options to manage the removal of duplicate / conflicting meta tags, ld+json scripts, and Schema HTML attributes.
 
 = 1.0.6-1 =
 
