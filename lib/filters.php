@@ -49,10 +49,10 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'output buffering started' );
 			}
-			ob_start( array( &$this, 'remove_schema_microdata' ) );
+			ob_start( array( &$this, 'strip_schema_microdata' ) );
 		}
 
-		public function remove_schema_microdata( $buffer ) {
+		public function strip_schema_microdata( $buffer ) {
 
 			// locate the body to remove schema microdata only in the body section
 			$body_pos = stripos( $buffer, '<body ' );
