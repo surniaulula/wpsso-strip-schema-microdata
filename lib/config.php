@@ -15,8 +15,8 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(
-					'version' => '1.0.6-1',		// plugin version
-					'opt_version' => '1',		// increment when changing default options
+					'version' => '1.1.0-dev1',		// plugin version
+					'opt_version' => '2',		// increment when changing default options
 					'short' => 'WPSSO SSM',		// short plugin name
 					'name' => 'WPSSO Strip Schema Microdata (WPSSO SSM)',
 					'desc' => 'WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google and Bing.',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WordPress Social Sharing Optimization (WPSSO)',
-						'min_version' => '3.40.1-2',
+						'min_version' => '3.40.5-dev1',
 					),
 					'img' => array(
 						'icon_small' => 'images/icon-128x128.png',
@@ -53,12 +53,21 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'lib' => array(
 						// submenu items must have unique keys
 						'submenu' => array (
+							'ssm-general' => 'Strip Schema',	// general settings
 						),
 						'gpl' => array(
 						),
 						'pro' => array(
 						),
 					),
+				),
+			),
+			'opt' => array(						// options
+				'defaults' => array(
+					'ssm_head_meta_tags' => 0,
+					'ssm_body_meta_tags' => 0,
+					'ssm_body_json_scripts' => 1,
+					'ssm_body_schema_attr' => 1,
 				),
 			),
 		);

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Strip Schema Microdata (WPSSO SSM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.0.6-1\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.1.0-dev1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -14,25 +14,77 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: lib/config-gettext-extract.php:3
+msgctxt "lib file description"
+msgid "Strip Schema"
+msgstr ""
+
+#: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
 msgid ""
 "WPSSO extension to remove outdated Schema Microdata, leaving the superior "
 "Schema JSON-LD markup untouched for Google and Bing."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:77
+#: lib/filters.php:178 lib/filters.php:181
+msgid ""
+"Remove known duplicate / conflicting meta tags from the webpage %1$s section."
+msgstr ""
+
+#: lib/filters.php:184
+msgid ""
+"Remove <code>application/ld+json</code> scripts from the webpage %1$s "
+"section."
+msgstr ""
+
+#: lib/filters.php:187
+msgid ""
+"Remove Schema HTML attributes (itemscope, itemtype, and itemprop) from the "
+"webpage %1$s section."
+msgstr ""
+
+#: lib/submenu/ssm-general.php:30
+msgctxt "metabox title"
+msgid "Strip Schema Microdata"
+msgstr ""
+
+#: lib/submenu/ssm-general.php:37
+msgctxt "metabox tab"
+msgid "Body Section"
+msgstr ""
+
+#: lib/submenu/ssm-general.php:38
+msgctxt "metabox tab"
+msgid "Head Section"
+msgstr ""
+
+#: lib/submenu/ssm-general.php:53 lib/submenu/ssm-general.php:61
+msgctxt "option label"
+msgid "Duplicate HTML Meta Tags"
+msgstr ""
+
+#: lib/submenu/ssm-general.php:65
+msgctxt "option label"
+msgid "Application LD+JSON Scripts"
+msgstr ""
+
+#: lib/submenu/ssm-general.php:69
+msgctxt "option label"
+msgid "Schema HTML Attributes"
+msgstr ""
+
+#: wpsso-strip-schema-microdata.php:79
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:79
+#: wpsso-strip-schema-microdata.php:81
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:147
+#: wpsso-strip-schema-microdata.php:159
 msgid ""
 "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently "
 "installed)."

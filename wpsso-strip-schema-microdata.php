@@ -13,7 +13,7 @@
  * Description: WPSSO extension to remove outdated Schema Microdata, leaving the superior Schema JSON-LD markup untouched for Google and Bing.
  * Requires At Least: 3.8
  * Tested Up To: 4.7.3
- * Version: 1.0.6-1
+ * Version: 1.1.0-dev1
  * 
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -60,14 +60,16 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		}
 
 		public static function &get_instance() {
-			if ( ! isset( self::$instance ) )
+			if ( ! isset( self::$instance ) ) {
 				self::$instance = new self;
+			}
 			return self::$instance;
 		}
 
 		public static function required_check() {
-			if ( ! class_exists( 'Wpsso' ) )
+			if ( ! class_exists( 'Wpsso' ) ) {
 				add_action( 'all_admin_notices', array( __CLASS__, 'required_notice' ) );
+			}
 		}
 
 		// also called from the activate_plugin method with $deactivate = true
@@ -83,8 +85,10 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 				require_once( ABSPATH.'wp-admin/includes/plugin.php' );
 				deactivate_plugins( $info['base'] );
 				wp_die( '<p>'.sprintf( $die_msg, $info['name'], $info['req']['name'], $info['req']['short'], $info['short'] ).'</p>' );
-			} else echo '<div class="notice notice-error error"><p>'.
-				sprintf( $err_msg, $info['name'], $info['req']['name'], $info['req']['short'] ).'</p></div>';
+			} else {
+				echo '<div class="notice notice-error error"><p>'.
+					sprintf( $err_msg, $info['name'], $info['req']['name'], $info['req']['short'] ).'</p></div>';
+			}
 		}
 
 		public static function wpsso_init_textdomain() {
@@ -103,35 +107,43 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		}
 
 		public function wpsso_init_options() {
-			if ( method_exists( 'Wpsso', 'get_instance' ) )
+			if ( method_exists( 'Wpsso', 'get_instance' ) ) {
 				$this->p =& Wpsso::get_instance();
-			else $this->p =& $GLOBALS['wpsso'];
+			} else {
+				$this->p =& $GLOBALS['wpsso'];
+			}
 
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
+			if ( self::$have_req_min === false ) {
 				return;		// stop here
+			}
 
 			$this->p->is_avail['ssm'] = true;
 		}
 
 		public function wpsso_init_objects() {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
+			if ( self::$have_req_min === false ) {
 				return;		// stop here
+			}
 
 			$this->filters = new WpssoSsmFilters( $this->p );
 		}
 
 		public function wpsso_init_plugin() {
-			if ( $this->p->debug->enabled )
+			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
+			}
 
-			if ( self::$have_req_min === false )
+			if ( self::$have_req_min === false ) {
 				return $this->min_version_notice();
+			}
 		}
 
 		private function min_version_notice() {
