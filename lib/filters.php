@@ -74,7 +74,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				return $doc_head.$doc_body.'<!-- '.__METHOD__.' = '.$removed_count.' matches removed in '.
 					$loop_iter.' interations and '.sprintf( '%f secs', $time_diff ).' -->';
 
-			} else return $buffer.'<!-- '.__METHOD__.' = nothing to do: body HTML tag not found -->';
+			} else {
+				return $buffer.'<!-- '.__METHOD__.' = nothing to do: body HTML tag not found -->';
+			}
 		}
 	}
 }
