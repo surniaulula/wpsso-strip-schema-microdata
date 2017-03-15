@@ -21,9 +21,9 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 
 <p><strong>Do you want to remove the Schema Microdata markup added by 3rd party plugins?</strong></p>
 
-<p><strong>Do you prefer to use the latest <em>Google recommended</em> Schema JSON-LD markup standard?</strong></p>
+<p><strong>Do you prefer using the <em>Google recommended</em> Schema JSON-LD markup standard?</strong></p>
 
-<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a></strong> (recommended) and would like to remove incorrect or duplicate Schema Microdata from your theme templates?</p>
+<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a> (recommended)</strong> and would like to remove incorrect or duplicate Schema Microdata from your theme templates?</p>
 
 <p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content <em>dynamically</em>, allowing you to activate / deactivate the plugin as desired to enable / disable the removal of Schema Microdata. A "Strip Schema" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head and/or body sections as well (disabled by default).</p>
 
