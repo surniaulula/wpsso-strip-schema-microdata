@@ -53,7 +53,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'lib' => array(
 						// submenu items must have unique keys
 						'submenu' => array (
-							'ssm-general' => 'Strip Schema',	// general settings
+							'ssm-general' => 'Strip Microdata',	// general settings
 						),
 						'gpl' => array(
 						),

@@ -112,7 +112,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 									}
 									if ( ! empty( $names ) ) {
 										$mt_pattern_cache[] = '/[\s\n]*<'.$tag.'(\s|[^>]+\s)'.
-											$type.'=[\'"]('.implode( '|', $names ).')[\'"][^>]*>[\s\n]*/im';
+											$type.'=[\'"]('.implode( '|', $names ).')[\'"][^>]*>[\s\n]*/imS';
 										$mt_replace_cache[] = '';
 									}
 								}
@@ -126,15 +126,15 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					}
 
 					if ( ! empty( $this->p->options['ssm_'.$section.'_schema_attr'] ) ) {
-						$pattern[] = '/[\s\n]*<(link|meta)(\s|[^>]+\s)itemprop=[\'"][^\'"]*[\'"][^>]*>[\s\n]*/im';
+						$pattern[] = '/[\s\n]*<(link|meta)(\s|[^>]+\s)itemprop=[\'"][^\'"]*[\'"][^>]*>[\s\n]*/imS';
 						$replace[] = '';
 
-						$pattern[] = '/(<[^>]*)\sitem(scope|type|prop)(=[\'"][^\'"]*[\'"])?([^>]*>)/im';
+						$pattern[] = '/(<[^>]*)\sitem(scope|type|prop)(=[\'"][^\'"]*[\'"])?([^>]*>)/imS';
 						$replace[] = '$1$4';
 					}
 
 					if ( ! empty( $this->p->options['ssm_'.$section.'_json_scripts'] ) ) {
-						$pattern[] = '/<script type="application\/ld\+json">.*<\/script>/Uim';	// ungreedy
+						$pattern[] = '/<script type="application\/ld\+json">.*<\/script>/UimS';	// ungreedy
 						$replace[] = '';
 					}
 

@@ -15,7 +15,7 @@ msgstr ""
 
 #: lib/config-gettext-extract.php:3
 msgctxt "lib file description"
-msgid "Strip Schema"
+msgid "Strip Microdata"
 msgstr ""
 
 #: lib/config-gettext-extract.php:4
