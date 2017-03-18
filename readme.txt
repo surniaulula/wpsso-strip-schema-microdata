@@ -34,8 +34,8 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 <p>WPSSO SSM includes a handy activity summary at the bottom of each webpage (as a hidden HTML comment) to inform you of how many matches it removed, and how long it took. Use your browser's "View Source" feature and scroll down to the bottom of the webpage HTML source to review the activity summary.</p>
 
 <pre>
-&lt;!-- WpssoSsmFilters::strip_schema_microdata = 41 matches removed
-	in 4 interations and 0.001799 secs --&gt;
+&lt;!-- WpssoSsmFilters::strip_schema_microdata = 41 matches 
+	removed in 4 interations and 0.001799 secs --&gt;
 </pre>
 
 <blockquote>
