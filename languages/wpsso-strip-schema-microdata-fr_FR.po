@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.1.0-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2017-03-15 16:00+0700\n"
-"PO-Revision-Date: 2017-03-15 16:11+0700\n"
+"POT-Creation-Date: 2017-03-18 07:29+0200\n"
+"PO-Revision-Date: 2017-03-18 07:30+0200\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,8 +16,8 @@ msgstr ""
 
 #: lib/config-gettext-extract.php:3
 msgctxt "lib file description"
-msgid "Strip Schema"
-msgstr "Suprimer Schéma"
+msgid "Strip Microdata"
+msgstr "Suprimer Microdonnées"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
@@ -97,3 +97,7 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
+
+#~ msgctxt "lib file description"
+#~ msgid "Strip Schema"
+#~ msgstr "Suprimer Schéma"
