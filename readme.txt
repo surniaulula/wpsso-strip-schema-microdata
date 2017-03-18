@@ -85,7 +85,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.1.0-rc2 (2017/03/15)**
+**Version 1.1.0-rc3 (2017/03/18)**
 
 * *New Features*
 	* Added a new "Strip Microdata" settings page with options to manage the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
@@ -109,9 +109,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.1.0-rc2 =
+= 1.1.0-rc3 =
 
-(2017/03/15) Added a new "Strip Microdata" settings page with options to manage the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
+(2017/03/18) Added a new "Strip Microdata" settings page with options to manage the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
 
 = 1.0.6-1 =
 
