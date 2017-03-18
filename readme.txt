@@ -25,11 +25,11 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 
 <p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a> (recommended)</strong> and would like to remove incorrect or duplicate Schema Microdata from your theme templates?</p>
 
-<p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content <em>dynamically</em>, allowing you to activate / deactivate the plugin as desired to enable / disable the removal of Schema Microdata. A "Strip Schema" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head and/or body sections as well (disabled by default).</p>
+<p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes unwanted Schema Microdata markup from the webpage body, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content <em>dynamically</em>, allowing you to activate / deactivate the plugin as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head and/or body sections as well (disabled by default).</p>
 
-= Is it working? =
+= How do you know what it’s doing? ;-) =
 
-<p>WPSSO SSM includes an activity summary (as a hidden HTML comment) at the bottom of each webpage:</p>
+<p>WPSSO SSM includes a handy activity summary at the bottom of each webpage (as a hidden HTML comment) to inform you of how many matches it removed, and how long it took. Use your browser’s “View Source” feature and scroll down to the bottom of the webpage HTML source to review the activity summary.</p>
 
 <pre>
 &lt;!-- WpssoSsmFilters::strip_schema_microdata = 41 matches removed in 4 interations and 0.001799 secs --&gt;
@@ -85,7 +85,7 @@ Note that the production stage level can be incremented on occasion for simple t
 **Version 1.1.0-rc2 (2017/03/15)**
 
 * *New Features*
-	* Added a new "Strip Schema" settings page with options to manage the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
+	* Added a new "Strip Microdata" settings page with options to manage the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
 * *Improvements*
 	* None
 * *Bugfixes*
@@ -108,7 +108,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = 1.1.0-rc2 =
 
-(2017/03/15) Added a new "Strip Schema" settings page with options to manage the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
+(2017/03/15) Added a new "Strip Microdata" settings page with options to manage the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
 
 = 1.0.6-1 =
 
