@@ -49,26 +49,19 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 			$table_rows = array();
 			switch ( $metabox.'-'.$key ) {
 				case 'general-head':
-
-					$table_rows[] = $this->form->get_th_html( _x( 'Duplicate HTML Meta Tags',
-						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_head_meta_tags' ).
-					'<td>'.$this->form->get_checkbox( 'ssm_head_meta_tags' ).'</td>';
-
-					break;
-
 				case 'general-body':
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Duplicate HTML Meta Tags',
-						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_body_meta_tags' ).
-					'<td>'.$this->form->get_checkbox( 'ssm_body_meta_tags' ).'</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$key.'_meta_tags' ).
+					'<td>'.$this->form->get_checkbox( 'ssm_'.$key.'_meta_tags' ).'</td>';
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Application/LD+JSON Scripts',
-						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_body_json_scripts' ).
-					'<td>'.$this->form->get_checkbox( 'ssm_body_json_scripts' ).'</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$key.'_json_scripts' ).
+					'<td>'.$this->form->get_checkbox( 'ssm_'.$key.'_json_scripts' ).'</td>';
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Schema HTML Attributes',
-						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_body_schema_attr' ).
-					'<td>'.$this->form->get_checkbox( 'ssm_body_schema_attr' ).'</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$key.'_schema_attr' ).
+					'<td>'.$this->form->get_checkbox( 'ssm_'.$key.'_schema_attr' ).'</td>';
 
 					break;
 			}

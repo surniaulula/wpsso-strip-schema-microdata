@@ -174,17 +174,29 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				return $text;
 
 			switch ( $idx ) {
+				case ( strpos( $idx, 'tooltip-ssm_head_' ) === 0 ? true : false ):
+					$section = 'head';
+					break;
+				case ( strpos( $idx, 'tooltip-ssm_body_' ) === 0 ? true : false ):
+					$section = 'body';
+					break;
+			}
+
+			switch ( $idx ) {
 				case 'tooltip-ssm_head_meta_tags':
-					$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;head&amp;gt;</code>' );
-					break;
 				case 'tooltip-ssm_body_meta_tags':
-					$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;body&amp;gt;</code>' );
+					if ( isset( $section ) )	// just in case
+						$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
 					break;
+				case 'tooltip-ssm_head_json_scripts':
 				case 'tooltip-ssm_body_json_scripts':
-					$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;body&amp;gt;</code>' );
+					if ( isset( $section ) )	// just in case
+						$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
 					break;
+				case 'tooltip-ssm_head_schema_attr':
 				case 'tooltip-ssm_body_schema_attr':
-					$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, and itemprop) from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;body&amp;gt;</code>' );
+					if ( isset( $section ) )	// just in case
+						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, and itemprop) from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
 					break;
 			}
 			return $text;

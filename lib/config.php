@@ -15,8 +15,8 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(
-					'version' => '1.1.0-1',		// plugin version
-					'opt_version' => '2',		// increment when changing default options
+					'version' => '1.1.1-dev1',		// plugin version
+					'opt_version' => '3',		// increment when changing default options
 					'short' => 'WPSSO SSM',		// short plugin name
 					'name' => 'WPSSO Strip Schema Microdata (WPSSO SSM)',
 					'desc' => 'WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.',
@@ -65,6 +65,8 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 			'opt' => array(						// options
 				'defaults' => array(
 					'ssm_head_meta_tags' => 0,
+					'ssm_head_json_scripts' => 0,
+					'ssm_head_schema_attr' => 0,
 					'ssm_body_meta_tags' => 0,
 					'ssm_body_json_scripts' => 1,
 					'ssm_body_schema_attr' => 1,
