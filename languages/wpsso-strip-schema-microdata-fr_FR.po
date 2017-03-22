@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.1.0-1\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.1.1-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2017-03-19 07:22+0200\n"
-"PO-Revision-Date: 2017-03-19 07:23+0200\n"
+"POT-Creation-Date: 2017-03-22 17:48+0200\n"
+"PO-Revision-Date: 2017-03-22 17:48+0200\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -24,15 +24,15 @@ msgctxt "plugin description"
 msgid "WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched."
 msgstr "Extension WPSSO pour supprimer les Microdonnées de Schéma obsolète / incomplète, laissant le balisage Schéma JSON-LD recommandé par Google intact."
 
-#: lib/filters.php:178 lib/filters.php:181
+#: lib/filters.php:189
 msgid "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr "Supprimer les balises méta HTML connu en double / en conflit dans la section %1$s de la page Web."
 
-#: lib/filters.php:184
+#: lib/filters.php:194
 msgid "Remove <code>application/ld+json</code> scripts from the webpage %1$s section."
 msgstr "Supprimer les scripts <code>application/ld+json</code> de la section %1$s de la page Web."
 
-#: lib/filters.php:187
+#: lib/filters.php:199
 msgid "Remove Schema HTML attributes (itemscope, itemtype, and itemprop) from the webpage %1$s section."
 msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, et itemprop) de la section %1$s de la page Web."
 
@@ -51,17 +51,17 @@ msgctxt "metabox tab"
 msgid "Head Section"
 msgstr "Section d'entête"
 
-#: lib/submenu/ssm-general.php:53 lib/submenu/ssm-general.php:61
+#: lib/submenu/ssm-general.php:54
 msgctxt "option label"
 msgid "Duplicate HTML Meta Tags"
 msgstr "Doublons de balises méta HTML"
 
-#: lib/submenu/ssm-general.php:65
+#: lib/submenu/ssm-general.php:58
 msgctxt "option label"
 msgid "Application/LD+JSON Scripts"
 msgstr "Scripts application/ld+json"
 
-#: lib/submenu/ssm-general.php:69
+#: lib/submenu/ssm-general.php:62
 msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr "Attributs HTML de Schéma"
@@ -97,7 +97,3 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
-
-#~ msgctxt "lib file description"
-#~ msgid "Strip Schema"
-#~ msgstr "Suprimer Schéma"
