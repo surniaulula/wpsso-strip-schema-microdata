@@ -86,7 +86,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.1.1-rc2 (2017/03/25)**
+**Version 1.1.1-1 (2017/03/25)**
 
 * *New Features*
 	* None
@@ -121,7 +121,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.1.1-rc2 =
+= 1.1.1-1 =
 
 (2017/03/25) Added the "Application/LD+JSON Scripts" and "Schema HTML Attributes" options under the Head Section tab as well (disabled by default).
 
