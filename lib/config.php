@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(
-					'version' => '1.1.1-rc1',		// plugin version
+					'version' => '1.1.1-rc2',		// plugin version
 					'opt_version' => '3',		// increment when changing default options
 					'short' => 'WPSSO SSM',		// short plugin name
 					'name' => 'WPSSO Strip Schema Microdata (WPSSO SSM)',
@@ -88,8 +88,8 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once( WPSSOSSM_PLUGINDIR.'lib/register.php' );
-			require_once( WPSSOSSM_PLUGINDIR.'lib/filters.php' );
+			require_once WPSSOSSM_PLUGINDIR.'lib/register.php';
+			require_once WPSSOSSM_PLUGINDIR.'lib/filters.php';
 
 			add_filter( 'wpssossm_load_lib', array( 'WpssoSsmConfig', 'load_lib' ), 10, 3 );
 		}
@@ -98,7 +98,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 			if ( $ret === false && ! empty( $filespec ) ) {
 				$filepath = WPSSOSSM_PLUGINDIR.'lib/'.$filespec.'.php';
 				if ( file_exists( $filepath ) ) {
-					require_once( $filepath );
+					require_once $filepath;
 					if ( empty( $classname ) )
 						return SucomUtil::sanitize_classname( 'wpssossm'.$filespec, false );	// $underscore = false
 					else return $classname;

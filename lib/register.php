@@ -67,9 +67,11 @@ if ( ! class_exists( 'WpssoSsmRegister' ) ) {
 
 		private function activate_plugin() {
 			$version = WpssoSsmConfig::$cf['plugin']['wpssossm']['version'];	// only our config
-			if ( class_exists( 'WpssoUtil' ) )
+			if ( class_exists( 'WpssoUtil' ) ) {
 				WpssoUtil::save_all_times( 'wpssossm', $version );
-			else WpssoSsm::required_notice( true );			// $deactivate = true
+			} else {
+				WpssoSsm::required_notice( true );			// $deactivate = true
+			}
 		}
 
 		private function deactivate_plugin() {

@@ -11,9 +11,9 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
- * Requires At Least: 3.8
+ * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 1.1.1-rc1
+ * Version: 1.1.1-rc2
  * 
  * Version Numbering Scheme: {major}.{minor}.{bugfix}-{stage}{level}
  *
@@ -80,10 +80,11 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 				'wpsso-strip-schema-microdata' );
 			$err_msg = __( 'The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin.',
 				'wpsso-strip-schema-microdata' );
-
 			if ( $deactivate === true ) {
-				require_once( ABSPATH.'wp-admin/includes/plugin.php' );
-				deactivate_plugins( $info['base'] );
+				if ( ! function_exists( 'deactivate_plugins' ) ) {
+					require_once ABSPATH.'wp-admin/includes/plugin.php';
+				}
+				deactivate_plugins( $info['base'], true );	// $silent = true
 				wp_die( '<p>'.sprintf( $die_msg, $info['name'], $info['req']['name'], $info['req']['short'], $info['short'] ).'</p>' );
 			} else {
 				echo '<div class="notice notice-error error"><p>'.
