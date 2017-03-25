@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
 Tags: schema.org, schema, microdata, remove, strip, fix, json-ld, ld+json, json, markup, google, duplicate, meta tags, filter
 Contributors: jsmoriss
-Requires At Least: 3.8
+Requires At Least: 3.7
 Tested Up To: 4.7.3
 Stable Tag: 1.1.0-1
 
@@ -86,7 +86,7 @@ Note that the production stage level can be incremented on occasion for simple t
 
 = Changelog / Release Notes =
 
-**Version 1.1.1-rc1 (2017/03/24)**
+**Version 1.1.1-rc2 (2017/03/25)**
 
 * *New Features*
 	* None
@@ -121,9 +121,9 @@ Note that the production stage level can be incremented on occasion for simple t
 
 == Upgrade Notice ==
 
-= 1.1.1-rc1 =
+= 1.1.1-rc2 =
 
-(2017/03/24) Added the "Application/LD+JSON Scripts" and "Schema HTML Attributes" options under the Head Section tab as well (disabled by default).
+(2017/03/25) Added the "Application/LD+JSON Scripts" and "Schema HTML Attributes" options under the Head Section tab as well (disabled by default).
 
 = 1.1.0-1 =
 
