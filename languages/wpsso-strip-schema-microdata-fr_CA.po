@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.1.1-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2017-03-22 17:48+0200\n"
-"PO-Revision-Date: 2017-03-22 17:48+0200\n"
+"POT-Creation-Date: 2017-03-31 18:02+0200\n"
+"PO-Revision-Date: 2017-03-31 18:03+0200\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,7 +17,7 @@ msgstr ""
 #: lib/config-gettext-extract.php:3
 msgctxt "lib file description"
 msgid "Strip Microdata"
-msgstr "Suprimer Microdonnées"
+msgstr "Supprimer Microdonnées"
 
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
@@ -39,7 +39,7 @@ msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, et itempro
 #: lib/submenu/ssm-general.php:30
 msgctxt "metabox title"
 msgid "Strip Schema Microdata"
-msgstr "Suprimer Microdonnées de Schéma"
+msgstr "Supprimer Microdonnées de Schéma"
 
 #: lib/submenu/ssm-general.php:37
 msgctxt "metabox tab"
@@ -74,7 +74,7 @@ msgstr "%1$s est une extension pour %2$s &mdash; s'il vous plaît installer et a
 msgid "The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin."
 msgstr "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer l'extension %3$s."
 
-#: wpsso-strip-schema-microdata.php:159
+#: wpsso-strip-schema-microdata.php:160
 msgid "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently installed)."
 msgstr "L'extension %1$s v%2$s requiert l'utilisation de %3$s v%4$s ou plus récente (v%5$s est actuellement installée)."
 
