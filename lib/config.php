@@ -46,7 +46,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						'update' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/update/',
 						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/changelog/',
 						'codex' => 'https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/',
-						'faq' => '',
+						'faqs' => '',
 						'notes' => '',
 						'support' => '',
 					),
