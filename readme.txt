@@ -64,7 +64,7 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 
 == Screenshots ==
 
-01. Strip Schema Microdata settings page &mdash; manage options for the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
+01. WPSSO SSM settings page &mdash; manage options to remove of duplicate / conflicting meta tags, application/ld+json scripts, and/or Schema HTML attributes.
 
 == Changelog ==
 
