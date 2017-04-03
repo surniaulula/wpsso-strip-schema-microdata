@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(
-					'version' => '1.1.1-1',		// plugin version
+					'version' => '1.1.2-dev1',		// plugin version
 					'opt_version' => '3',		// increment when changing default options
 					'short' => 'WPSSO SSM',		// short plugin name
 					'name' => 'WPSSO Strip Schema Microdata (WPSSO SSM)',
@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						'latest' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/latest/',
 						'update' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/update/',
 						'changelog' => 'https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/changelog/',
-						'codex' => 'https://wpsso.com/codex/plugins/wpsso-strip-schema-microdata/',
+						'docs' => 'https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/',
 						'faqs' => '',
 						'notes' => '',
 						'support' => '',
