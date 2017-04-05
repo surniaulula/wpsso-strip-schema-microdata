@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Strip Schema Microdata (WPSSO SSM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.1.2-rc1\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.1.2-1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
