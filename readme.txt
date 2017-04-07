@@ -73,7 +73,7 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 * [GitHub](https://surniaulula.github.io/wpsso-strip-schema-microdata/)
 * [WordPress.org](https://wordpress.org/plugins/wpsso-strip-schema-microdata/developers/)
 
-= Version Numbering Scheme =
+= Version Numbering =
 
 Version components: `{major}.{minor}.{bugfix}-{stage}{level}`
 
