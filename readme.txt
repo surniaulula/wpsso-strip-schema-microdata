@@ -16,7 +16,7 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 
 == Description ==
 
-<img src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png" style="width:33%;min-width:128px;max-width:256px;height:auto;float:left;margin:10px 40px 40px 0;" />
+<img src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png" width="128" height="128" class="plugin_icon">
 
 <p><strong>Does your theme include outdated, innacurate, or incomplete Schema Microdata?</strong></p>
 
