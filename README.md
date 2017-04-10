@@ -13,7 +13,7 @@
 
 <h2>Description</h2>
 
-<p><img src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png" width="128" height="128" class="plugin_icon"></p>
+<p><img src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png" width="128" height="128" class="plugin-icon"></p>
 
 <p><strong>Does your theme include outdated, innacurate, or incomplete Schema Microdata?</strong></p>
 
