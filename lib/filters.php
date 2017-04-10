@@ -67,7 +67,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 				// split the buffer to work on the head and body separately
 				$doc = array(
-					'head' => substr( $buffer, 0, $body_pos - 1 ),
+					'head' => substr( $buffer, 0, $body_pos ),
 					'body' => substr( $buffer, $body_pos ),
 				);
 

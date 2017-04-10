@@ -13,7 +13,7 @@
  * Description: WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 1.1.3
+ * Version: 1.1.4
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
