@@ -84,6 +84,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.1.4 (2017/04/10)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* Fixed the head section byte count to retain the newline character.
+* *Developer Notes*
+	* None
+
 **Version 1.1.3 (2017/04/08)**
 
 * *New Features*
@@ -141,6 +152,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.4 =
+
+(2017/04/10) Fixed the head section byte count to retain the newline character.
 
 = 1.1.3 =
 
