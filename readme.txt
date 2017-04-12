@@ -84,6 +84,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.1.5-a.1 (2017/04/12)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* None
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Refactored the plugin init filters and moved/renamed the registration boolean from `is_avail[$name]` to `is_avail['p_ext'][$name]`.
+
 **Version 1.1.4 (2017/04/10)**
 
 * *New Features*
@@ -152,6 +163,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.5-a.1 =
+
+(2017/04/12) Refactored the plugin init filters and moved/renamed the registration boolean.
 
 = 1.1.4 =
 
