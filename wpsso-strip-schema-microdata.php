@@ -13,7 +13,7 @@
  * Description: WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
  * Requires At Least: 3.7
  * Tested Up To: 4.7.3
- * Version: 1.1.4
+ * Version: 1.1.5-a.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		public $filters;		// WpssoSsmFilters
 
 		private static $instance;
-		private static $have_req_min = true;	// have at least minimum wpsso version
+		private static $have_req_min = true;	// have minimum wpsso version
 
 		public function __construct() {
 
@@ -116,11 +116,11 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min === false ) {
-				return;		// stop here
+			if ( self::$have_req_min ) {
+				$this->p->is_avail['p_ext']['ssm'] = true;
+			} else {
+				$this->p->is_avail['p_ext']['ssm'] = false;	// just in case
 			}
-
-			$this->p->is_avail['ssm'] = true;
 		}
 
 		public function wpsso_init_objects() {
@@ -128,11 +128,9 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min === false ) {
-				return;		// stop here
+			if ( self::$have_req_min ) {
+				$this->filters = new WpssoSsmFilters( $this->p );
 			}
-
-			$this->filters = new WpssoSsmFilters( $this->p );
 		}
 
 		public function wpsso_init_plugin() {
@@ -140,8 +138,8 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min === false ) {
-				return $this->min_version_notice();
+			if ( ! self::$have_req_min ) {
+				return $this->min_version_notice();	// stop here
 			}
 		}
 
