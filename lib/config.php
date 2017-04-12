@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(
-					'version' => '1.1.5-a.1',		// plugin version
+					'version' => '1.1.5-a.2',		// plugin version
 					'opt_version' => '3',		// increment when changing default options
 					'short' => 'WPSSO SSM',		// short plugin name
 					'name' => 'WPSSO Strip Schema Microdata (WPSSO SSM)',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WordPress Social Sharing Optimization (WPSSO)',
-						'min_version' => '3.40.13-a.1',
+						'min_version' => '3.40.13-a.2',
 					),
 					'img' => array(
 						'icons' => array(
