@@ -84,7 +84,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.5-rc.1 (2017/04/14)**
+**Version 1.1.5-rc.2 (2017/04/15)**
 
 * *New Features*
 	* None
@@ -164,9 +164,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.5-rc.1 =
+= 1.1.5-rc.2 =
 
-(2017/04/14) Refactored the plugin init filters and moved/renamed the registration boolean.
+(2017/04/15) Refactored the plugin init filters and moved/renamed the registration boolean.
 
 = 1.1.4 =
 
