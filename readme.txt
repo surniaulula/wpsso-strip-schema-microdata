@@ -10,7 +10,7 @@ Tags: structured data, rich snippets, schema, microdata, duplicate, remove, stri
 Contributors: jsmoriss
 Requires At Least: 3.7
 Tested Up To: 4.7.3
-Stable Tag: 1.1.4
+Stable Tag: 1.1.5
 
 WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
 
@@ -84,7 +84,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.5 (2017/04/15)**
+**Version 1.1.5 (2017/04/16)**
 
 * *New Features*
 	* None
@@ -166,7 +166,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.1.5 =
 
-(2017/04/15) Refactored the plugin init filters and moved/renamed the registration boolean.
+(2017/04/16) Refactored the plugin init filters and moved/renamed the registration boolean.
 
 = 1.1.4 =
 
