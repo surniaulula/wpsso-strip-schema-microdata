@@ -4,7 +4,7 @@
  * Plugin Slug: wpsso-strip-schema-microdata
  * Text Domain: wpsso-strip-schema-microdata
  * Domain Path: /languages
- * Plugin URI: https://surniaulula.com/extend/plugins/wpsso-strip-schema-microdata/
+ * Plugin URI: https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/
  * Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
  * Author: JS Morisset
  * Author URI: https://surniaulula.com/
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		public $filters;		// WpssoSsmFilters
 
 		private static $instance;
-		private static $have_req_min = true;	// have minimum wpsso version
+		private static $have_min = true;	// have minimum wpsso version
 
 		public function __construct() {
 
@@ -98,7 +98,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			$info = WpssoSsmConfig::$cf['plugin']['wpssossm'];
 
 			if ( version_compare( $plugin_version, $info['req']['min_version'], '<' ) ) {
-				self::$have_req_min = false;
+				self::$have_min = false;
 				return $cf;
 			}
 
@@ -116,7 +116,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min ) {
+			if ( self::$have_min ) {
 				$this->p->is_avail['p_ext']['ssm'] = true;
 			} else {
 				$this->p->is_avail['p_ext']['ssm'] = false;	// just in case
@@ -128,7 +128,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( self::$have_req_min ) {
+			if ( self::$have_min ) {
 				$this->filters = new WpssoSsmFilters( $this->p );
 			}
 		}
@@ -138,7 +138,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( ! self::$have_req_min ) {
+			if ( ! self::$have_min ) {
 				return $this->min_version_notice();	// stop here
 			}
 		}

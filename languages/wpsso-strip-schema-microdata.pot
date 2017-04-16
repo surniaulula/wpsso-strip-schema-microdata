@@ -95,7 +95,7 @@ msgid "WPSSO Strip Schema Microdata (WPSSO SSM)"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://surniaulula.com/extend/plugins/wpsso-strip-schema-microdata/"
+msgid "https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/"
 msgstr ""
 
 #. Description of the plugin/theme
