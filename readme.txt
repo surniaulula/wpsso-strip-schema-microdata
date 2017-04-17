@@ -84,6 +84,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.1.6 (2017/04/17)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added 'itemid' to the list of Schema attributes that are removed.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.1.5 (2017/04/16)**
 
 * *New Features*
@@ -163,6 +174,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.6 =
+
+(2017/04/17) Added 'itemid' to the list of Schema attributes that are removed.
 
 = 1.1.5 =
 
