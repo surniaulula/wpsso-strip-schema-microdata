@@ -129,7 +129,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 						$pattern[] = '/[\s\n]*<(link|meta)(\s|[^>]+\s)itemprop=[\'"][^\'"]*[\'"][^>]*>[\s\n]*/imS';
 						$replace[] = '';
 
-						$pattern[] = '/(<[^>]*)\sitem(scope|type|prop)(=[\'"][^\'"]*[\'"])?([^>]*>)/imS';
+						$pattern[] = '/(<[^>]*)\sitem(scope|type|prop|id)(=[\'"][^\'"]*[\'"])?([^>]*>)/imS';
 						$replace[] = '$1$4';
 					}
 
@@ -196,7 +196,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				case 'tooltip-ssm_head_schema_attr':
 				case 'tooltip-ssm_body_schema_attr':
 					if ( isset( $section ) )	// just in case
-						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, and itemprop) from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
+						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, and itemid) from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
 					break;
 			}
 			return $text;
