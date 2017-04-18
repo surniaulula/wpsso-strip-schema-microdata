@@ -15,15 +15,15 @@
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png"></p>
 
-<p><strong>Do your theme templates include innacurate or incomplete Schema Microdata?</strong></p>
+<p><strong>Do you need to fix incorrect Schema Microdata in your theme templates?</strong></p>
 
-<p><strong>Would you like to remove Schema Microdata markup added by 3rd party plugins?</strong></p>
+<p><strong>Do you need to remove Schema Microdata markup added by 3rd party plugins?</strong></p>
 
 <p><strong>Do you prefer the <em>Google recommended</em> Schema JSON-LD markup standard?</strong></p>
 
 <p><strong>Is Pinterest picking up duplicate / incorrect Schema from your theme templates?</strong></p>
 
-<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension</a></strong> and want to remove the old Schema Microdata from your theme templates?</p>
+<p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension for Google SEO</a> </strong> and want to remove the old Schema Microdata from your theme templates?</p>
 
 <p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes Schema Microdata markup from the webpage body section, leaving the <em>Google recommended</em> Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content <em>dynamically</em>, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section as well (disabled by default).</p>
 
