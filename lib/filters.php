@@ -88,7 +88,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					}
 				}
 
-				$removed_count = 0;
+				$total_count = 0;
 				$loop_iter = 0;
 
 				foreach ( array( 'head', 'body' ) as $section ) {
@@ -142,7 +142,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 						// recurse to remove multiple attributes from the same HTML tag
 						do {
 							$doc[$section] = preg_replace( $pattern, $replace, $doc[$section], -1, $count );
-							$removed_count += $count;
+							$total_count += $count;
 							$loop_iter++;
 						} while ( $count > 0 && $loop_iter < 20 );	// max 20 loops, just in case
 					}
@@ -161,8 +161,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 				// recombine and add some activity stats
 				return $doc['head'].$doc['body'].
-					'<!-- '.__METHOD__.' = '.$removed_count.' matches removed in '.
-						$loop_iter.' interations and '.sprintf( '%f secs', $time_diff ).' -->';
+					'<!-- '.__METHOD__.' v'.WpssoSsmConfig::get_version().' = '.
+						$total_count.' matches removed in '.$loop_iter.' interations and '.
+							sprintf( '%f secs', $time_diff ).' -->';
 
 			} else {
 				return $buffer.'<!-- '.__METHOD__.' = nothing to do: body HTML tag not found -->';
@@ -186,17 +187,20 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				case 'tooltip-ssm_head_meta_tags':
 				case 'tooltip-ssm_body_meta_tags':
 					if ( isset( $section ) )	// just in case
-						$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
+						$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.',
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
 					break;
 				case 'tooltip-ssm_head_json_scripts':
 				case 'tooltip-ssm_body_json_scripts':
 					if ( isset( $section ) )	// just in case
-						$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
+						$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.',
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
 					break;
 				case 'tooltip-ssm_head_schema_attr':
 				case 'tooltip-ssm_body_schema_attr':
 					if ( isset( $section ) )	// just in case
-						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, and itemid) from the webpage %1$s section.', 'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
+						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
 					break;
 			}
 			return $text;
