@@ -13,7 +13,7 @@
  * Description: WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
  * Requires At Least: 3.7
  * Tested Up To: 4.7.4
- * Version: 1.1.6
+ * Version: 1.1.7-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -117,9 +117,9 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			}
 
 			if ( self::$have_min ) {
-				$this->p->is_avail['p_ext']['ssm'] = true;
+				$this->p->avail['p_ext']['ssm'] = true;
 			} else {
-				$this->p->is_avail['p_ext']['ssm'] = false;	// just in case
+				$this->p->avail['p_ext']['ssm'] = false;	// just in case
 			}
 		}
 
