@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
 Tags: structured data, rich snippets, schema, microdata, duplicate, remove, strip, fix, json-ld, ld+json, json, markup, meta tags, schema.org
 Contributors: jsmoriss
 Requires At Least: 3.7
-Tested Up To: 4.7.4
+Tested Up To: 4.7.5
 Stable Tag: 1.1.7
 
 WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
