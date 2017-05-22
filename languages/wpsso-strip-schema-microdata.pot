@@ -1,8 +1,8 @@
-# Copyright (C) 2017 WPSSO Strip Schema Microdata (WPSSO SSM)
-# This file is distributed under the same license as the WPSSO Strip Schema Microdata (WPSSO SSM) package.
+# Copyright (C) 2017 WPSSO Strip Schema Microdata
+# This file is distributed under the same license as the WPSSO Strip Schema Microdata package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.1.7\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 1.1.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -91,7 +91,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Strip Schema Microdata (WPSSO SSM)"
+msgid "WPSSO Strip Schema Microdata"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
