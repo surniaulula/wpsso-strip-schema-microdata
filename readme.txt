@@ -1,5 +1,5 @@
 === WPSSO Strip Schema Microdata to Use Google Recommended Schema JSON-LD Markup ===
-Plugin Name: WPSSO Strip Schema Microdata (WPSSO SSM)
+Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
 Domain Path: /languages
@@ -28,7 +28,7 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 
 <p><strong>Are you using <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">the WPSSO JSON extension for Google SEO</a> </strong> and want to remove the old Schema Microdata from your theme templates?</p>
 
-<p>The WPSSO Strip Schema Microdata (WPSSO SSM) extension removes Schema Microdata markup from the webpage body section, leaving the <em>Google recommended</em> Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content <em>dynamically</em>, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section as well (disabled by default).</p>
+<p>The WPSSO Strip Schema Microdata extension removes Schema Microdata markup from the webpage body section, leaving the <em>Google recommended</em> Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content <em>dynamically</em>, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section as well (disabled by default).</p>
 
 <p><strong>The WPSSO SSM filters are very fast</strong> – generally running in under 0.003 seconds – and enabling the removal of duplicate meta tags won't add much to this, but I would suggest not enabling that feature unless you need it. If your theme and/or other plugins are adding duplicate meta tags, it's always best to disable them at their source instead of filtering them out afterwards – but if that's not possible, then you should find this WPSSO SSM feature very useful. ;-)</p>
 
@@ -42,7 +42,7 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 </pre>
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Strip Schema Microdata (WPSSO SSM) is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Strip Schema Microdata is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO</a> plugin, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for Social Sharing Optimization (SSO) and Search Engine Optimization (SEO).</p>
 </blockquote>
 
 == Installation ==
