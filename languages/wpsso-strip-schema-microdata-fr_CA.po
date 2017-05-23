@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata (WPSSO SSM) 1.1.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2017-05-22 09:10-0400\n"
-"PO-Revision-Date: 2017-05-22 09:10-0400\n"
+"POT-Creation-Date: 2017-05-23 07:52-0400\n"
+"PO-Revision-Date: 2017-05-23 07:52-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -79,8 +79,8 @@ msgid "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently in
 msgstr "L'extension %1$s v%2$s requiert l'utilisation de %3$s v%4$s ou plus récente (v%5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Strip Schema Microdata (WPSSO SSM)"
-msgstr "WPSSO Strip Schema Microdata (WPSSO SSM)"
+msgid "WPSSO Strip Schema Microdata"
+msgstr "WPSSO Strip Schema Microdata"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/"
@@ -97,3 +97,6 @@ msgstr "JS Morisset"
 #. Author URI of the plugin/theme
 msgid "https://surniaulula.com/"
 msgstr "https://surniaulula.com/"
+
+#~ msgid "WPSSO Strip Schema Microdata (WPSSO SSM)"
+#~ msgstr "WPSSO Strip Schema Microdata (WPSSO SSM)"
