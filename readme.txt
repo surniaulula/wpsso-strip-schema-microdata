@@ -86,7 +86,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.8-dev.4 (2017/06/28)**
+**Version 1.1.8-dev.5 (2017/06/28)**
 
 * *New Features*
 	* None
@@ -199,7 +199,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.8-dev.4 =
+= 1.1.8-dev.5 =
 
 (2017/06/28) Added a check for a duplicate "<body " string in the webpage. Added a PHP error_log() messages for errors.
 
