@@ -5,8 +5,9 @@
  * Copyright 2016-2017 Jean-Sebastien Morisset (https://surniaulula.com/)
  */
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
+}
 
 if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
@@ -70,6 +71,12 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					'head' => substr( $buffer, 0, $body_pos ),
 					'body' => substr( $buffer, $body_pos ),
 				);
+
+				if ( stripos( $doc['body'], '<body ' ) !== false ) {	// just in case
+					error_log( __METHOD__.' = exiting early: duplicate "<body " string found in '.
+						$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].' webpage' );
+					return $buffer.'<!-- '.__METHOD__.' = exiting early: duplicate "<body " string found in webpage -->';
+				}
 
 				// protect the wpsso meta tag code block
 				if ( ! empty( $this->p->options['ssm_head_meta_tags'] ) ) {
@@ -166,13 +173,16 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 							sprintf( '%f secs', $time_diff ).' -->';
 
 			} else {
-				return $buffer.'<!-- '.__METHOD__.' = nothing to do: body HTML tag not found -->';
+				error_log( __METHOD__.' = nothing to do: "<body " string not found in '.
+					$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].' webpage' );
+				return $buffer.'<!-- '.__METHOD__.' = nothing to do: "<body " string not found in webpage -->';
 			}
 		}
 
 		public function filter_messages_tooltip( $text, $idx ) {
-			if ( strpos( $idx, 'tooltip-ssm_' ) !== 0 )
+			if ( strpos( $idx, 'tooltip-ssm_' ) !== 0 ) {
 				return $text;
+			}
 
 			switch ( $idx ) {
 				case ( strpos( $idx, 'tooltip-ssm_head_' ) === 0 ? true : false ):
@@ -186,23 +196,27 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			switch ( $idx ) {
 				case 'tooltip-ssm_head_meta_tags':
 				case 'tooltip-ssm_body_meta_tags':
-					if ( isset( $section ) )	// just in case
+					if ( isset( $section ) ) {	// just in case
 						$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.',
 							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
+					}
 					break;
 				case 'tooltip-ssm_head_json_scripts':
 				case 'tooltip-ssm_body_json_scripts':
-					if ( isset( $section ) )	// just in case
+					if ( isset( $section ) ) {	// just in case
 						$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.',
 							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
+					}
 					break;
 				case 'tooltip-ssm_head_schema_attr':
 				case 'tooltip-ssm_body_schema_attr':
-					if ( isset( $section ) )	// just in case
+					if ( isset( $section ) ) {	// just in case
 						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
 							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
+					}
 					break;
 			}
+
 			return $text;
 		}
 	}
