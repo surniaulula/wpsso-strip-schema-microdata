@@ -86,6 +86,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.1.8-dev.1 (2017/06/28)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a check for a duplicate "<body " string in the webpage.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* Added PHP error_log() messages if the "<body " string is not found or a duplicate string is found.
+
 **Version 1.1.7 (2017/04/30)**
 
 * *New Features*
@@ -187,6 +198,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.1.8-dev.1 =
+
+(2017/06/28) Added a check for a duplicate "<body " string in the webpage. Added a PHP error_log() messages for errors.
 
 = 1.1.7 =
 
