@@ -55,6 +55,10 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 		public function strip_schema_microdata( $buffer ) {
 
+			if ( empty( $buffer ) ) {
+				return $buffer;	// nothing to do (possible redirect)
+			}
+
 			// locate the body to remove schema microdata only in the body section
 			$body_pos = stripos( $buffer, '<body ' );
 
