@@ -86,11 +86,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.8-dev.6 (2017/06/28)**
+**Version 1.1.8-dev.7 (2017/06/29)**
 
 * *New Features*
 	* None
 * *Improvements*
+	* Added a check for an empty webpage (possible redirect).
 	* Added a check for a duplicate "<body " string in the webpage.
 * *Bugfixes*
 	* None
@@ -199,9 +200,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.8-dev.6 =
+= 1.1.8-dev.7 =
 
-(2017/06/28) Added a check for a duplicate "<body " string in the webpage. Added a PHP error_log() messages for errors.
+(2017/06/29) Added a check for an empty webpage (possible redirect). Added a check for a duplicate "<body " string in the webpage. Added a PHP error_log() messages for errors.
 
 = 1.1.7 =
 
