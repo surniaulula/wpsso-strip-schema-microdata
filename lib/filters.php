@@ -36,7 +36,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					$this->p->util->add_plugin_filters( $this, array( 
 						'check_post_head' => '__return_false',
 						'add_meta_name_wpsso:mark' => '__return_true',
-					) );
+					), 1000 );
 				}
 
 				if ( $this->p->debug->enabled ) {
@@ -60,6 +60,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				return $buffer;	// nothing to do (possible redirect)
 			}
 
+			$log_prefix = __METHOD__.' v'.WpssoSsmConfig::get_version();
+
 			// locate the body to remove schema microdata only in the body section
 			$body_pos = stripos( $buffer, $this->body_str );
 
@@ -78,9 +80,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				);
 
 				if ( stripos( substr( $doc['body'], strlen( $this->body_str ) ), $this->body_str ) !== false ) {	// just in case
-					error_log( __METHOD__.' = exiting early: duplicate "'.$this->body_str.'" string found in '.
+					error_log( $log_prefix.' = exiting early: duplicate "'.$this->body_str.'" string found in '.
 						$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].' webpage' );
-					return $buffer.'<!-- '.__METHOD__.' = exiting early: duplicate "'.$this->body_str.'" string found in webpage -->';
+					return $buffer.'<!-- '.$log_prefix.' = exiting early: duplicate "'.$this->body_str.'" string found in webpage -->';
 				}
 
 				// protect the wpsso meta tag code block
@@ -173,14 +175,13 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 				// recombine and add some activity stats
 				return $doc['head'].$doc['body'].
-					'<!-- '.__METHOD__.' v'.WpssoSsmConfig::get_version().' = '.
-						$total_count.' matches removed in '.$loop_iter.' interations and '.
-							sprintf( '%f secs', $time_diff ).' -->';
+					'<!-- '.$log_prefix.' = '.$total_count.' matches removed in '.
+						$loop_iter.' interations and '.sprintf( '%f secs', $time_diff ).' -->';
 
 			} else {
-				error_log( __METHOD__.' = nothing to do: "'.$this->body_str.'" string not found in '.
+				error_log( $log_prefix.' = nothing to do: "'.$this->body_str.'" string not found in '.
 					$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].' webpage' );
-				return $buffer.'<!-- '.__METHOD__.' = nothing to do: "'.$this->body_str.'" string not found in webpage -->';
+				return $buffer.'<!-- '.$log_prefix.' = nothing to do: "'.$this->body_str.'" string not found in webpage -->';
 			}
 		}
 
