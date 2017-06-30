@@ -86,7 +86,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
-**Version 1.1.8-dev.9 (2017/06/30)**
+**Version 1.1.8-dev.10 (2017/06/30)**
 
 * *New Features*
 	* None
@@ -200,7 +200,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.8-dev.9 =
+= 1.1.8-dev.10 =
 
 (2017/06/30) Added a check for an empty webpage (possible redirect). Added a check for a duplicate "<body " string in the webpage. Added a PHP error_log() messages for errors.
 
