@@ -14,6 +14,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 	class WpssoSsmFilters {
 
 		protected $p;
+		protected $body_str = '<body ';
 
 		public function __construct( &$plugin ) {
 			$this->p =& $plugin;
@@ -60,7 +61,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			}
 
 			// locate the body to remove schema microdata only in the body section
-			$body_pos = stripos( $buffer, '<body ' );
+			$body_pos = stripos( $buffer, $body_str );
 
 			if ( $body_pos !== false ) {	// just in case
 
@@ -76,10 +77,10 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					'body' => substr( $buffer, $body_pos ),
 				);
 
-				if ( stripos( $doc['body'], '<body ' ) !== false ) {	// just in case
-					error_log( __METHOD__.' = exiting early: duplicate "<body " string found in '.
+				if ( stripos( substr( $doc['body'], strlen( $body_str ) ), $body_str ) !== false ) {	// just in case
+					error_log( __METHOD__.' = exiting early: duplicate "'.$body_str.'" string found in '.
 						$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].' webpage' );
-					return $buffer.'<!-- '.__METHOD__.' = exiting early: duplicate "<body " string found in webpage -->';
+					return $buffer.'<!-- '.__METHOD__.' = exiting early: duplicate "'.$body_str.'" string found in webpage -->';
 				}
 
 				// protect the wpsso meta tag code block
@@ -177,9 +178,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 							sprintf( '%f secs', $time_diff ).' -->';
 
 			} else {
-				error_log( __METHOD__.' = nothing to do: "<body " string not found in '.
+				error_log( __METHOD__.' = nothing to do: "'.$body_str.'" string not found in '.
 					$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].' webpage' );
-				return $buffer.'<!-- '.__METHOD__.' = nothing to do: "<body " string not found in webpage -->';
+				return $buffer.'<!-- '.__METHOD__.' = nothing to do: "'.$body_str.'" string not found in webpage -->';
 			}
 		}
 
