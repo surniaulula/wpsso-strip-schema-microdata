@@ -34,9 +34,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				// wpsso mark meta tags are enabled and duplicate check is disabled
 				if ( ! empty( $this->p->options['ssm_head_meta_tags'] ) ) {
 					$this->p->util->add_plugin_filters( $this, array( 
-						'check_post_head' => '__return_false',
+						'check_post_head' => '__return_false',		// redundant since we are removing duplicates
 						'add_meta_name_wpsso:mark' => '__return_true',
-					), 1000 );
+					) );
 				}
 
 				if ( $this->p->debug->enabled ) {
@@ -62,14 +62,20 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 			$log_prefix = __METHOD__.' v'.WpssoSsmConfig::get_version();
 
-			// locate the body to remove schema microdata only in the body section
-			$body_pos = stripos( $buffer, $this->body_str );
+			if ( ( $body_pos = stripos( $buffer, $this->body_str ) ) === false ) {
 
-			if ( $body_pos !== false ) {	// just in case
+				error_log( $log_prefix.' = nothing to do: "'.
+					$this->body_str.'" string not found in '.
+					$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+
+				return $buffer.'<!-- '.$log_prefix.' = nothing to do: "'.
+					$this->body_str.'" string not found in webpage -->';
+
+			} else {
 
 				$time_start = microtime( true );
 				$lca = $this->p->cf['lca'];
-				$mt_found = 0;
+				$mt_mark_matched = 0;
 				$mt_pattern_cache = null;
 				$mt_replace_cache = null;
 
@@ -79,26 +85,31 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					'body' => substr( $buffer, $body_pos ),
 				);
 
-				if ( stripos( substr( $doc['body'], strlen( $this->body_str ) ), $this->body_str ) !== false ) {	// just in case
-					error_log( $log_prefix.' = exiting early: duplicate "'.$this->body_str.'" string found in '.
-						$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].' webpage' );
-					return $buffer.'<!-- '.$log_prefix.' = exiting early: duplicate "'.$this->body_str.'" string found in webpage -->';
+				if ( stripos( substr( $doc['body'], strlen( $this->body_str ) ), $this->body_str ) !== false ) {
+
+					error_log( $log_prefix.' = exiting early: duplicate "'.
+						$this->body_str.'" string found in '.
+						$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+
+					return $buffer.'<!-- '.$log_prefix.' = exiting early: duplicate "'.
+						$this->body_str.'" string found in webpage -->';
 				}
 
 				// protect the wpsso meta tag code block
 				if ( ! empty( $this->p->options['ssm_head_meta_tags'] ) ) {
-					$placeholder = '<!-- placeholder for '.$lca.' meta tags -->';
-					$mark_prefix = '<(!--[\s\n\r]+|meta[\s\n\r]+name="'.$lca.':mark:(begin|end)"[\s\n\r]+content=")';
-					$mark_suffix = '([\s\n\r]+--|"[\s\n\r]*\/?)>';	// space and slash are optional for html optimizers
-					$mt_found = preg_match( '/'.$mark_prefix.$lca.' meta tags begin'.$mark_suffix.'.*'.
-						$mark_prefix.$lca.' meta tags end'.$mark_suffix.'/ums',	// enable utf8 functionality
+
+					$mt_placeholder = '<!-- placeholder for '.$lca.' meta tags -->';
+					$mt_mark_prefix = '<(!--[\s\n\r]+|meta[\s\n\r]+name="'.$lca.':mark:(begin|end)"[\s\n\r]+content=")';
+					$mt_mark_suffix = '([\s\n\r]+--|"[\s\n\r]*\/?)>';	// space and slash are optional for html optimizers
+					$mt_mark_matched = preg_match( '/'.$mt_mark_prefix.$lca.' meta tags begin'.$mt_mark_suffix.'.*'.
+						$mt_mark_prefix.$lca.' meta tags end'.$mt_mark_suffix.'/ums',	// enable utf8 functionality
 							$doc['head'], $matches, PREG_OFFSET_CAPTURE );
 	
-					if ( $mt_found ) {
+					if ( $mt_mark_matched ) {
 						$doc['mt_html'] = $matches[0][0];
 						$doc['mt_pos'] = $matches[0][1];
 						$doc['head'] = substr_replace( $doc['head'],
-							$placeholder, $doc['mt_pos'], strlen( $doc['mt_html'] ) );
+							$mt_placeholder, $doc['mt_pos'], strlen( $doc['mt_html'] ) );
 					}
 				}
 
@@ -109,9 +120,12 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					// check first as this initializes new pattern / replace arrays
 					if ( ! empty( $this->p->options['ssm_'.$section.'_meta_tags'] ) ) {
+
 						if ( $mt_pattern_cache === null ) {	// build this array once
+
 							$mt_pattern_cache = array();
 							$mt_replace_cache = array();
+
 							foreach( array(
 								'link' => array( 'rel' ),
 								'meta' => array( 'name', 'property', 'itemprop' )
@@ -162,11 +176,10 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					}
 				}
 
-				if ( $mt_found ) {
-					$doc['mt_pos'] = strpos( $doc['head'], $placeholder );
-					if ( $doc['mt_pos'] !== false ) {
-						$doc['head'] = substr_replace( $doc['head'],
-							$doc['mt_html'], $doc['mt_pos'], strlen( $placeholder ) );
+				if ( $mt_mark_matched ) {
+					if ( ( $doc['mt_pos'] = strpos( $doc['head'], $mt_placeholder ) ) !== false ) {
+						$doc['head'] = substr_replace( $doc['head'], $doc['mt_html'],
+							$doc['mt_pos'], strlen( $mt_placeholder ) );
 					}
 				}
 
@@ -177,11 +190,6 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				return $doc['head'].$doc['body'].
 					'<!-- '.$log_prefix.' = '.$total_count.' matches removed in '.
 						$loop_iter.' interations and '.sprintf( '%f secs', $time_diff ).' -->';
-
-			} else {
-				error_log( $log_prefix.' = nothing to do: "'.$this->body_str.'" string not found in '.
-					$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].' webpage' );
-				return $buffer.'<!-- '.$log_prefix.' = nothing to do: "'.$this->body_str.'" string not found in webpage -->';
 			}
 		}
 
