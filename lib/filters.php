@@ -64,12 +64,16 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 			if ( ( $body_pos = stripos( $buffer, $this->body_str ) ) === false ) {
 
-				error_log( $log_prefix.' = nothing to do: "'.
-					$this->body_str.'" string not found in '.
-					$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+				if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
+					error_log( $log_prefix.' = nothing to do: "'.$this->body_str.'" '.
+						'string not found in WordPress \'template_redirect\' buffer for '.
+						$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+				}
 
-				return $buffer.'<!-- '.$log_prefix.' = nothing to do: "'.
-					$this->body_str.'" string not found in webpage -->';
+				if ( ! SucomUtil::get_const( 'WPSSOSSM_COMMENT_DISABLE' ) ) {
+					return $buffer.'<!-- '.$log_prefix.' = nothing to do: "'.$this->body_str.'" '.
+						'string not found in webpage -->';
+				}
 
 			} else {
 
@@ -87,12 +91,16 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 				if ( stripos( substr( $doc['body'], strlen( $this->body_str ) ), $this->body_str ) !== false ) {
 
-					error_log( $log_prefix.' = exiting early: duplicate "'.
-						$this->body_str.'" string found in '.
-						$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
+						error_log( $log_prefix.' = exiting early: duplicate "'.$this->body_str.'"'.
+							'string found in WordPress \'template_redirect\' buffer for '.
+							$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+					}
 
-					return $buffer.'<!-- '.$log_prefix.' = exiting early: duplicate "'.
-						$this->body_str.'" string found in webpage -->';
+					if ( ! SucomUtil::get_const( 'WPSSOSSM_COMMENT_DISABLE' ) ) {
+						return $buffer.'<!-- '.$log_prefix.' = exiting early: duplicate "'.$this->body_str.'" '.
+							'string found in webpage -->';
+					}
 				}
 
 				// protect the wpsso meta tag code block
@@ -186,10 +194,13 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				$time_stop = microtime( true );
 				$time_diff = $time_stop - $time_start;
 
-				// recombine and add some activity stats
-				return $doc['head'].$doc['body'].
-					'<!-- '.$log_prefix.' = '.$total_count.' matches removed in '.
-						$loop_iter.' interations and '.sprintf( '%f secs', $time_diff ).' -->';
+				if ( ! SucomUtil::get_const( 'WPSSOSSM_COMMENT_DISABLE' ) ) {
+					return $doc['head'].$doc['body'].
+						'<!-- '.$log_prefix.' = '.$total_count.' matches removed in '.
+							$loop_iter.' interations and '.sprintf( '%f secs', $time_diff ).' -->';
+				} else {
+					return $doc['head'].$doc['body'];
+				}
 			}
 		}
 

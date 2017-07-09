@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Strip Schema Microdata package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 1.1.8\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2017-MO-DA HO:MI+ZONE\n"
@@ -25,18 +25,18 @@ msgid ""
 "the Google recommended Schema JSON-LD markup untouched."
 msgstr ""
 
-#: lib/filters.php:214
+#: lib/filters.php:225
 msgid ""
 "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr ""
 
-#: lib/filters.php:221
+#: lib/filters.php:232
 msgid ""
 "Remove <code>application/ld+json</code> scripts from the webpage %1$s "
 "section."
 msgstr ""
 
-#: lib/filters.php:228
+#: lib/filters.php:239
 msgid ""
 "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the "
 "webpage %1$s section."
