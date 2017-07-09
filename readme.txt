@@ -86,6 +86,19 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.2.0 (2017/07/09)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added support for two new constants:
+		* WPSSOSSM_ERROR_LOG_DISABLE
+		* WPSSOSSM_COMMENT_DISABLE
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.1.8 (2017/07/03)**
 
 * *New Features*
@@ -199,6 +212,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+
+(2017/07/09) Added support for two new constants: WPSSOSSM_ERROR_LOG_DISABLE and WPSSOSSM_COMMENT_DISABLE.
 
 = 1.1.8 =
 
