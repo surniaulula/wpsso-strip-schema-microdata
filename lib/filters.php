@@ -56,7 +56,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 		public function strip_schema_microdata( $buffer ) {
 
-			if ( empty( $buffer ) ) {
+			if ( empty( $buffer ) || is_feed() ) {
 				return $buffer;	// nothing to do (possible redirect)
 			}
 
