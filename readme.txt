@@ -86,6 +86,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = Changelog / Release Notes =
 
+**Version 1.2.1 (2017/07/14)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added an is_feed() check to skip content from feeds. 
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.2.0 (2017/07/09)**
 
 * *New Features*
@@ -212,6 +223,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+
+(2017/07/14) Added an is_feed() check to skip content from feeds. 
 
 = 1.2.0 =
 
