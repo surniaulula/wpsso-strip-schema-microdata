@@ -1,0 +1,15 @@
+/*
+ * Hard-coded / fixed constants (values cannot be modified).
+ */
+WPSSOSSM_FILEPATH
+WPSSOSSM_PLUGINDIR
+WPSSOSSM_PLUGINSLUG
+WPSSOSSM_PLUGINBASE
+WPSSOSSM_URLPATH
+WPSSOSSM_NONCE
+/*
+ * Undefined constants (can be defined to change specific plugin behaviors).
+ */
+WPSSOSSM_INFO_COMMENT_DISABLE	= (not defined)
+WPSSOSSM_ERROR_COMMENT_DISABLE	= (not defined)
+WPSSOSSM_ERROR_LOG_DISABLE	= (not defined)
