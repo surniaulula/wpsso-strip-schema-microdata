@@ -70,7 +70,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 						$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
 				}
 
-				if ( ! SucomUtil::get_const( 'WPSSOSSM_COMMENT_DISABLE' ) ) {
+				if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
 					return $buffer.'<!-- '.$log_prefix.' = nothing to do: "'.$this->body_str.'" '.
 						'string not found in webpage -->';
 				}
@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 							$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
 					}
 
-					if ( ! SucomUtil::get_const( 'WPSSOSSM_COMMENT_DISABLE' ) ) {
+					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
 						return $buffer.'<!-- '.$log_prefix.' = exiting early: duplicate "'.$this->body_str.'" '.
 							'string found in webpage -->';
 					}
@@ -194,7 +194,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				$time_stop = microtime( true );
 				$time_diff = $time_stop - $time_start;
 
-				if ( ! SucomUtil::get_const( 'WPSSOSSM_COMMENT_DISABLE' ) ) {
+				if ( ! SucomUtil::get_const( 'WPSSOSSM_INFO_COMMENT_DISABLE' ) ) {
 					return $doc['head'].$doc['body'].
 						'<!-- '.$log_prefix.' = '.$total_count.' matches removed in '.
 							$loop_iter.' interations and '.sprintf( '%f secs', $time_diff ).' -->';
