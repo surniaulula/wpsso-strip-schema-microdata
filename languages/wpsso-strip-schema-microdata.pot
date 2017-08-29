@@ -72,19 +72,19 @@ msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:78
+#: wpsso-strip-schema-microdata.php:79
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:80
+#: wpsso-strip-schema-microdata.php:81
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; please install and "
 "activate the %3$s plugin."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:157
+#: wpsso-strip-schema-microdata.php:158
 msgid ""
 "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently "
 "installed)."
