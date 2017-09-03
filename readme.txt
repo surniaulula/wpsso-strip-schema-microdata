@@ -43,7 +43,7 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 </pre>
 
 <blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Strip Schema Microdata is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO core plugin</a>, which <em>automatically</em> generates complete and accurate meta tags + Schema markup from your content for social media optimization (SMO) and SEO.</p>
+<p><strong>Prerequisite</strong> &mdash; WPSSO Strip Schema Microdata is an extension for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO core plugin</a>, which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for social media optimization (SMO) and SEO.</p>
 </blockquote>
 
 == Installation ==
