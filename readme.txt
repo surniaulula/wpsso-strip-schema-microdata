@@ -50,8 +50,8 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 
 = Install and Uninstall =
 
-* [Install the Plugin](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/)
-* [Uninstall the Plugin](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/)
+* [Install the WPSSO SSM Plugin](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/)
+* [Uninstall the WPSSO SSM Plugin](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
