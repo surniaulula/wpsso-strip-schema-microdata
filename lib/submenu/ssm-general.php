@@ -26,6 +26,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 			$this->menu_ext = $ext;	// lowercase acronyn for plugin or extension
 		}
 
+		// called by the extended WpssoAdmin class
 		protected function add_meta_boxes() {
 			add_meta_box( $this->pagehook.'_general',
 				_x( 'Strip Schema Microdata', 'metabox title', 'wpsso-strip-schema-microdata' ), 
@@ -33,22 +34,22 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 		}
 
 		public function show_metabox_general() {
-			$metabox = 'general';
-			$tabs = apply_filters( $this->p->cf['lca'].'_ssm_'.$metabox.'_tabs', array(
+			$metabox_id = 'general';
+			$tabs = apply_filters( $this->p->cf['lca'].'_ssm_'.$metabox_id.'_tabs', array(
 				'body' => _x( 'Body Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
 				'head' => _x( 'Head Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
 			) );
 			$table_rows = array();
 			foreach ( $tabs as $key => $title ) {
-				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox, $key ), 
-					apply_filters( $this->p->cf['lca'].'_'.$metabox.'_'.$key.'_rows', array(), $this->form ) );
+				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox_id, $key ), 
+					apply_filters( $this->p->cf['lca'].'_'.$metabox_id.'_'.$key.'_rows', array(), $this->form ) );
 			}
-			$this->p->util->do_metabox_tabs( $metabox, $tabs, $table_rows );
+			$this->p->util->do_metabox_tabs( $metabox_id, $tabs, $table_rows );
 		}
 
-		protected function get_table_rows( $metabox, $key ) {
+		protected function get_table_rows( $metabox_id, $key ) {
 			$table_rows = array();
-			switch ( $metabox.'-'.$key ) {
+			switch ( $metabox_id.'-'.$key ) {
 				case 'general-head':
 				case 'general-body':
 
