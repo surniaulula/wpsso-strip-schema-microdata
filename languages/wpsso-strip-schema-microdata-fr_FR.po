@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 1.1.8\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 1.2.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2017-06-30 12:18-0500\n"
-"PO-Revision-Date: 2017-06-30 12:18-0500\n"
+"POT-Creation-Date: 2017-09-05 14:01-0400\n"
+"PO-Revision-Date: 2017-09-05 14:01-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -24,57 +24,57 @@ msgctxt "plugin description"
 msgid "WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched."
 msgstr "Extension WPSSO pour supprimer les Microdonnées de Schéma obsolète / incomplète, laissant le balisage Schéma JSON-LD recommandé par Google intact."
 
-#: lib/filters.php:204
+#: lib/filters.php:225
 msgid "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr "Supprimer les balises méta HTML connu en double / en conflit dans la section %1$s de la page Web."
 
-#: lib/filters.php:211
+#: lib/filters.php:232
 msgid "Remove <code>application/ld+json</code> scripts from the webpage %1$s section."
 msgstr "Supprimer les scripts <code>application/ld+json</code> de la section %1$s de la page Web."
 
-#: lib/filters.php:218
+#: lib/filters.php:239
 msgid "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section."
 msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, itemprop, etc.) de la section %1$s de la page Web."
 
-#: lib/submenu/ssm-general.php:31
+#: lib/submenu/ssm-general.php:32
 msgctxt "metabox title"
 msgid "Strip Schema Microdata"
 msgstr "Supprimer Microdonnées de Schéma"
 
-#: lib/submenu/ssm-general.php:38
+#: lib/submenu/ssm-general.php:39
 msgctxt "metabox tab"
 msgid "Body Section"
 msgstr "Section de corps"
 
-#: lib/submenu/ssm-general.php:39
+#: lib/submenu/ssm-general.php:40
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr "Section d'entête"
 
-#: lib/submenu/ssm-general.php:55
+#: lib/submenu/ssm-general.php:56
 msgctxt "option label"
 msgid "Duplicate HTML Meta Tags"
 msgstr "Doublons de balises méta HTML"
 
-#: lib/submenu/ssm-general.php:59
+#: lib/submenu/ssm-general.php:60
 msgctxt "option label"
 msgid "Application/LD+JSON Scripts"
 msgstr "Scripts application/ld+json"
 
-#: lib/submenu/ssm-general.php:63
+#: lib/submenu/ssm-general.php:64
 msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr "Attributs HTML de Schéma"
 
-#: wpsso-strip-schema-microdata.php:77
+#: wpsso-strip-schema-microdata.php:79
 msgid "%1$s is an extension for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est une extension pour %2$s &mdash; s'il vous plaît installer et activer %3$s avant d'activer l'extension %4$s."
 
-#: wpsso-strip-schema-microdata.php:79
+#: wpsso-strip-schema-microdata.php:81
 msgid "The %1$s extension requires the %2$s plugin &mdash; please install and activate the %3$s plugin."
 msgstr "L'extension %1$s requiert %2$s &mdash; s'il vous plaît installer et activer l'extension %3$s."
 
-#: wpsso-strip-schema-microdata.php:156
+#: wpsso-strip-schema-microdata.php:158
 msgid "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently installed)."
 msgstr "L'extension %1$s v%2$s requiert l'utilisation de %3$s v%4$s ou plus récente (v%5$s est actuellement installée)."
 
