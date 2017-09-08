@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(
-					'version' => '1.2.3-dev.3',		// plugin version
+					'version' => '1.2.3-b.1',		// plugin version
 					'opt_version' => '3',		// increment when changing default options
 					'short' => 'WPSSO SSM',		// short plugin name
 					'name' => 'WPSSO Strip Schema Microdata',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO',
 						'name' => 'WPSSO',
-						'min_version' => '3.45.10-dev.3',
+						'min_version' => '3.45.10-b.1',
 					),
 					'img' => array(
 						'icons' => array(
@@ -66,6 +66,10 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
+			if ( defined( 'WPSSOSSM_VERSION' ) ) {			// execute and define constants only once
+				return;
+			}
+			define( 'WPSSOSSM_VERSION', self::$cf['plugin']['wpssossm']['version'] );						
 			define( 'WPSSOSSM_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOSSM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
 			define( 'WPSSOSSM_PLUGINSLUG', self::$cf['plugin']['wpssossm']['slug'] );		// wpsso-strip-schema-microdata
