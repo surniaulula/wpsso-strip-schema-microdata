@@ -25,9 +25,11 @@
 
 <p><strong>Are you using the <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup</a> extension for better SEO</strong> (and want to remove the old Schema Microdata from your theme templates)?</p>
 
-<p>The WPSSO Strip Schema Microdata extension removes Schema Microdata markup from the webpage body section, leaving the (<em>Google preferred and recommended</em>) Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section as well.</p>
+<p>The WPSSO Strip Schema Microdata extension removes Schema Microdata markup from the webpage body section, leaving the (<em>Google preferred and recommended</em>) Schema JSON-LD markup and Schema meta tags in the head section untouched.</p>
 
-<p>WPSSO SSM filters are very fast &mdash; generally running in under 0.003 seconds &mdash; and enabling the removal of duplicate meta tags won't add much to this, but I would suggest not enabling that feature unless required. If your theme and/or other plugins are adding duplicate meta tags, it's always best to disable them at their source instead of filtering them out afterwards &mdash; but if that's not possible, then you should find this WPSSO SSM feature very useful. ;-)</p>
+<p>WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section as well.</p>
+
+<p><strong>WPSSO SSM filters are very fast</strong> &mdash; generally running in under 0.003 seconds &mdash; and enabling the removal of duplicate meta tags won't add much to this, but I would suggest not enabling that feature unless required. If your theme and/or other plugins are adding duplicate meta tags, it's always best to disable them at their source instead of filtering them out afterwards &mdash; but if that's not possible, then you should find this WPSSO SSM feature very useful. ;-)</p>
 
 <p><strong>Fast and coded for performance:</strong></p>
 
