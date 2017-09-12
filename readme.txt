@@ -50,9 +50,9 @@ WPSSO SSM includes a handy activity summary at the bottom of each webpage (as a 
 	removed in 4 interations and 0.001799 secs --&gt;
 </pre>
 
-<blockquote>
-<p><strong>Prerequisite</strong> &mdash; WPSSO Strip Schema Microdata is an extension for the WPSSO (Core Plugin), which <em>automatically</em> generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).</p>
-</blockquote>
+= WPSSO (Core Plugin) Prerequisite =
+
+WPSSO Strip Schema Microdata is an extension for the WPSSO (Core Plugin), which automatically generates complete and accurate meta tags and Schema markup from your content for Social Media Optimization (SMO) and Search Engine Optimization (SEO).
 
 == Installation ==
 
