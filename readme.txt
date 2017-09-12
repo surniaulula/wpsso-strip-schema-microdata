@@ -19,23 +19,29 @@ WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Go
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png">
 
-<p><strong>Do you need to fix incorrect Schema Microdata in your theme templates?</strong></p>
+**Is your Schema *Microdata* getting in the way of Google reading its preferred Schema JSON-LD markup?**
 
-<p><strong>Do you need to remove Schema Microdata markup added by 3rd party plugins?</strong></p>
+**Do you need to remove incorrect / complete Schema *Microdata* from your theme templates?**
 
-<p><strong>Do you prefer the <em>Google recommended</em> Schema JSON-LD markup standard?</strong></p>
+**Do you need to remove Schema *Microdata* added by 3rd party plugins from your content?**
 
-<p><strong>Is Pinterest picking up duplicate / incorrect Schema from your theme templates?</strong></p>
+**Is Pinterest picking up duplicate / incorrect Schema from your theme templates?**
 
-<p><strong>Are you using the <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup</a> extension for Google SEO</strong> and want to remove the old Schema Microdata from your theme templates?</p>
+**Are you using the [WPSSO Schema JSON-LD Markup](https://wordpress.org/plugins/wpsso-schema-json-ld/) extension for better SEO** (and want to remove the old Schema Microdata from your theme templates)?
 
-<p>The WPSSO Strip Schema Microdata extension removes Schema Microdata markup from the webpage body section, leaving the <em>Google recommended</em> Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content <em>dynamically</em>, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section as well (disabled by default).</p>
+The WPSSO Strip Schema Microdata extension removes Schema Microdata markup from the webpage body section, leaving the (*Google preferred and recommended*) Schema JSON-LD markup and Schema meta tags in the head section untouched. WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section as well.
 
-<p><strong>The WPSSO SSM filters are very fast</strong> – generally running in under 0.003 seconds – and enabling the removal of duplicate meta tags won't add much to this, but I would suggest not enabling that feature unless you need it. If your theme and/or other plugins are adding duplicate meta tags, it's always best to disable them at their source instead of filtering them out afterwards – but if that's not possible, then you should find this WPSSO SSM feature very useful. ;-)</p>
+WPSSO SSM filters are very fast &mdash; generally running in under 0.003 seconds &mdash; and enabling the removal of duplicate meta tags won't add much to this, but I would suggest not enabling that feature unless required. If your theme and/or other plugins are adding duplicate meta tags, it's always best to disable them at their source instead of filtering them out afterwards &mdash; but if that's not possible, then you should find this WPSSO SSM feature very useful. ;-)
+
+**Fast and coded for performance:**
+
+WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching). They load only the PHP library files and object classes needed, keeping the code small, fast, light, and able to support a wide range of 3rd party integration features.
+
+Fully tested and compatible with PHP v7.x (requires PHP v5.3 or better).
 
 = How do you know what it's doing? ;-) =
 
-<p>WPSSO SSM includes a handy activity summary at the bottom of each webpage (as a hidden HTML comment) to inform you of how many matches it removed, and how long it took. Use your browser's "View Source" feature and scroll down to the bottom of the webpage HTML source to review the activity summary.</p>
+WPSSO SSM includes a handy activity summary at the bottom of each webpage (as a hidden HTML comment) to inform you of how many matches it removed, and how long it took. Use your browser's "View Source" feature and scroll down to the bottom of the webpage HTML source to review the activity summary.
 
 <pre>
 &lt;!-- WpssoSsmFilters::strip_schema_microdata = 41 matches \
