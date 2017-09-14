@@ -37,7 +37,7 @@ WPSSO SSM filters the webpage content dynamically, allowing you to activate / de
 
 **WPSSO SSM is *fast* and coded for performance:**
 
-WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes it needs, keeping the code small, fast, light, and able to support a wide range of 3rd party integration features.
+WPSSO and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the library files and object classes they need, keeping the code small, fast, and light.
 
 WPSSO and its extensions are fully tested and compatible with PHP v7.x (PHP v5.3 or better required).
 
