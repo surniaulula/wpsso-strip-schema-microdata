@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
  * Requires At Least: 3.7
- * Tested Up To: 4.8.1
+ * Tested Up To: 4.8.2
  * Requires PHP: 5.3
  * Version: 1.2.3
  * 
