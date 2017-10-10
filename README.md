@@ -1,4 +1,4 @@
-<h1>WPSSO Strip Schema Microdata to Use Google Recommended Schema JSON-LD Markup</h1>
+<h1>WPSSO Strip Schema Microdata and Use Google&#039;s Recommended Schema JSON-LD Markup</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Strip Schema Microdata</td></tr>
@@ -46,14 +46,14 @@
     removed in 4 interations and 0.001799 secs --&gt;
 </pre>
 
-<h4>WPSSO (Core Plugin) Prerequisite</h4>
+<h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO Strip Schema Microdata is an extension for the WPSSO (Core Plugin) &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.</p>
+<p>WPSSO Strip Schema Microdata is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.</p>
 
 
 <h2>Installation</h2>
 
-<h4>Install and Uninstall</h4>
+<h3>Install and Uninstall</h3>
 
 <ul>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/">Install the WPSSO SSM Plugin</a></li>
@@ -63,7 +63,7 @@
 
 <h2>Frequently Asked Questions</h2>
 
-<h4>Frequently Asked Questions</h4>
+<h3>Frequently Asked Questions</h3>
 
 <ul>
 <li>None</li>
@@ -73,7 +73,7 @@
 <h2>Other Notes</h2>
 
 <h3>Other Notes</h3>
-<h4>Additional Documentation</h4>
+<h3>Additional Documentation</h3>
 
 <ul>
 <li>None</li>
