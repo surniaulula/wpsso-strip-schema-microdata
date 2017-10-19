@@ -104,7 +104,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* None
+	* Minor code refactoring for WPSSO v3.47.2:
+		* Added a call to the new WpssoHead get_mt_mark() method to return the begin/end regex.
 
 **Version 1.2.3 (2017/09/10)**
 
@@ -269,7 +270,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.2.4-dev.1 =
 
-(2017/10/19) None.
+(2017/10/19) Minor code refactoring for WPSSO v3.46.2: Added a call to the new WpssoHead get_mt_mark() method to return the begin/end regex.
 
 = 1.2.3 =
 
