@@ -107,17 +107,12 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				if ( ! empty( $this->p->options['ssm_head_meta_tags'] ) ) {
 
 					$mt_placeholder = '<!-- placeholder for '.$lca.' meta tags -->';
-					$mt_mark_prefix = '<(!--[\s\n\r]+|meta[\s\n\r]+name="'.$lca.':mark:(begin|end)"[\s\n\r]+content=")';
-					$mt_mark_suffix = '([\s\n\r]+--|"[\s\n\r]*\/?)>';	// space and slash are optional for html optimizers
-					$mt_mark_matched = preg_match( '/'.$mt_mark_prefix.$lca.' meta tags begin'.$mt_mark_suffix.'.*'.
-						$mt_mark_prefix.$lca.' meta tags end'.$mt_mark_suffix.'/ums',	// enable utf8 functionality
-							$doc['head'], $matches, PREG_OFFSET_CAPTURE );
+					$mt_mark_matched = preg_match( $this->p->head->get_mt_mark( 'preg' ), $doc['head'], $matches, PREG_OFFSET_CAPTURE );
 	
 					if ( $mt_mark_matched ) {
 						$doc['mt_html'] = $matches[0][0];
 						$doc['mt_pos'] = $matches[0][1];
-						$doc['head'] = substr_replace( $doc['head'],
-							$mt_placeholder, $doc['mt_pos'], strlen( $doc['mt_html'] ) );
+						$doc['head'] = substr_replace( $doc['head'], $mt_placeholder, $doc['mt_pos'], strlen( $doc['mt_html'] ) );
 					}
 				}
 
