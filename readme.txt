@@ -95,7 +95,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.2.4-dev.2 (2017/10/20)**
+**Version 1.2.4-dev.3 (2017/10/21)**
 
 * *New Features*
 	* None
@@ -268,9 +268,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.2.4-dev.2 =
+= 1.2.4-dev.3 =
 
-(2017/10/20) Minor code refactoring for WPSSO v3.46.2: Added a call to the new WpssoHead get_mt_mark() method to return the begin/end regex.
+(2017/10/21) Minor code refactoring for WPSSO v3.46.2: Added a call to the new WpssoHead get_mt_mark() method to return the begin/end regex.
 
 = 1.2.3 =
 
