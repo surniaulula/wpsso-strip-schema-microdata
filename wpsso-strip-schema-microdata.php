@@ -13,7 +13,7 @@
  * Description: WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
  * Requires PHP: 5.3
  * Requires At Least: 3.7
- * Tested Up To: 4.8.3
+ * Tested Up To: 4.9
  * Version: 1.2.4
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
