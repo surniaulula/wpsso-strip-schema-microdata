@@ -242,4 +242,3 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 	}
 }
 
-?>

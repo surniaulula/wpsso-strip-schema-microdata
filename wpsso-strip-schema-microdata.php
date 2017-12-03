@@ -169,4 +169,3 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 	$wpssossm =& WpssoSsm::get_instance();
 }
 
-?>

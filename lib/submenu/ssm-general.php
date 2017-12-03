@@ -72,4 +72,3 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 	}
 }
 
-?>
