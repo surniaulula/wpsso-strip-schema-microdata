@@ -61,8 +61,10 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 			),
 		);
 
-		public static function get_version() { 
-			return self::$cf['plugin']['wpssossm']['version'];
+		public static function get_version( $add_slug = false ) {
+			$ext = 'wpssossm';
+			$info =& self::$cf['plugin'][$ext];
+			return $add_slug ? $info['slug'].'-'.$info['version'] : $info['version'];
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
