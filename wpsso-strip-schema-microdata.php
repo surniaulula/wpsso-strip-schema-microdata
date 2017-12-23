@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name: WPSSO Strip Schema Microdata
  * Plugin Slug: wpsso-strip-schema-microdata
