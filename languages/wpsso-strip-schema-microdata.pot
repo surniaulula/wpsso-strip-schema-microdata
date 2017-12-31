@@ -25,66 +25,66 @@ msgid ""
 "leaving the Google recommended Schema JSON-LD markup untouched."
 msgstr ""
 
-#: lib/filters.php:221
+#: lib/filters.php:220
 msgid ""
 "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr ""
 
-#: lib/filters.php:228
+#: lib/filters.php:227
 msgid ""
 "Remove <code>application/ld+json</code> scripts from the webpage %1$s "
 "section."
 msgstr ""
 
-#: lib/filters.php:235
+#: lib/filters.php:234
 msgid ""
 "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the "
 "webpage %1$s section."
 msgstr ""
 
-#: lib/submenu/ssm-general.php:33
+#: lib/submenu/ssm-general.php:32
 msgctxt "metabox title"
 msgid "Strip Schema Microdata"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:40
+#: lib/submenu/ssm-general.php:39
 msgctxt "metabox tab"
 msgid "Body Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:41
+#: lib/submenu/ssm-general.php:40
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:57
+#: lib/submenu/ssm-general.php:56
 msgctxt "option label"
 msgid "Duplicate HTML Meta Tags"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:61
+#: lib/submenu/ssm-general.php:60
 msgctxt "option label"
 msgid "Application/LD+JSON Scripts"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:65
+#: lib/submenu/ssm-general.php:64
 msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:80
+#: wpsso-strip-schema-microdata.php:79
 msgid ""
 "%1$s is an extension for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:81
+#: wpsso-strip-schema-microdata.php:80
 msgid ""
 "The %1$s extension requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s extension</a>."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:162
+#: wpsso-strip-schema-microdata.php:161
 msgid ""
 "The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently "
 "installed)."

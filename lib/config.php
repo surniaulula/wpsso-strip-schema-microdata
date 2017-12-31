@@ -1,5 +1,4 @@
 <?php
-
 /**
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
@@ -89,13 +88,15 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		}
 
 		public static function load_lib( $ret = false, $filespec = '', $classname = '' ) {
-			if ( $ret === false && ! empty( $filespec ) ) {
+			if ( false === $ret && ! empty( $filespec ) ) {
 				$filepath = WPSSOSSM_PLUGINDIR.'lib/'.$filespec.'.php';
 				if ( file_exists( $filepath ) ) {
 					require_once $filepath;
-					if ( empty( $classname ) )
+					if ( empty( $classname ) ) {
 						return SucomUtil::sanitize_classname( 'wpssossm'.$filespec, false );	// $underscore = false
-					else return $classname;
+					} else {
+						return $classname;
+					}
 				}
 			}
 			return $ret;
