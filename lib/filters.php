@@ -124,7 +124,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					// check first as this initializes new pattern / replace arrays
 					if ( ! empty( $this->p->options['ssm_'.$section.'_meta_tags'] ) ) {
 
-						if ( $mt_pattern_cache === null ) {	// build this array once
+						if ( null === $mt_pattern_cache ) {	// build this array once
 
 							$mt_pattern_cache = array();
 							$mt_replace_cache = array();
