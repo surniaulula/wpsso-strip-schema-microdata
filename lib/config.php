@@ -15,10 +15,10 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 
 		public static $cf = array(
 			'plugin' => array(
-				'wpssossm' => array(
-					'version' => '1.2.4',		// plugin version
-					'opt_version' => '3',		// increment when changing default options
-					'short' => 'WPSSO SSM',		// short plugin name
+				'wpssossm' => array(			// Plugin acronym.
+					'version' => '1.2.4',		// Plugin version.
+					'opt_version' => '3',		// Increment when changing default option values.
+					'short' => 'WPSSO SSM',		// Short plugin name.
 					'name' => 'WPSSO Strip Schema Microdata',
 					'desc' => 'WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.',
 					'slug' => 'wpsso-strip-schema-microdata',
@@ -38,9 +38,8 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						// submenu items must have unique keys
-						'submenu' => array (
-							'ssm-general' => 'Strip Microdata',	// general settings
+						'submenu' => array(	// Note that submenu elements must have unique keys.
+							'ssm-general' => 'Strip Microdata',
 						),
 						'gpl' => array(
 						),
