@@ -57,22 +57,25 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 		public function strip_schema_microdata( $buffer ) {
 
 			if ( empty( $buffer ) || is_feed() ) {
-				return $buffer;	// nothing to do (possible redirect)
+				return $buffer;
 			}
 
 			$log_prefix = __METHOD__.' v'.WpssoSsmConfig::get_version();
 
 			if ( ( $body_pos = stripos( $buffer, $this->body_str ) ) === false ) {
 
-				if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
-					error_log( $log_prefix.' = nothing to do: "'.$this->body_str.'" '.
-						'string not found in WordPress \'template_redirect\' buffer for '.
-						$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
-				}
+				if ( stripos( $buffer, '<html' ) !== false ) {
 
-				if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
-					return $buffer.'<!-- '.$log_prefix.' = nothing to do: "'.$this->body_str.'" '.
-						'string not found in webpage -->';
+					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
+						error_log( $log_prefix.' = nothing to do: "'.$this->body_str.'" '.
+							'string not found in WordPress \'template_redirect\' buffer for '.
+							$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+					}
+
+					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
+						return $buffer.'<!-- '.$log_prefix.' = nothing to do: "'.$this->body_str.'" '.
+							'string not found in webpage -->';
+					}
 				}
 
 			} else {
