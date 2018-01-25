@@ -95,6 +95,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.2.5 (2018/01/25)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Added a test for an &lt;html&gt; tag before adding an HTML comment to the webpage.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.2.4 (2017/10/28)**
 
 * *New Features*
@@ -268,63 +279,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.2.4 =
+= 1.2.5 =
 
-(2017/10/28) Minor code refactoring for WPSSO v3.46.2: Added a call to the new WpssoHead get_mt_mark() method to return the begin/end regex.
-
-= 1.2.3 =
-
-(2017/09/10) Minor code refactoring for WPSSO v3.46.0.
-
-= 1.2.2 =
-
-(2017/08/23) Added support for a new WPSSOSSM_INFO_COMMENT_DISABLE constant. Renamed the WPSSOSSM_COMMENT_DISABLE constant to WPSSOSSM_ERROR_COMMENT_DISABLE.
-
-= 1.2.1 =
-
-(2017/07/14) Added an is_feed() check to skip content from feeds. 
-
-= 1.2.0 =
-
-(2017/07/09) Added support for two new constants: WPSSOSSM_ERROR_LOG_DISABLE and WPSSOSSM_COMMENT_DISABLE.
-
-= 1.1.8 =
-
-(2017/07/03) Added a check for an empty webpage (possible redirect). Added a check for a duplicate "<body " string in the webpage. Added a PHP error_log() messages for errors.
-
-= 1.1.7 =
-
-(2017/04/30) Code refactoring to rename the $is_avail array to $avail for WPSSO v3.42.0.
-
-= 1.1.6 =
-
-(2017/04/17) Added 'itemid' to the list of Schema attributes that are removed.
-
-= 1.1.5 =
-
-(2017/04/16) Refactored the plugin init filters and moved/renamed the registration boolean.
-
-= 1.1.4 =
-
-(2017/04/10) Fixed the head section byte count to retain the newline character.
-
-= 1.1.3 =
-
-(2017/04/08) Minor revision to move URLs in the extension config to the main WPSSO Core plugin config.
-
-= 1.1.2-1 =
-
-(2017/04/05) Updated the plugin icon images and the documentation URLs.
-
-= 1.1.1-1 =
-
-(2017/03/25) Added the "Application/LD+JSON Scripts" and "Schema HTML Attributes" options under the Head Section tab as well (disabled by default).
-
-= 1.1.0-1 =
-
-(2017/03/19) Added a new "Strip Microdata" settings page with options to manage the removal of duplicate / conflicting meta tags, application/ld+json scripts, and Schema HTML attributes.
-
-= 1.0.6-1 =
-
-(2017/03/01) Added removal of application/ld+json scripts from the webpage body.
+(2018/01/25) Added a test for an &lt;html&gt; tag before adding an HTML comment to the webpage.
 
