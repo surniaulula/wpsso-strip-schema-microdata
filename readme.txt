@@ -95,7 +95,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.2.5 (2018/01/25)**
+**Version 1.2.5 (2018/01/26)**
 
 * *New Features*
 	* None
@@ -110,5 +110,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.2.5 =
 
-(2018/01/25) Added a test for an &lt;html&gt; tag before adding an HTML comment to the webpage.
+(2018/01/26) Added a test for an &lt;html&gt; tag before adding an HTML comment to the webpage.
 
