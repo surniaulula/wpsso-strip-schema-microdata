@@ -95,20 +95,20 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.2.5 (2018/01/27)**
+**Version 1.2.6 (2018/01/29)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* Added a test for an &lt;html&gt; tag before adding an HTML comment to the webpage.
-* *Bugfixes*
 	* None
+* *Bugfixes*
+	* Added a missing return if no &lt;html&gt; tag in the output buffer.
 * *Developer Notes*
 	* None
 
 == Upgrade Notice ==
 
-= 1.2.5 =
+= 1.2.6 =
 
-(2018/01/27) Added a test for an &lt;html&gt; tag before adding an HTML comment to the webpage.
+(2018/01/29) Added a missing return if no &lt;html&gt; tag in the output buffer.
 
