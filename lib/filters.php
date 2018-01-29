@@ -62,8 +62,14 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 			$log_prefix = __METHOD__.' v'.WpssoSsmConfig::get_version();
 
+			/**
+			 * Return early if there's no <body> tag.
+			 */
 			if ( ( $body_pos = stripos( $buffer, $this->body_str ) ) === false ) {
 
+				/**
+				 * We have an <html> tag, but no <body> tag - log an error.
+				 */
 				if ( stripos( $buffer, '<html' ) !== false ) {
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
@@ -71,12 +77,14 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 							'string not found in WordPress \'template_redirect\' buffer for '.
 							$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
 					}
-
+	
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
-						return $buffer.'<!-- '.$log_prefix.' = nothing to do: "'.$this->body_str.'" '.
+						$buffer += '<!-- '.$log_prefix.' = nothing to do: "'.$this->body_str.'" '.
 							'string not found in webpage -->';
 					}
 				}
+
+				return $buffer;
 
 			} else {
 
