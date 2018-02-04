@@ -95,20 +95,20 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.2.6 (2018/01/29)**
+**Version 1.2.7 (2018/01/04)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* None
 * *Bugfixes*
-	* Added a missing return if no &lt;html&gt; tag in the output buffer.
-* *Developer Notes*
 	* None
+* *Developer Notes*
+	* Maintenance release.
 
 == Upgrade Notice ==
 
-= 1.2.6 =
+= 1.2.7 =
 
-(2018/01/29) Added a missing return if no &lt;html&gt; tag in the output buffer.
+(2018/02/04) Maintenance release.
 
