@@ -52,14 +52,14 @@ WPSSO SSM includes a handy activity summary at the bottom of each webpage (as a 
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Strip Schema Microdata is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your content for social sharing, social media / SMO, search / SEO / rich cards, and more.
+WPSSO Strip Schema Microdata is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
 
 == Installation ==
 
 <h3>Install and Uninstall</h3>
 
-* [Install the WPSSO SSM Plugin](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/)
-* [Uninstall the WPSSO SSM Plugin](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/)
+* [Install the WPSSO SSM Extension](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/)
+* [Uninstall the WPSSO SSM Extension](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
