@@ -14,7 +14,7 @@
  * Requires PHP: 5.4
  * Requires At Least: 3.8
  * Tested Up To: 4.9.4
- * Version: 1.2.7
+ * Version: 1.3.0-dev.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -121,6 +121,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		}
 
 		public function wpsso_get_config( $cf, $plugin_version = 0 ) {
+
 			$info = WpssoSsmConfig::$cf['plugin']['wpssossm'];
 
 			if ( version_compare( $plugin_version, $info['req']['min_version'], '<' ) ) {
@@ -132,56 +133,61 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		}
 
 		public function wpsso_init_options() {
-			if ( method_exists( 'Wpsso', 'get_instance' ) ) {
-				$this->p =& Wpsso::get_instance();
-			} else {
-				$this->p =& $GLOBALS['wpsso'];
-			}
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
+			$this->p =& Wpsso::get_instance();
 
-			if ( $this->have_req_min ) {
-				$this->p->avail['p_ext']['ssm'] = true;
-			} else {
-				$this->p->avail['p_ext']['ssm'] = false;	// just in case
-			}
-		}
-
-		public function wpsso_init_objects() {
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
-
-			if ( $this->have_req_min ) {
-				$this->filters = new WpssoSsmFilters( $this->p );
-			}
-		}
-
-		public function wpsso_init_plugin() {
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
 
 			if ( ! $this->have_req_min ) {
-				return $this->min_version_notice();	// stop here
+				$this->p->avail['p_ext']['ssm'] = false;	// just in case
+				return;	// stop here
+			}
+
+			$this->p->avail['p_ext']['ssm'] = true;
+		}
+
+		public function wpsso_init_objects() {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			if ( ! $this->have_req_min ) {
+				return;	// stop here
+			}
+
+			$this->filters = new WpssoSsmFilters( $this->p );
+		}
+
+		public function wpsso_init_plugin() {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			if ( ! $this->have_req_min ) {
+				$this->min_version_notice();
+				return;	// stop here
 			}
 		}
 
 		private function min_version_notice() {
-			$info = WpssoSsmConfig::$cf['plugin']['wpssossm'];
-			$wpsso_version = $this->p->cf['plugin']['wpsso']['version'];
 
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log( $info['name'] . ' requires ' . $info['req']['short'] . ' v' . 
-					$info['req']['min_version'] . ' or newer (' . $wpsso_version . ' installed)' );
-			}
+			$info = WpssoSsmConfig::$cf['plugin']['wpssossm'];
+			$have_version = $this->p->cf['plugin']['wpsso']['version'];
+
+			$error_msg = sprintf( __( 'The %1$s version %2$s extension requires %3$s version %4$s or newer (version %5$s is currently installed).',
+				'wpsso-strip-schema-microdata' ), $info['name'], $info['version'], $info['req']['short'], $info['req']['min_version'], $have_version );
+
+			trigger_error( sprintf( __( '%s warning:', 'wpsso-strip-schema-microdata' ), $info['short'] ).' '.$error_msg, E_USER_WARNING );
 
 			if ( is_admin() ) {
-				$this->p->notice->err( sprintf( __( 'The %1$s extension v%2$s requires %3$s v%4$s or newer (v%5$s currently installed).',
-					'wpsso-strip-schema-microdata' ), $info['name'], $info['version'], $info['req']['short'],
-						$info['req']['min_version'], $wpsso_version ) );
+				$this->p->notice->err( $error_msg );
+				if ( method_exists( $this->p->admin, 'get_check_for_updates_link' ) ) {
+					$this->p->notice->inf( $this->p->admin->get_check_for_updates_link() );
+				}
 			}
 		}
 	}
