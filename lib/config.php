@@ -27,7 +27,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'text_domain' => 'wpsso-strip-schema-microdata',
 					'domain_path' => '/languages',
 					'req' => array(
-						'short' => 'WPSSO',
+						'short' => 'WPSSO Core',
 						'name' => 'WPSSO Core',
 						'min_version' => '3.52.0',
 					),
