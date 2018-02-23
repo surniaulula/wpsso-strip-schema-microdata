@@ -33,6 +33,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				// if we're stripping the head section of meta tags, make sure the 
 				// wpsso mark meta tags are enabled and duplicate check is disabled
 				if ( ! empty( $this->p->options['ssm_head_meta_tags'] ) ) {
+
 					$this->p->util->add_plugin_filters( $this, array( 
 						'check_post_head' => '__return_false',		// redundant since we are removing duplicates
 						'add_meta_name_wpsso:mark' => '__return_true',
@@ -75,7 +76,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
 						error_log( $log_prefix.' = nothing to do: "'.$this->body_str.'" '.
 							'string not found in WordPress \'template_redirect\' buffer for '.
-							$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+								$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
 					}
 	
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
@@ -89,7 +90,6 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			} else {
 
 				$time_start = microtime( true );
-				$lca = $this->p->cf['lca'];
 				$mt_mark_matched = 0;
 				$mt_pattern_cache = null;
 				$mt_replace_cache = null;
@@ -105,7 +105,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
 						error_log( $log_prefix.' = exiting early: duplicate "'.$this->body_str.'"'.
 							'string found in WordPress \'template_redirect\' buffer for '.
-							$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+								$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
 					}
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
@@ -117,7 +117,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				// protect the wpsso meta tag code block
 				if ( ! empty( $this->p->options['ssm_head_meta_tags'] ) ) {
 
-					$mt_placeholder = '<!-- placeholder for '.$lca.' meta tags -->';
+					$mt_placeholder = '<!-- placeholder for '.$this->p->lca.' meta tags -->';
 					$mt_mark_matched = preg_match( $this->p->head->get_mt_mark( 'preg' ), $doc['head'], $matches, PREG_OFFSET_CAPTURE );
 	
 					if ( $mt_mark_matched ) {
@@ -211,6 +211,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 		}
 
 		public function filter_messages_tooltip( $text, $idx ) {
+
 			if ( strpos( $idx, 'tooltip-ssm_' ) !== 0 ) {
 				return $text;
 			}
