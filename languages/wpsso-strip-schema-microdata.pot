@@ -90,7 +90,7 @@ msgid ""
 "%5$s is currently installed)."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:191
+#: wpsso-strip-schema-microdata.php:193
 msgid "%s warning:"
 msgstr ""
 
