@@ -190,7 +190,8 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 				}
 			}
 
-			trigger_error( sprintf( __( '%s warning:', 'wpsso-strip-schema-microdata' ), $info['short'] ).' '.$error_msg, E_USER_WARNING );
+			// translators: %s is the short plugin name
+			trigger_error( sprintf( __( '%s warning:', 'wpsso-strip-schema-microdata' ), $info['short'] ).' '.rtrim( $error_msg, '.' ), E_USER_WARNING );
 		}
 	}
 
