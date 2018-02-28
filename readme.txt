@@ -1,4 +1,4 @@
-=== WPSSO Strip Schema Microdata from theme templates to use Google's recommended Schema JSON-LD markup ===
+=== WPSSO Strip Schema Microdata from the Webpage to use Google Recommended Schema JSON-LD Markup ===
 Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
