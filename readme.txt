@@ -1,4 +1,4 @@
-=== WPSSO Strip chema Microdata from Theme Templates to use Google's recommended Schema JSON-LD markup ===
+=== WPSSO Strip Schema Microdata from theme templates to use Google's recommended Schema JSON-LD markup ===
 Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
@@ -27,7 +27,7 @@ WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving t
 
 **Is Pinterest picking up duplicate / incorrect Schema from your theme templates?**
 
-**Are you using the [WPSSO Schema JSON-LD Markup](https://wordpress.org/plugins/wpsso-schema-json-ld/) extension for better SEO** (and want to remove the old Schema Microdata from your theme templates)?
+**Are you using the [WPSSO Schema JSON-LD Markup](https://wordpress.org/plugins/wpsso-schema-json-ld/) extension** (and want to remove the old Schema Microdata from your theme templates)?
 
 The WPSSO Strip Schema Microdata (aka WPSSO SSM) extension removes Schema Microdata markup from the webpage body section, leaving the (*Google preferred and recommended*) Schema JSON-LD markup and Schema meta tags in the head section untouched.
 
