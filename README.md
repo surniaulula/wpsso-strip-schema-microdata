@@ -1,4 +1,4 @@
-<h1>WPSSO Strip Schema Microdata from the Webpage to use Google Recommended Schema JSON-LD Markup</h1>
+<h1>WPSSO Strip Schema Microdata from the webpage to use Google recommended Schema JSON-LD Markup</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Strip Schema Microdata</td></tr>
