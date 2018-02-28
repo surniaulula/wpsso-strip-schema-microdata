@@ -1,4 +1,4 @@
-=== WPSSO Strip Schema Microdata and Use Google's Recommended Schema JSON-LD Markup ===
+=== WPSSO Strip chema Microdata from Theme Templates to use Google's recommended Schema JSON-LD markup ===
 Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
@@ -21,7 +21,7 @@ WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving t
 
 **Is your Schema *Microdata* getting in the way of Google reading its preferred Schema JSON-LD markup?**
 
-**Do you need to remove incorrect / complete Schema *Microdata* from your theme templates?**
+**Do you need to remove incorrect / incomplete Schema *Microdata* from your theme templates?**
 
 **Do you need to remove Schema *Microdata* added by 3rd party plugins from your content?**
 
