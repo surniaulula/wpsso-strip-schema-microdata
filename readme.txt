@@ -1,4 +1,4 @@
-=== WPSSO Strip Schema Microdata from the webpage to use Google recommended Schema JSON-LD Markup ===
+=== WPSSO Strip Schema Microdata for Better Schema JSON-LD Markup ===
 Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
@@ -19,27 +19,25 @@ WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving t
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png">
 
-**Is your Schema *Microdata* getting in the way of Google reading its preferred Schema JSON-LD markup?**
+**WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.**
 
-**Do you need to remove incorrect / incomplete Schema *Microdata* from your theme templates?**
+*Is your Schema *Microdata* getting in the way of Google reading its preferred Schema JSON-LD markup?*
 
-**Do you need to remove Schema *Microdata* added by 3rd party plugins from your content?**
+*Do you need to remove incorrect / incomplete Schema *Microdata* from your theme templates?*
 
-**Is Pinterest picking up duplicate / incorrect Schema from your theme templates?**
+*Do you need to remove Schema *Microdata* added by 3rd party plugins from your content?*
 
-**Are you using the [WPSSO Schema JSON-LD Markup](https://wordpress.org/plugins/wpsso-schema-json-ld/) extension** (and want to remove the old Schema Microdata from your theme templates)?
+*Is Pinterest picking up duplicate / incorrect Schema from your theme templates?*
+
+*Are you using the [WPSSO Schema JSON-LD Markup](https://wordpress.org/plugins/wpsso-schema-json-ld/) extension, and want to remove old Schema Microdata from your theme templates?*
 
 The WPSSO Strip Schema Microdata (aka WPSSO SSM) extension removes Schema Microdata markup from the webpage body section, leaving the (*Google preferred and recommended*) Schema JSON-LD markup and Schema meta tags in the head section untouched.
 
-WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section as well.
+WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page also allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section.
 
-*WPSSO SSM filters are very fast* &mdash; generally running in under 0.003 seconds &mdash; and enabling the removal of duplicate meta tags won't add much to this, but I would suggest not enabling that feature unless required. If your theme and/or other plugins are adding duplicate meta tags, it's always best to disable them at their source instead of filtering them out afterwards &mdash; but if that's not possible, then you should find this WPSSO SSM feature very useful. ;-)
+WPSSO SSM filters are very fast &mdash; generally running in under 0.003 seconds &mdash; and enabling the removal of duplicate meta tags won't add much to this, but I would suggest not enabling that feature unless required. If your theme and/or other plugins are adding duplicate meta tags, it's always best to disable them at their source instead of filtering them out afterwards &mdash; but if that's not possible, then you should find this WPSSO SSM feature very useful. ;-)
 
-**WPSSO Strip Schema Microdata is *incredibly fast* and coded for performance:**
-
-WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light.
-
-WPSSO Core and its extensions are fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
+WPSSO Strip Schema Microdata is *incredibly fast* and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 = How do you know what it's doing? ;-) =
 
