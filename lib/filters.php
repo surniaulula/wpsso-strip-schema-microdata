@@ -192,8 +192,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 				if ( $mt_mark_matched ) {
 					if ( ( $doc['mt_pos'] = strpos( $doc['head'], $mt_placeholder ) ) !== false ) {
-						$doc['head'] = substr_replace( $doc['head'], $doc['mt_html'],
-							$doc['mt_pos'], strlen( $mt_placeholder ) );
+						$doc['head'] = substr_replace( $doc['head'], '<!-- wpsso ssm preserved block begin -->' . "\n" .
+							$doc['mt_html'] . "\n" . '<!-- wpsso ssm preserved block end -->', $doc['mt_pos'], strlen( $mt_placeholder ) );
 					}
 				}
 
