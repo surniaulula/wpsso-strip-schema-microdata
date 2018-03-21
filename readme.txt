@@ -13,13 +13,13 @@ Requires At Least: 3.8
 Tested Up To: 4.9.4
 Stable Tag: 1.3.0
 
-WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
+WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
 
 == Description ==
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png">
 
-**WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.**
+**WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.**
 
 *Is your Schema *Microdata* getting in the way of Google reading its preferred Schema JSON-LD markup?*
 
@@ -29,15 +29,15 @@ WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving t
 
 *Is Pinterest picking up duplicate / incorrect Schema from your theme templates?*
 
-*Are you using the [WPSSO Schema JSON-LD Markup](https://wordpress.org/plugins/wpsso-schema-json-ld/) extension, and want to remove old Schema Microdata from your theme templates?*
+*Are you using the [WPSSO Schema JSON-LD Markup](https://wordpress.org/plugins/wpsso-schema-json-ld/) add-on, and want to remove old Schema Microdata from your theme templates?*
 
-The WPSSO Strip Schema Microdata (aka WPSSO SSM) extension removes Schema Microdata markup from the webpage body section, leaving the (*Google preferred and recommended*) Schema JSON-LD markup and Schema meta tags in the head section untouched.
+The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes Schema Microdata markup from the webpage body section, leaving the (*Google preferred and recommended*) Schema JSON-LD markup and Schema meta tags in the head section untouched.
 
-WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page also allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section.
+WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the add-on as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page also allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section.
 
 WPSSO SSM filters are very fast &mdash; generally running in under 0.003 seconds &mdash; and enabling the removal of duplicate meta tags won't add much to this, but I would suggest not enabling that feature unless required. If your theme and/or other plugins are adding duplicate meta tags, it's always best to disable them at their source instead of filtering them out afterwards &mdash; but if that's not possible, then you should find this WPSSO SSM feature very useful. ;-)
 
-WPSSO Strip Schema Microdata is *incredibly fast* and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
+WPSSO Strip Schema Microdata is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 = How do you know what it's doing? ;-) =
 
@@ -50,14 +50,14 @@ WPSSO Strip Schema Microdata (aka WPSSO SSM) includes a handy activity summary a
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Strip Schema Microdata (aka WPSSO SSM) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
+WPSSO Strip Schema Microdata (aka WPSSO SSM) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
 
 == Installation ==
 
 <h3>Install and Uninstall</h3>
 
-* [Install the WPSSO SSM Extension](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/)
-* [Uninstall the WPSSO SSM Extension](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/)
+* [Install the WPSSO SSM Add-on](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/)
+* [Uninstall the WPSSO SSM Add-on](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
@@ -93,6 +93,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.3.1-dev.2 (2018/03/21)**
+
+* *New Features*
+	* None
+* *Improvements*
+	* Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
+* *Bugfixes*
+	* None
+* *Developer Notes*
+	* None
+
 **Version 1.3.0 (2018/02/24)**
 
 * *New Features*
@@ -105,6 +116,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the WpssoSsm `min_version_notice()` method to use PHP's `trigger_error()` and include a notice to refresh plugin update information.
 
 == Upgrade Notice ==
+
+= 1.3.1-dev.2 =
+
+(2018/03/21) Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
 
 = l.3.0 =
 

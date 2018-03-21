@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Strip Schema Microdata</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.3.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.8</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.9.4</td></tr>
@@ -15,7 +15,7 @@
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png"></p>
 
-<p><strong>WPSSO Core extension to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.</strong></p>
+<p><strong>WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.</strong></p>
 
 <p><em>Is your Schema *Microdata</em> getting in the way of Google reading its preferred Schema JSON-LD markup?*</p>
 
@@ -25,15 +25,15 @@
 
 <p><em>Is Pinterest picking up duplicate / incorrect Schema from your theme templates?</em></p>
 
-<p><em>Are you using the <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup</a> extension, and want to remove old Schema Microdata from your theme templates?</em></p>
+<p><em>Are you using the <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup</a> add-on, and want to remove old Schema Microdata from your theme templates?</em></p>
 
-<p>The WPSSO Strip Schema Microdata (aka WPSSO SSM) extension removes Schema Microdata markup from the webpage body section, leaving the (<em>Google preferred and recommended</em>) Schema JSON-LD markup and Schema meta tags in the head section untouched.</p>
+<p>The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes Schema Microdata markup from the webpage body section, leaving the (<em>Google preferred and recommended</em>) Schema JSON-LD markup and Schema meta tags in the head section untouched.</p>
 
-<p>WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the extension as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page also allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section.</p>
+<p>WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the add-on as desired to enable / disable the removal of Schema Microdata. A "Strip Microdata" settings page also allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section.</p>
 
 <p>WPSSO SSM filters are very fast &mdash; generally running in under 0.003 seconds &mdash; and enabling the removal of duplicate meta tags won't add much to this, but I would suggest not enabling that feature unless required. If your theme and/or other plugins are adding duplicate meta tags, it's always best to disable them at their source instead of filtering them out afterwards &mdash; but if that's not possible, then you should find this WPSSO SSM feature very useful. ;-)</p>
 
-<p>WPSSO Strip Schema Microdata is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its extensions make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its extensions are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
+<p>WPSSO Strip Schema Microdata is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
 
 <h4>How do you know what it's doing? ;-)</h4>
 
@@ -46,7 +46,7 @@
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO Strip Schema Microdata (aka WPSSO SSM) is an extension for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.</p>
+<p>WPSSO Strip Schema Microdata (aka WPSSO SSM) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.</p>
 
 
 <h2>Installation</h2>
@@ -54,8 +54,8 @@
 <h3>Install and Uninstall</h3>
 
 <ul>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/">Install the WPSSO SSM Extension</a></li>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/">Uninstall the WPSSO SSM Extension</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/">Install the WPSSO SSM Add-on</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/">Uninstall the WPSSO SSM Add-on</a></li>
 </ul>
 
 
