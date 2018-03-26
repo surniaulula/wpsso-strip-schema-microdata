@@ -19,7 +19,7 @@ WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the 
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png">
 
-**WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.**
+**A WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.**
 
 *Is your Schema *Microdata* getting in the way of Google reading its preferred Schema JSON-LD markup?*
 
