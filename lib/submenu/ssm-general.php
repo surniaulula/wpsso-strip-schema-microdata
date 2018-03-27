@@ -35,14 +35,14 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 
 		public function show_metabox_general() {
 			$metabox_id = 'general';
-			$tabs = apply_filters( $this->p->cf['lca'].'_ssm_'.$metabox_id.'_tabs', array(
+			$tabs = apply_filters( $this->p->lca.'_ssm_'.$metabox_id.'_tabs', array(
 				'body' => _x( 'Body Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
 				'head' => _x( 'Head Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
 			) );
 			$table_rows = array();
 			foreach ( $tabs as $key => $title ) {
 				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox_id, $key ), 
-					apply_filters( $this->p->cf['lca'].'_'.$metabox_id.'_'.$key.'_rows', array(), $this->form ) );
+					apply_filters( $this->p->lca.'_'.$metabox_id.'_'.$key.'_rows', array(), $this->form ) );
 			}
 			$this->p->util->do_metabox_tabs( $metabox_id, $tabs, $table_rows );
 		}
@@ -71,4 +71,3 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 		}
 	}
 }
-

@@ -25,18 +25,18 @@ msgid ""
 "the Google recommended Schema JSON-LD markup untouched."
 msgstr ""
 
-#: lib/filters.php:232
+#: lib/filters.php:238
 msgid ""
 "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr ""
 
-#: lib/filters.php:239
+#: lib/filters.php:245
 msgid ""
 "Remove <code>application/ld+json</code> scripts from the webpage %1$s "
 "section."
 msgstr ""
 
-#: lib/filters.php:246
+#: lib/filters.php:252
 msgid ""
 "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the "
 "webpage %1$s section."
@@ -72,26 +72,26 @@ msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:89
+#: wpsso-strip-schema-microdata.php:94
 msgid ""
 "%1$s is an add-on for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:91
+#: wpsso-strip-schema-microdata.php:96
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:180
+#: wpsso-strip-schema-microdata.php:191
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
 msgstr ""
 
 #. translators: %s is the short plugin name
-#: wpsso-strip-schema-microdata.php:192
+#: wpsso-strip-schema-microdata.php:203
 msgid "%s warning:"
 msgstr ""
 

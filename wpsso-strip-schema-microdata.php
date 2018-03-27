@@ -51,17 +51,20 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		public function __construct() {
 
 			require_once ( dirname( __FILE__ ) . '/lib/config.php' );
+
 			WpssoSsmConfig::set_constants( __FILE__ );
 			WpssoSsmConfig::require_libs( __FILE__ );	// includes the register.php class library
+
 			$this->reg = new WpssoSsmRegister();		// activate, deactivate, uninstall hooks
 
 			if ( is_admin() ) {
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
-				add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
 			}
 
-			add_filter( 'wpsso_get_config', array( &$this, 'wpsso_get_config' ), 10, 2 );
-			add_action( 'wpsso_init_options', array( &$this, 'wpsso_init_options' ), 10 );
+			add_filter( 'wpsso_get_config', array( &$this, 'wpsso_get_config' ), 10, 2 );	// Checks core version and merges config array.
+
+			add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
+			add_action( 'wpsso_init_options', array( &$this, 'wpsso_init_options' ), 10 );	// Sets the $this->p reference variable.
 			add_action( 'wpsso_init_objects', array( &$this, 'wpsso_init_objects' ), 10 );
 			add_action( 'wpsso_init_plugin', array( &$this, 'wpsso_init_plugin' ), 10 );
 		}
@@ -79,7 +82,9 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			}
 		}
 
-		// also called from the activate_plugin method with $deactivate = true
+		/**
+		 * Also called from the activate_plugin method with $deactivate = true.
+		 */
 		public static function required_notice( $deactivate = false ) {
 
 			self::wpsso_init_textdomain();
@@ -120,6 +125,9 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			load_plugin_textdomain( 'wpsso-strip-schema-microdata', false, 'wpsso-strip-schema-microdata/languages/' );
 		}
 
+		/**
+		 * Checks the core plugin version and merges the extension / add-on config array.
+		 */
 		public function wpsso_get_config( $cf, $plugin_version = 0 ) {
 
 			$info = WpssoSsmConfig::$cf['plugin']['wpssossm'];
@@ -132,6 +140,9 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			return SucomUtil::array_merge_recursive_distinct( $cf, WpssoSsmConfig::$cf );
 		}
 
+		/**
+		 * Sets the $this->p reference variable for the core plugin instance.
+		 */
 		public function wpsso_init_options() {
 
 			$this->p =& Wpsso::get_instance();
@@ -141,11 +152,11 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			}
 
 			if ( ! $this->have_req_min ) {
-				$this->p->avail['p_ext']['ssm'] = false;	// just in case
-				return;	// stop here
+				$this->p->avail['p_ext']['ssm'] = false;	// Signal that this extension / add-on is not available.
+				return;
 			}
 
-			$this->p->avail['p_ext']['ssm'] = true;
+			$this->p->avail['p_ext']['ssm'] = true;	// Signal that this extension / add-on is available.
 		}
 
 		public function wpsso_init_objects() {

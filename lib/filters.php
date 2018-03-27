@@ -26,12 +26,18 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			if ( SucomUtil::get_const( 'DOING_AJAX' ) ) {
 				// nothing to do
 			} else {
-				$this->p->util->add_plugin_filters( $this, array( 
-					'messages_tooltip' => 2,		// tooltip messages filter
-				) );
 
-				// if we're stripping the head section of meta tags, make sure the 
-				// wpsso mark meta tags are enabled and duplicate check is disabled
+				if ( is_admin() ) {
+					$this->p->util->add_plugin_filters( $this, array( 
+						'messages_tooltip' => 2,		// tooltip messages filter
+					) );
+				}
+
+				/**
+				 * If we're stripping the head section of meta tags, make sure the wpsso mark meta tags
+				 * are enabled and the duplicate check feature is disabled (no use checking if we're
+				 * removing duplicates).
+				 */
 				if ( ! empty( $this->p->options['ssm_head_meta_tags'] ) ) {
 
 					$this->p->util->add_plugin_filters( $this, array( 
@@ -253,4 +259,3 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 		}
 	}
 }
-
