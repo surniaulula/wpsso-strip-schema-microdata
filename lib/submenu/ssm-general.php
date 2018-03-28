@@ -40,33 +40,37 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 				'head' => _x( 'Head Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
 			) );
 			$table_rows = array();
-			foreach ( $tabs as $key => $title ) {
-				$table_rows[$key] = array_merge( $this->get_table_rows( $metabox_id, $key ), 
-					apply_filters( $this->p->lca.'_'.$metabox_id.'_'.$key.'_rows', array(), $this->form ) );
+			foreach ( $tabs as $tab_key => $title ) {
+				$table_rows[$tab_key] = array_merge( $this->get_table_rows( $metabox_id, $tab_key ), 
+					apply_filters( $this->p->lca.'_'.$metabox_id.'_'.$tab_key.'_rows', array(), $this->form ) );
 			}
 			$this->p->util->do_metabox_tabs( $metabox_id, $tabs, $table_rows );
 		}
 
-		protected function get_table_rows( $metabox_id, $key ) {
+		protected function get_table_rows( $metabox_id, $tab_key ) {
+
 			$table_rows = array();
-			switch ( $metabox_id.'-'.$key ) {
+
+			switch ( $metabox_id.'-'.$tab_key ) {
+
 				case 'general-head':
 				case 'general-body':
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Duplicate HTML Meta Tags',
-						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$key.'_meta_tags' ).
-					'<td>'.$this->form->get_checkbox( 'ssm_'.$key.'_meta_tags' ).'</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$tab_key.'_meta_tags' ).
+					'<td>'.$this->form->get_checkbox( 'ssm_'.$tab_key.'_meta_tags' ).'</td>';
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Application/LD+JSON Scripts',
-						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$key.'_json_scripts' ).
-					'<td>'.$this->form->get_checkbox( 'ssm_'.$key.'_json_scripts' ).'</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$tab_key.'_json_scripts' ).
+					'<td>'.$this->form->get_checkbox( 'ssm_'.$tab_key.'_json_scripts' ).'</td>';
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Schema HTML Attributes',
-						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$key.'_schema_attr' ).
-					'<td>'.$this->form->get_checkbox( 'ssm_'.$key.'_schema_attr' ).'</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$tab_key.'_schema_attr' ).
+					'<td>'.$this->form->get_checkbox( 'ssm_'.$tab_key.'_schema_attr' ).'</td>';
 
 					break;
 			}
+
 			return $table_rows;
 		}
 	}

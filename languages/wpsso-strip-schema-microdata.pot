@@ -57,17 +57,17 @@ msgctxt "metabox tab"
 msgid "Head Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:56
+#: lib/submenu/ssm-general.php:59
 msgctxt "option label"
 msgid "Duplicate HTML Meta Tags"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:60
+#: lib/submenu/ssm-general.php:63
 msgctxt "option label"
 msgid "Application/LD+JSON Scripts"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:64
+#: lib/submenu/ssm-general.php:67
 msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr ""
