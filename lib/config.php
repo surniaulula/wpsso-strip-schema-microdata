@@ -67,9 +67,11 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
+
 			if ( defined( 'WPSSOSSM_VERSION' ) ) {			// execute and define constants only once
 				return;
 			}
+
 			define( 'WPSSOSSM_VERSION', self::$cf['plugin']['wpssossm']['version'] );						
 			define( 'WPSSOSSM_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOSSM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
