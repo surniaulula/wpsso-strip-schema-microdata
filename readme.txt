@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.5
-Stable Tag: 1.3.1
+Stable Tag: 1.3.2
 
 WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
 
@@ -131,8 +131,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.3.2 =
 
 (2018/04/05) Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
-
-= 1.3.1 =
-
-(2018/03/24) Renamed plugin "Extensions" to "Add-ons" to avoid confusion and improve / simplify translations.
 
