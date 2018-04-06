@@ -90,11 +90,6 @@ msgid ""
 "%5$s is currently installed)."
 msgstr ""
 
-#. translators: %s is the short plugin name
-#: wpsso-strip-schema-microdata.php:203
-msgid "%s warning:"
-msgstr ""
-
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Strip Schema Microdata"
 msgstr ""
