@@ -24,7 +24,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			}
 
 			if ( SucomUtil::get_const( 'DOING_AJAX' ) ) {
+
 				// nothing to do
+
 			} else {
 
 				if ( is_admin() ) {
