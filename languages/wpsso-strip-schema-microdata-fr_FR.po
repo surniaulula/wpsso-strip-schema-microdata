@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata 1.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2018-03-24 09:03-0400\n"
-"PO-Revision-Date: 2018-03-24 09:58-0400\n"
+"POT-Creation-Date: 2018-05-10 10:41-0600\n"
+"PO-Revision-Date: 2018-05-10 10:41-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -24,15 +24,15 @@ msgctxt "plugin description"
 msgid "WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched."
 msgstr "Extension d'ajout WPSSO Core pour supprimer les Microdonnées de Schéma obsolète / incomplète, laissant le balisage Schéma JSON-LD recommandé par Google intact."
 
-#: lib/filters.php:232
+#: lib/filters.php:242
 msgid "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr "Supprimer les balises méta HTML connu en double / en conflit dans la section %1$s de la page Web."
 
-#: lib/filters.php:239
+#: lib/filters.php:249
 msgid "Remove <code>application/ld+json</code> scripts from the webpage %1$s section."
 msgstr "Supprimer les scripts <code>application/ld+json</code> de la section %1$s de la page Web."
 
-#: lib/filters.php:246
+#: lib/filters.php:256
 msgid "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section."
 msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, itemprop, etc.) de la section %1$s de la page Web."
 
@@ -41,47 +41,42 @@ msgctxt "metabox title"
 msgid "Strip Schema Microdata"
 msgstr "Supprimer microdonnées de Schéma"
 
-#: lib/submenu/ssm-general.php:39
+#: lib/submenu/ssm-general.php:41
 msgctxt "metabox tab"
 msgid "Body Section"
 msgstr "Section de corps"
 
-#: lib/submenu/ssm-general.php:40
+#: lib/submenu/ssm-general.php:42
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr "Section d'entête"
 
-#: lib/submenu/ssm-general.php:56
+#: lib/submenu/ssm-general.php:64
 msgctxt "option label"
 msgid "Duplicate HTML Meta Tags"
 msgstr "Doublons de balises méta HTML"
 
-#: lib/submenu/ssm-general.php:60
+#: lib/submenu/ssm-general.php:68
 msgctxt "option label"
 msgid "Application/LD+JSON Scripts"
 msgstr "Scripts application/ld+json"
 
-#: lib/submenu/ssm-general.php:64
+#: lib/submenu/ssm-general.php:72
 msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr "Attributs HTML de Schéma"
 
-#: wpsso-strip-schema-microdata.php:89
+#: wpsso-strip-schema-microdata.php:94
 msgid "%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est un ajout pour l'extension %2$s &mdash; SVP installer et activer l'extension %3$s avant d'activer %4$s."
 
-#: wpsso-strip-schema-microdata.php:91
+#: wpsso-strip-schema-microdata.php:96
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension %3$s ou <a href=\"%4$s\">désactiver l'ajout %5$s</a>."
 
-#: wpsso-strip-schema-microdata.php:180
+#: wpsso-strip-schema-microdata.php:191
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
-
-#. translators: %s is the short plugin name
-#: wpsso-strip-schema-microdata.php:192
-msgid "%s warning:"
-msgstr "Alerte %s:"
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Strip Schema Microdata"
