@@ -1,4 +1,4 @@
-<h1>WPSSO Strip Schema Microdata for Better Schema JSON-LD Markup</h1>
+<h1>WPSSO Strip Schema Microdata from the WebPage for Better Schema JSON-LD Markup</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Strip Schema Microdata</td></tr>

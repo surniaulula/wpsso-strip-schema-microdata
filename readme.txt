@@ -1,4 +1,4 @@
-=== WPSSO Strip Schema Microdata for Better Schema JSON-LD Markup ===
+=== WPSSO Strip Schema Microdata from the WebPage for Better Schema JSON-LD Markup ===
 Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
