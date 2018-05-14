@@ -19,17 +19,15 @@ WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the 
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png">
 
-*Do you need to remove incorrect / incomplete Schema Microdata from your theme templates?*
+**Do you need to remove incorrect / incomplete Schema Microdata from your theme templates?**
 
-*Is Schema Microdata getting in the way of Google reading the preferred Schema JSON-LD markup?*
+**Is Schema Microdata getting in the way of Google reading the preferred Schema JSON-LD markup?**
 
-*Do you need to remove Schema Microdata added by 3rd party plugins from your content?*
+**Do you need to remove Schema Microdata added by 3rd party plugins from your content?**
 
-*Do you need to remove duplicate social or SEO meta tags from the head section?*
+**Do you need to remove duplicate social or SEO meta tags from the head section?**
 
-*Is Pinterest picking up duplicate / incorrect Schema from your theme templates?*
-
-*Are you using the [WPSSO Schema JSON-LD Markup](https://wordpress.org/plugins/wpsso-schema-json-ld/) add-on, and want to remove old Schema Microdata from your theme templates?*
+**Is Pinterest picking up duplicate / incorrect Schema from your theme templates?**
 
 The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes Schema Microdata markup from the webpage body section, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. A Strip Microdata settings page also allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section.
 
