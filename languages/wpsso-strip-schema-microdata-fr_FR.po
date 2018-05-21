@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata 1.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
 "POT-Creation-Date: 2018-05-10 10:41-0600\n"
-"PO-Revision-Date: 2018-05-10 10:41-0600\n"
+"PO-Revision-Date: 2018-05-21 07:13-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -22,7 +22,7 @@ msgstr "Supprimer microdonnées"
 #: lib/config-gettext-extract.php:4
 msgctxt "plugin description"
 msgid "WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched."
-msgstr "Extension d'ajout WPSSO Core pour supprimer les Microdonnées de Schéma obsolète / incomplète, laissant le balisage Schéma JSON-LD recommandé par Google intact."
+msgstr "Extension d'ajout WPSSO Core pour supprimer les Microdonnées de Schéma obsolète / incomplète, laissant le balisage de Schéma JSON-LD recommandé par Google intact."
 
 #: lib/filters.php:242
 msgid "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
@@ -88,7 +88,7 @@ msgstr "https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/"
 
 #. Description of the plugin/theme
 msgid "WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched."
-msgstr "Extension d'ajout WPSSO Core pour supprimer les Microdonnées de Schéma obsolète / incomplète, laissant le balisage Schéma JSON-LD recommandé par Google intact."
+msgstr "Extension d'ajout WPSSO Core pour supprimer les Microdonnées de Schéma obsolète / incomplète, laissant le balisage de Schéma JSON-LD recommandé par Google intact."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
