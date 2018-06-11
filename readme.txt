@@ -17,7 +17,7 @@ WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the 
 
 == Description ==
 
-<img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png">
+<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png"></p>
 
 **Want to remove incorrect / incomplete Schema Microdata from your theme templates?**
 

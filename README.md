@@ -13,7 +13,7 @@
 
 <h2>Description</h2>
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png"></p>
+<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png"></p>
 
 <p><strong>Want to remove incorrect / incomplete Schema Microdata from your theme templates?</strong></p>
 
