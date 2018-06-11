@@ -54,7 +54,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					$this->p->debug->log( 'adding template_redirect action for output_buffer_start' );
 				}
 
-				add_action( 'template_redirect', array( &$this, 'output_buffer_start' ), -900000 );
+				add_action( 'template_redirect', array( &$this, 'output_buffer_start' ), -1000000000 );
 			}
 		}
 
