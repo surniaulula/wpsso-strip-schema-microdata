@@ -35,6 +35,8 @@ WPSSO SSM filters are *very* fast &mdash; generally running in under 0.003 secon
 
 <h3>Users Love the WPSSO SSM Add-on</h3>
 
+&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "This worked great to automatically remove almost 100 invalid microdata markup hentry entries from a divi/woocommerce project, bringing the error count to 0 in Google webmaster tools. The WPSSO plugin suite is the best out of many SSO solutions I’ve tried. Thank you!" - [marvtech](https://wordpress.org/support/topic/works-great-where-other-solutions-fail/)
+
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Fantastic tool and necessary if you want proper schema markup on your website. Many themes come with markup that is unnecessary and conflicts. This handles that perfectly." - [krisfannin](https://wordpress.org/support/topic/necessary-plugin-for-proper-schema-markup/)
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
