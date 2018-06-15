@@ -54,7 +54,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					$this->p->debug->log( 'adding template_redirect action for output_buffer_start' );
 				}
 
-				add_action( 'template_redirect', array( &$this, 'output_buffer_start' ), -1000000000 );
+				add_action( 'template_redirect', array( $this, 'output_buffer_start' ), -1000000000 );
 			}
 		}
 
@@ -62,7 +62,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'output buffering started' );
 			}
-			ob_start( array( &$this, 'strip_schema_microdata' ) );
+			ob_start( array( $this, 'strip_schema_microdata' ) );
 		}
 
 		public function strip_schema_microdata( $buffer ) {
