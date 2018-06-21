@@ -45,20 +45,20 @@ WPSSO Strip Schema Microdata (aka WPSSO SSM) is an add-on for the WPSSO Core plu
 
 == Installation ==
 
-<h3>Install and Uninstall</h3>
+<h3 class="top">Install and Uninstall</h3>
 
 * [Install the WPSSO SSM Add-on](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/install-the-plugin/)
 * [Uninstall the WPSSO SSM Add-on](https://wpsso.com/docs/plugins/wpsso-strip-schema-microdata/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
-<h3>Frequently Asked Questions</h3>
+<h3 class="top">Frequently Asked Questions</h3>
 
 * None
 
 == Other Notes ==
 
-<h3>Additional Documentation</h3>
+<h3 class="top">Additional Documentation</h3>
 
 * None
 
@@ -68,7 +68,7 @@ WPSSO Strip Schema Microdata (aka WPSSO SSM) is an add-on for the WPSSO Core plu
 
 == Changelog ==
 
-<h3>Version Numbering</h3>
+<h3 class="top">Version Numbering</h3>
 
 Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
