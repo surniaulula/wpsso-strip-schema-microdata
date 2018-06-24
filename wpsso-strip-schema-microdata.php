@@ -62,6 +62,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			}
 
 			add_filter( 'wpsso_get_config', array( $this, 'wpsso_get_config' ), 10, 2 );	// Checks core version and merges config array.
+			add_filter( 'wpsso_get_avail', array( $this, 'wpsso_get_avail' ), 10, 1 );
 
 			add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
 			add_action( 'wpsso_init_options', array( $this, 'wpsso_init_options' ), 10 );	// Sets the $this->p reference variable.
@@ -142,6 +143,18 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			return SucomUtil::array_merge_recursive_distinct( $cf, WpssoSsmConfig::$cf );
 		}
 
+		public function wpsso_get_avail( $avail ) {
+
+			if ( ! $this->have_req_min ) {
+				$avail['p_ext']['ssm'] = false;	// Signal that this extension / add-on is not available.
+				return $avail;
+			}
+
+			$avail['p_ext']['ssm'] = true;		// Signal that this extension / add-on is available.
+
+			return $avail;
+		}
+
 		/**
 		 * Sets the $this->p reference variable for the core plugin instance.
 		 */
@@ -152,13 +165,6 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
-
-			if ( ! $this->have_req_min ) {
-				$this->p->avail['p_ext']['ssm'] = false;	// Signal that this extension / add-on is not available.
-				return;
-			}
-
-			$this->p->avail['p_ext']['ssm'] = true;	// Signal that this extension / add-on is available.
 		}
 
 		public function wpsso_init_objects() {
@@ -189,12 +195,16 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		private function min_version_notice() {
 
 			$info = WpssoSsmConfig::$cf['plugin']['wpssossm'];
+
 			$have_version = $this->p->cf['plugin']['wpsso']['version'];
+
 			$error_msg = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
 				'wpsso-strip-schema-microdata' ), $info['name'], $info['version'], $info['req']['short'], $info['req']['min_version'], $have_version );
 
 			if ( is_admin() ) {
+
 				$this->p->notice->err( $error_msg );
+
 				if ( method_exists( $this->p->admin, 'get_check_for_updates_link' ) ) {
 					$this->p->notice->inf( $this->p->admin->get_check_for_updates_link() );
 				}

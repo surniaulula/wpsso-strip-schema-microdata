@@ -68,7 +68,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 
 		public static function set_constants( $plugin_filepath ) { 
 
-			if ( defined( 'WPSSOSSM_VERSION' ) ) {			// execute and define constants only once
+			if ( defined( 'WPSSOSSM_VERSION' ) ) {	// Define constants only once.
 				return;
 			}
 
