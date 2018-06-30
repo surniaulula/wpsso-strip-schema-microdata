@@ -41,7 +41,7 @@ WPSSO SSM filters are *very* fast &mdash; generally running in under 0.003 secon
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Strip Schema Microdata (aka WPSSO SSM) is an add-on for the WPSSO Core plugin.
+WPSSO Strip Schema Microdata (aka WPSSO SSM) is an add-on for the [WPSSO Core Plugin](https://wordpress.org/plugins/wpsso/) (Free or Pro version).
 
 == Installation ==
 
