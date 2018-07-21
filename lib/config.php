@@ -16,24 +16,24 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(			// Plugin acronym.
-					'version' => '1.3.2',		// Plugin version.
+					'version'     => '1.4.0-rc.1',	// Plugin version.
 					'opt_version' => '3',		// Increment when changing default option values.
-					'short' => 'WPSSO SSM',		// Short plugin name.
-					'name' => 'WPSSO Strip Schema Microdata',
-					'desc' => 'WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.',
-					'slug' => 'wpsso-strip-schema-microdata',
-					'base' => 'wpsso-strip-schema-microdata/wpsso-strip-schema-microdata.php',
+					'short'       => 'WPSSO SSM',	// Short plugin name.
+					'name'        => 'WPSSO Strip Schema Microdata',
+					'desc'        => 'WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.',
+					'slug'        => 'wpsso-strip-schema-microdata',
+					'base'        => 'wpsso-strip-schema-microdata/wpsso-strip-schema-microdata.php',
 					'update_auth' => '',
 					'text_domain' => 'wpsso-strip-schema-microdata',
 					'domain_path' => '/languages',
 					'req' => array(
-						'short' => 'WPSSO Core',
-						'name' => 'WPSSO Core',
-						'min_version' => '4.7.0',
+						'short'       => 'WPSSO Core',
+						'name'        => 'WPSSO Core',
+						'min_version' => '4.9.0-rc.1',
 					),
 					'img' => array(
 						'icons' => array(
-							'low' => 'images/icon-128x128.png',
+							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
 						),
 					),
@@ -50,12 +50,12 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 			),
 			'opt' => array(						// options
 				'defaults' => array(
-					'ssm_head_meta_tags' => 0,
+					'ssm_head_meta_tags'    => 0,
 					'ssm_head_json_scripts' => 0,
-					'ssm_head_schema_attr' => 0,
-					'ssm_body_meta_tags' => 0,
+					'ssm_head_schema_attr'  => 0,
+					'ssm_body_meta_tags'    => 0,
 					'ssm_body_json_scripts' => 1,
-					'ssm_body_schema_attr' => 1,
+					'ssm_body_schema_attr'  => 1,
 				),
 			),
 		);
