@@ -74,6 +74,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.4.0-rc.1 (2018/07/21)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Maintenance release.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 1.3.2 (2018/04/05)**
 
 * *New Features*
@@ -86,6 +97,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Renamed some WpssoUtil methods for Gutenberg related changes in WPSSO v3.57.0.
 
 == Upgrade Notice ==
+
+= 1.4.0-rc.1 =
+
+(2018/07/21) Maintenance release.
 
 = 1.3.2 =
 
