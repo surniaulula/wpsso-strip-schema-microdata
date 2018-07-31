@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				if ( ! empty( $this->p->options['ssm_head_meta_tags'] ) ) {
 
 					$this->p->util->add_plugin_filters( $this, array( 
-						'check_post_head' => '__return_false',		// redundant since we are removing duplicates
+						'check_post_head'          => '__return_false',		// redundant since we are removing duplicates
 						'add_meta_name_wpsso:mark' => '__return_true',
 					) );
 				}
