@@ -10,7 +10,7 @@ Tags: structured data, rich snippets, schema, microdata, duplicate, remove, stri
 Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
-Tested Up To: 4.9.7
+Tested Up To: 4.9.8
 Stable Tag: 1.4.0
 
 WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google preferred Schema JSON-LD markup untouched.
