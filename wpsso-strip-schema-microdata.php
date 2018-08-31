@@ -53,7 +53,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			require_once ( dirname( __FILE__ ) . '/lib/config.php' );
 
 			WpssoSsmConfig::set_constants( __FILE__ );
-			WpssoSsmConfig::require_libs( __FILE__ );	// includes the register.php class library
+			WpssoSsmConfig::require_libs( __FILE__ );	// Includes the register.php class library.
 
 			$this->reg = new WpssoSsmRegister();		// activate, deactivate, uninstall hooks
 
@@ -213,5 +213,6 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 	}
 
         global $wpssossm;
+
 	$wpssossm =& WpssoSsm::get_instance();
 }
