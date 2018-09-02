@@ -25,49 +25,49 @@ msgid ""
 "the Google recommended Schema JSON-LD markup untouched."
 msgstr ""
 
-#: lib/filters.php:242
+#: lib/filters.php:243
 msgid ""
 "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr ""
 
-#: lib/filters.php:249
+#: lib/filters.php:250
 msgid ""
 "Remove <code>application/ld+json</code> scripts from the webpage %1$s "
 "section."
 msgstr ""
 
-#: lib/filters.php:256
+#: lib/filters.php:257
 msgid ""
 "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the "
 "webpage %1$s section."
 msgstr ""
 
-#: lib/submenu/ssm-general.php:32
+#: lib/submenu/ssm-general.php:33
 msgctxt "metabox title"
 msgid "Strip Schema Microdata"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:41
+#: lib/submenu/ssm-general.php:42
 msgctxt "metabox tab"
 msgid "Body Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:42
+#: lib/submenu/ssm-general.php:43
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:64
+#: lib/submenu/ssm-general.php:65
 msgctxt "option label"
 msgid "Duplicate HTML Meta Tags"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:68
+#: lib/submenu/ssm-general.php:69
 msgctxt "option label"
 msgid "Application/LD+JSON Scripts"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:72
+#: lib/submenu/ssm-general.php:73
 msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr ""

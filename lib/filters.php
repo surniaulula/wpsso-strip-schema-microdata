@@ -17,6 +17,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 		protected $body_str = '<body ';
 
 		public function __construct( &$plugin ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
