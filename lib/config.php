@@ -72,12 +72,12 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 				return;
 			}
 
-			define( 'WPSSOSSM_VERSION', self::$cf['plugin']['wpssossm']['version'] );						
 			define( 'WPSSOSSM_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOSSM_PLUGINBASE', self::$cf['plugin']['wpssossm']['base'] );		// wpsso-strip-schema-microdata/wpsso-strip-schema-microdata.php
 			define( 'WPSSOSSM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
 			define( 'WPSSOSSM_PLUGINSLUG', self::$cf['plugin']['wpssossm']['slug'] );		// wpsso-strip-schema-microdata
-			define( 'WPSSOSSM_PLUGINBASE', self::$cf['plugin']['wpssossm']['base'] );		// wpsso-strip-schema-microdata/wpsso-strip-schema-microdata.php
 			define( 'WPSSOSSM_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOSSM_VERSION', self::$cf['plugin']['wpssossm']['version'] );						
 		}
 
 		public static function require_libs( $plugin_filepath ) {
