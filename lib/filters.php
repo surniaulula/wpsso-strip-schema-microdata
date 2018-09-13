@@ -100,8 +100,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 			} else {
 
-				$time_start = microtime( true );
-				$mt_mark_matched = 0;
+				$mtime_start      = microtime( true );
+				$mt_mark_matched  = 0;
 				$mt_pattern_cache = null;
 				$mt_replace_cache = null;
 
@@ -208,13 +208,12 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					}
 				}
 
-				$time_stop = microtime( true );
-				$time_diff = $time_stop - $time_start;
+				$mtime_total = microtime( true ) - $mtime_start;
 
 				if ( ! SucomUtil::get_const( 'WPSSOSSM_INFO_COMMENT_DISABLE' ) ) {
 					return $doc['head'].$doc['body'].
 						'<!-- '.$log_prefix.' = '.$total_count.' matches removed in '.
-							$loop_iter.' interations and '.sprintf( '%f secs', $time_diff ).' -->';
+							$loop_iter.' interations and '.sprintf( '%f secs', $mtime_total ).' -->';
 				} else {
 					return $doc['head'].$doc['body'];
 				}

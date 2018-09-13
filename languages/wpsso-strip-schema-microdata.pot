@@ -25,18 +25,18 @@ msgid ""
 "the Google recommended Schema JSON-LD markup untouched."
 msgstr ""
 
-#: lib/filters.php:243
+#: lib/filters.php:242
 msgid ""
 "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr ""
 
-#: lib/filters.php:250
+#: lib/filters.php:249
 msgid ""
 "Remove <code>application/ld+json</code> scripts from the webpage %1$s "
 "section."
 msgstr ""
 
-#: lib/filters.php:257
+#: lib/filters.php:256
 msgid ""
 "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the "
 "webpage %1$s section."
