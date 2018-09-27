@@ -60,9 +60,11 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 		}
 
 		public function output_buffer_start() {
+
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'output buffering started' );
 			}
+
 			ob_start( array( $this, 'strip_schema_microdata' ) );
 		}
 
