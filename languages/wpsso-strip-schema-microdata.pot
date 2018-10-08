@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Strip Schema Microdata package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 1.4.0\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 1.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -42,32 +42,32 @@ msgid ""
 "webpage %1$s section."
 msgstr ""
 
-#: lib/submenu/ssm-general.php:33
+#: lib/submenu/ssm-general.php:36
 msgctxt "metabox title"
 msgid "Strip Schema Microdata"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:42
+#: lib/submenu/ssm-general.php:47
 msgctxt "metabox tab"
 msgid "Body Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:43
+#: lib/submenu/ssm-general.php:48
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:65
+#: lib/submenu/ssm-general.php:77
 msgctxt "option label"
 msgid "Duplicate HTML Meta Tags"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:69
+#: lib/submenu/ssm-general.php:81
 msgctxt "option label"
 msgid "Application/LD+JSON Scripts"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:73
+#: lib/submenu/ssm-general.php:85
 msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr ""

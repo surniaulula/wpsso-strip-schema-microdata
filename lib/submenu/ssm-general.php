@@ -21,33 +21,43 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 				$this->p->debug->mark();
 			}
 
-			$this->menu_id = $id;
+			$this->menu_id   = $id;
 			$this->menu_name = $name;
-			$this->menu_lib = $lib;
-			$this->menu_ext = $ext;
+			$this->menu_lib  = $lib;
+			$this->menu_ext  = $ext;
 		}
 
-		// called by the extended WpssoAdmin class
+		/**
+		 * Called by the extended WpssoAdmin class.
+		 */
 		protected function add_meta_boxes() {
-			add_meta_box( $this->pagehook.'_general',
+
+			add_meta_box( $this->pagehook . '_general',
 				_x( 'Strip Schema Microdata', 'metabox title', 'wpsso-strip-schema-microdata' ), 
 					array( $this, 'show_metabox_general' ), $this->pagehook, 'normal' );
 		}
 
 		public function show_metabox_general() {
 
-			$metabox_id = 'general';
+			$metabox_id = 'ssm-general';
 
-			$tabs = apply_filters( $this->p->lca.'_ssm_'.$metabox_id.'_tabs', array(
-				'body' => _x( 'Body Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
-				'head' => _x( 'Head Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
+			$filter_name = SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_tabs' );
+
+			$tabs = apply_filters( $filter_name, array(
+				'body_section' => _x( 'Body Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
+				'head_section' => _x( 'Head Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
 			) );
 
 			$table_rows = array();
 
 			foreach ( $tabs as $tab_key => $title ) {
-				$table_rows[$tab_key] = array_merge( $this->get_table_rows( $metabox_id, $tab_key ), 
-					apply_filters( $this->p->lca.'_'.$metabox_id.'_'.$tab_key.'_rows', array(), $this->form ) );
+
+				$filter_name = SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_' . $tab_key . '_rows' );
+
+				$table_rows[ $tab_key ] = array_merge(
+					$this->get_table_rows( $metabox_id, $tab_key ), 
+					(array) apply_filters( $filter_name, array(), $this->form )
+				);
 			}
 
 			$this->p->util->do_metabox_tabbed( $metabox_id, $tabs, $table_rows );
@@ -57,22 +67,24 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 
 			$table_rows = array();
 
-			switch ( $metabox_id.'-'.$tab_key ) {
+			switch ( $metabox_id . '-' . $tab_key ) {
 
-				case 'general-head':
-				case 'general-body':
+				case 'ssm-general-head_section':
+				case 'ssm-general-body_section':
+
+					$opt_prefix = 'ssm_' . preg_replace( '/_section$/', '', $tab_key );
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Duplicate HTML Meta Tags',
-						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$tab_key.'_meta_tags' ).
-					'<td>'.$this->form->get_checkbox( 'ssm_'.$tab_key.'_meta_tags' ).'</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', $opt_prefix . '_meta_tags' ) . 
+					'<td>' . $this->form->get_checkbox( $opt_prefix . '_meta_tags' ) . '</td>';
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Application/LD+JSON Scripts',
-						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$tab_key.'_json_scripts' ).
-					'<td>'.$this->form->get_checkbox( 'ssm_'.$tab_key.'_json_scripts' ).'</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', $opt_prefix . '_json_scripts' ) . 
+					'<td>' . $this->form->get_checkbox( $opt_prefix . '_json_scripts' ) . '</td>';
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Schema HTML Attributes',
-						'option label', 'wpsso-strip-schema-microdata' ), '', 'ssm_'.$tab_key.'_schema_attr' ).
-					'<td>'.$this->form->get_checkbox( 'ssm_'.$tab_key.'_schema_attr' ).'</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', $opt_prefix . '_schema_attr' ) . 
+					'<td>' . $this->form->get_checkbox( $opt_prefix . '_schema_attr' ) . '</td>';
 
 					break;
 			}
