@@ -74,6 +74,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.4.1 (2018/10/08)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Renamed the Strip Microdata settings page "Body Section" and "Head Section" tab IDs.
+
 **Version 1.4.0 (2018/07/22)**
 
 * *New Features*
@@ -86,6 +97,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 1.4.1 =
+
+(2018/10/08) Renamed the Strip Microdata settings page "Body Section" and "Head Section" tab IDs.
 
 = 1.4.0 =
 
