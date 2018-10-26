@@ -47,27 +47,27 @@ msgctxt "metabox title"
 msgid "Strip Schema Microdata"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:47
+#: lib/submenu/ssm-general.php:55
 msgctxt "metabox tab"
 msgid "Body Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:48
+#: lib/submenu/ssm-general.php:56
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:77
+#: lib/submenu/ssm-general.php:85
 msgctxt "option label"
 msgid "Duplicate HTML Meta Tags"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:81
+#: lib/submenu/ssm-general.php:89
 msgctxt "option label"
 msgid "Application/LD+JSON Scripts"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:85
+#: lib/submenu/ssm-general.php:93
 msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr ""
