@@ -63,9 +63,9 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static function get_version( $add_slug = false ) {
 
 			$ext  = 'wpssossm';
-			$info =& self::$cf['plugin'][$ext];
+			$info =& self::$cf[ 'plugin' ][$ext];
 
-			return $add_slug ? $info['slug'] . '-' . $info['version'] : $info['version'];
+			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
@@ -75,11 +75,11 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 			}
 
 			define( 'WPSSOSSM_FILEPATH', $plugin_filepath );						
-			define( 'WPSSOSSM_PLUGINBASE', self::$cf['plugin']['wpssossm']['base'] );		// wpsso-strip-schema-microdata/wpsso-strip-schema-microdata.php
+			define( 'WPSSOSSM_PLUGINBASE', self::$cf[ 'plugin' ]['wpssossm'][ 'base' ] );		// wpsso-strip-schema-microdata/wpsso-strip-schema-microdata.php
 			define( 'WPSSOSSM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'WPSSOSSM_PLUGINSLUG', self::$cf['plugin']['wpssossm']['slug'] );		// wpsso-strip-schema-microdata
+			define( 'WPSSOSSM_PLUGINSLUG', self::$cf[ 'plugin' ]['wpssossm'][ 'slug' ] );		// wpsso-strip-schema-microdata
 			define( 'WPSSOSSM_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
-			define( 'WPSSOSSM_VERSION', self::$cf['plugin']['wpssossm']['version'] );						
+			define( 'WPSSOSSM_VERSION', self::$cf[ 'plugin' ]['wpssossm'][ 'version' ] );						
 		}
 
 		public static function require_libs( $plugin_filepath ) {
