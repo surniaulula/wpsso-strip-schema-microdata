@@ -84,7 +84,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				/**
 				 * We have an <html> tag, but no <body> tag - log an error.
 				 */
-				if ( stripos( $buffer, '<html' ) !== false ) {
+				if ( false !== stripos( $buffer, '<html' ) ) {
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
 						error_log( $log_prefix.' = nothing to do: "'.$this->body_str.'" '.
@@ -113,7 +113,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					'body' => substr( $buffer, $body_pos ),
 				);
 
-				if ( stripos( substr( $doc['body'], strlen( $this->body_str ) ), $this->body_str ) !== false ) {
+				if ( false !== stripos( substr( $doc['body'], strlen( $this->body_str ) ), $this->body_str ) ) {
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
 						error_log( $log_prefix.' = exiting early: duplicate "'.$this->body_str.'"'.
@@ -204,7 +204,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				}
 
 				if ( $mt_mark_matched ) {
-					if ( ( $doc['mt_pos'] = strpos( $doc['head'], $mt_placeholder ) ) !== false ) {
+					if ( false !== ( $doc['mt_pos'] = strpos( $doc['head'], $mt_placeholder ) ) ) {
 						$doc['head'] = substr_replace( $doc['head'], '<!-- wpsso ssm preserved block begin -->' . "\n" .
 							$doc['mt_html'] . "\n" . '<!-- wpsso ssm preserved block end -->', $doc['mt_pos'], strlen( $mt_placeholder ) );
 					}
