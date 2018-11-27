@@ -97,22 +97,24 @@ if ( ! class_exists( 'WpssoSsmRegister' ) ) {
 
 		private function activate_plugin() {
 
-			$version = WpssoSsmConfig::$cf[ 'plugin' ][ 'wpssossm' ][ 'version' ];	// only our config
+			if ( class_exists( 'Wpsso' ) ) {
 
-			if ( class_exists( 'WpssoUtil' ) ) {
-				WpssoUtil::save_all_times( 'wpssossm', $version );
+				if ( class_exists( 'WpssoUtil' ) ) {	// Just in case.
+
+					$version = WpssoSsmConfig::$cf[ 'plugin' ][ 'wpssossm' ][ 'version' ];
+
+					WpssoUtil::save_all_times( 'wpssossm', $version );
+				}
+
 			} else {
-				WpssoSsm::required_notice( true );			// $deactivate = true
+				WpssoSsm::required_notice( $deactivate = true );
 			}
 		}
 
 		private function deactivate_plugin() {
-			// nothing to do
 		}
 
-		// uninstall.php defines constants before calling network_uninstall()
 		private static function uninstall_plugin() {
-			// nothing to do
 		}
 	}
 }
