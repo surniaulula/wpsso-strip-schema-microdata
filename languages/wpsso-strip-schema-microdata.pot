@@ -13,18 +13,6 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: lib/config-gettext-extract.php:3
-msgctxt "lib file description"
-msgid "Strip Microdata"
-msgstr ""
-
-#: lib/config-gettext-extract.php:4
-msgctxt "plugin description"
-msgid ""
-"WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving "
-"the Google recommended Schema JSON-LD markup untouched."
-msgstr ""
-
 #: lib/filters.php:252
 msgid ""
 "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
@@ -40,6 +28,18 @@ msgstr ""
 msgid ""
 "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the "
 "webpage %1$s section."
+msgstr ""
+
+#: lib/gettext-config.php:6
+msgctxt "lib file description"
+msgid "Strip Microdata"
+msgstr ""
+
+#: lib/gettext-config.php:7
+msgctxt "plugin description"
+msgid ""
+"WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving "
+"the Google recommended Schema JSON-LD markup untouched."
 msgstr ""
 
 #: lib/submenu/ssm-general.php:36
