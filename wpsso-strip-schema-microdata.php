@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO Core add-on to remove outdated / incomplete Schema Microdata, leaving the Google recommended Schema JSON-LD markup untouched.
+ * Description: WPSSO Core add-on to remove outdated or incomplete Schema Microdata to use Google's preferred Schema JSON-LD / Rich Card markup.
  * Requires PHP: 5.4
  * Requires At Least: 3.8
  * Tested Up To: 5.0
