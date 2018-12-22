@@ -1,4 +1,4 @@
-=== WPSSO Strip Schema Microdata from the WebPage for Better Schema JSON-LD Markup ===
+=== WPSSO Strip Schema Microdata for better Google Rich Cards and Pinterest Rich Pins ===
 Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
@@ -19,13 +19,13 @@ WPSSO Core add-on to remove outdated or incomplete Schema Microdata to use Googl
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png"></p>
 
-**Want to remove incorrect / incomplete Schema Microdata from your theme templates?**
+**Want to remove incorrect or incomplete Schema Microdata from your webpages and/or theme templates?**
 
 **Want to remove incorrect Microdata added by 3rd party plugins from your content?**
 
 **Want to remove duplicate social or SEO meta tags from the webpage head section?**
 
-**Is Pinterest picking up duplicate / incorrect Schema from your theme templates?**
+**Is Pinterest picking up duplicate or incorrect Schema from your theme templates?**
 
 The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes Schema Microdata markup from the webpage body section, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. A Strip Microdata settings page also allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section.
 
