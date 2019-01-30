@@ -1,5 +1,5 @@
 === WPSSO Strip Schema Microdata for better Google Rich Cards and Pinterest Rich Pins ===
-Plugin Name: WPSSO Strip Schema Microdata [Add-on]
+Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
 Domain Path: /languages
