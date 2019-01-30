@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WPSSO Strip Schema Microdata [Add-on]
+ * Plugin Name: WPSSO Strip Schema Microdata
  * Plugin Slug: wpsso-strip-schema-microdata
  * Text Domain: wpsso-strip-schema-microdata
  * Domain Path: /languages

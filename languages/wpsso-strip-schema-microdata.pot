@@ -1,8 +1,8 @@
-# Copyright (C) 2019 WPSSO Strip Schema Microdata [Add-on]
-# This file is distributed under the same license as the WPSSO Strip Schema Microdata [Add-on] package.
+# Copyright (C) 2019 WPSSO Strip Schema Microdata
+# This file is distributed under the same license as the WPSSO Strip Schema Microdata package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata [Add-on] 1.4.1\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 1.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -91,7 +91,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Strip Schema Microdata [Add-on]"
+msgid "WPSSO Strip Schema Microdata"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
