@@ -19,7 +19,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'version'     => '1.4.1',	// Plugin version.
 					'opt_version' => '3',		// Increment when changing default option values.
 					'short'       => 'WPSSO SSM',	// Short plugin name.
-					'name'        => 'WPSSO Strip Schema Microdata',
+					'name'        => 'WPSSO Strip Schema Microdata [Add-on]',
 					'desc'        => 'WPSSO Core add-on to remove outdated or incomplete Schema Microdata to use Google\'s preferred Schema JSON-LD / Rich Card markup.',
 					'slug'        => 'wpsso-strip-schema-microdata',
 					'base'        => 'wpsso-strip-schema-microdata/wpsso-strip-schema-microdata.php',
