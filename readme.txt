@@ -74,6 +74,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.4.2 (2019/01/31)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Maintenance release for WPSSO Core v4.22.0.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Updated the required minimum PHP version from 5.4 to 5.5.
+
 **Version 1.4.1 (2018/10/08)**
 
 * *New Features*
@@ -85,24 +96,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Renamed the Strip Microdata settings page "Body Section" and "Head Section" tab IDs.
 
-**Version 1.4.0 (2018/07/22)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* Maintenance release.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
 == Upgrade Notice ==
 
-= 1.4.1 =
+= 1.4.2 =
 
-(2018/10/08) Renamed the Strip Microdata settings page "Body Section" and "Head Section" tab IDs.
-
-= 1.4.0 =
-
-(2018/07/22) Maintenance release.
+(2019/01/31) Maintenance release for WPSSO Core v4.22.0.
 
