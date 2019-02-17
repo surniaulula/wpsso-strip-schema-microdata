@@ -5,7 +5,7 @@
 <tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to remove outdated or incomplete Schema Microdata to use Google&#039;s preferred Schema JSON-LD / Rich Card markup.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.4.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.8</td></tr>
-<tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.0</td></tr>
+<tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
 <tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>structured data, rich snippets, schema, microdata, duplicate, remove, strip, fix, json-ld, ld+json, json, markup, meta tags, schema.org</td></tr>
