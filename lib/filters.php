@@ -34,7 +34,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 				if ( is_admin() ) {
 					$this->p->util->add_plugin_filters( $this, array( 
-						'messages_tooltip' => 2,		// tooltip messages filter
+						'messages_tooltip' => 2,	// Tooltip messages filter.
 					) );
 				}
 
@@ -43,10 +43,10 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				 * are enabled and the duplicate check feature is disabled (no use checking if we're
 				 * removing duplicates).
 				 */
-				if ( ! empty( $this->p->options['ssm_head_meta_tags'] ) ) {
+				if ( ! empty( $this->p->options[ 'ssm_head_meta_tags' ] ) ) {
 
 					$this->p->util->add_plugin_filters( $this, array( 
-						'check_post_head'          => '__return_false',		// redundant since we are removing duplicates
+						'check_post_head'          => '__return_false',	// Redundant since we are removing duplicates.
 						'add_meta_name_wpsso:mark' => '__return_true',
 					) );
 				}
@@ -74,7 +74,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				return $buffer;
 			}
 
-			$log_prefix = __METHOD__.' v'.WpssoSsmConfig::get_version();
+			$log_prefix = __METHOD__ . ' v' . WpssoSsmConfig::get_version();
 
 			/**
 			 * Return early if there's no <body> tag.
@@ -87,13 +87,13 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				if ( false !== stripos( $buffer, '<html' ) ) {
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
-						error_log( $log_prefix.' = nothing to do: "'.$this->body_str.'" '.
-							'string not found in WordPress \'template_redirect\' buffer for '.
-								$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+						error_log( $log_prefix . ' = nothing to do: "' . $this->body_str . '" ' . 
+							'string not found in WordPress \'template_redirect\' buffer for ' . 
+								$_SERVER[ 'SERVER_NAME' ] . $_SERVER[ 'REQUEST_URI' ] );
 					}
 	
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
-						$buffer += '<!-- '.$log_prefix.' = nothing to do: "'.$this->body_str.'" '.
+						$buffer += '<!-- ' . $log_prefix . ' = nothing to do: "' . $this->body_str . '" ' . 
 							'string not found in webpage -->';
 					}
 				}
@@ -107,48 +107,54 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				$mt_pattern_cache = null;
 				$mt_replace_cache = null;
 
-				// split the buffer to work on the head and body separately
+				/**
+				 * Split the buffer to work on the head and body separately.
+				 */
 				$doc = array(
 					'head' => substr( $buffer, 0, $body_pos ),
 					'body' => substr( $buffer, $body_pos ),
 				);
 
-				if ( false !== stripos( substr( $doc['body'], strlen( $this->body_str ) ), $this->body_str ) ) {
+				if ( false !== stripos( substr( $doc[ 'body' ], strlen( $this->body_str ) ), $this->body_str ) ) {
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
-						error_log( $log_prefix.' = exiting early: duplicate "'.$this->body_str.'"'.
-							'string found in WordPress \'template_redirect\' buffer for '.
-								$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] );
+						error_log( $log_prefix . ' = exiting early: duplicate "' . $this->body_str . '"' . 
+							'string found in WordPress \'template_redirect\' buffer for ' . 
+								$_SERVER[ 'SERVER_NAME' ] . $_SERVER[ 'REQUEST_URI' ] );
 					}
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
-						return $buffer.'<!-- '.$log_prefix.' = exiting early: duplicate "'.$this->body_str.'" '.
+						return $buffer . '<!-- ' . $log_prefix . ' = exiting early: duplicate "' . $this->body_str . '" ' . 
 							'string found in webpage -->';
 					}
 				}
 
-				// protect the wpsso meta tag code block
-				if ( ! empty( $this->p->options['ssm_head_meta_tags'] ) ) {
+				/**
+				 * Protect the wpsso meta tag code block.
+				 */
+				if ( ! empty( $this->p->options[ 'ssm_head_meta_tags' ] ) ) {
 
-					$mt_placeholder = '<!-- placeholder for '.$this->p->lca.' meta tags -->';
-					$mt_mark_matched = preg_match( $this->p->head->get_mt_mark( 'preg' ), $doc['head'], $matches, PREG_OFFSET_CAPTURE );
+					$mt_placeholder = '<!-- placeholder for ' . $this->p->lca . ' meta tags -->';
+					$mt_mark_matched = preg_match( $this->p->head->get_mt_mark( 'preg' ), $doc[ 'head' ], $matches, PREG_OFFSET_CAPTURE );
 	
 					if ( $mt_mark_matched ) {
-						$doc['mt_html'] = $matches[0][0];
-						$doc['mt_pos'] = $matches[0][1];
-						$doc['head'] = substr_replace( $doc['head'], $mt_placeholder, $doc['mt_pos'], strlen( $doc['mt_html'] ) );
+						$doc[ 'mt_html' ] = $matches[0][0];
+						$doc[ 'mt_pos' ]  = $matches[0][1];
+						$doc[ 'head' ]    = substr_replace( $doc[ 'head' ], $mt_placeholder, $doc[ 'mt_pos' ], strlen( $doc[ 'mt_html' ] ) );
 					}
 				}
 
 				$total_count = 0;
-				$loop_iter = 0;
+				$loop_iter   = 0;
 
 				foreach ( array( 'head', 'body' ) as $section ) {
 
-					// check first as this initializes new pattern / replace arrays
-					if ( ! empty( $this->p->options['ssm_'.$section.'_meta_tags'] ) ) {
+					/**
+					 * Check first as this initializes new pattern / replace arrays.
+					 */
+					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_meta_tags' ] ) ) {
 
-						if ( null === $mt_pattern_cache ) {	// build this array once
+						if ( null === $mt_pattern_cache ) {	// Build this array once.
 
 							$mt_pattern_cache = array();
 							$mt_replace_cache = array();
@@ -157,30 +163,40 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 								'link' => array( 'rel' ),
 								'meta' => array( 'name', 'property', 'itemprop' )
 							) as $tag => $types ) {
+
 								foreach( $types as $type ) {
+
 									$names = array();
-									foreach ( SucomUtil::preg_grep_keys( '/^add_'.$tag.'_'.$type.'_/',
+
+									foreach ( SucomUtil::preg_grep_keys( '/^add_' . $tag . '_' . $type . '_/',
 										$this->p->options, false, '' ) as $name => $value ) {
+
 										if ( ! empty( $value ) && $name !== 'generator' ) {
 											$names[] = $name;
 										}
 									}
+
 									if ( ! empty( $names ) ) {
-										$mt_pattern_cache[] = '/[\s\n]*<'.$tag.'(\s|[^>]+\s)'.
-											$type.'=[\'"]('.implode( '|', $names ).')[\'"][^>]*>[\s\n]*/imS';
+
+										$mt_pattern_cache[] = '/[\s\n]*<' . $tag . '(\s|[^>]+\s)' . 
+											$type . '=[\'"](' . implode( '|', $names ) . ')[\'"][^>]*>[\s\n]*/imS';
+
 										$mt_replace_cache[] = '';
 									}
 								}
 							}
 						}
+
 						$pattern = $mt_pattern_cache;
 						$replace = $mt_replace_cache;
+
 					} else {
+
 						$pattern = array();
 						$replace = array();
 					}
 
-					if ( ! empty( $this->p->options['ssm_'.$section.'_schema_attr'] ) ) {
+					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_schema_attr' ] ) ) {
 						$pattern[] = '/[\s\n]*<(link|meta)(\s|[^>]+\s)itemprop=[\'"][^\'"]*[\'"][^>]*>[\s\n]*/imS';
 						$replace[] = '';
 
@@ -188,36 +204,42 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 						$replace[] = '$1$4';
 					}
 
-					if ( ! empty( $this->p->options['ssm_'.$section.'_json_scripts'] ) ) {
-						$pattern[] = '/<script type="application\/ld\+json">.*<\/script>/UimS';	// ungreedy
+					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_json_scripts' ] ) ) {
+						$pattern[] = '/<script type="application\/ld\+json">.*<\/script>/UimS';	// Ungreedy.
 						$replace[] = '';
 					}
 
-					if ( ! empty( $pattern ) ) {	// just in case
-						// recurse to remove multiple attributes from the same HTML tag
+					if ( ! empty( $pattern ) ) {	// Just in case.
+
+						/**
+						 * Recurse to remove multiple attributes from the same HTML tag.
+						 */
 						do {
-							$doc[$section] = preg_replace( $pattern, $replace, $doc[$section], -1, $count );
+							$doc[ $section ] = preg_replace( $pattern, $replace, $doc[ $section ], -1, $count );
+
 							$total_count += $count;
+
 							$loop_iter++;
-						} while ( $count > 0 && $loop_iter < 20 );	// max 20 loops, just in case
+
+						} while ( $count > 0 && $loop_iter < 20 );	// Max 20 loops, just in case.
 					}
 				}
 
 				if ( $mt_mark_matched ) {
-					if ( false !== ( $doc['mt_pos'] = strpos( $doc['head'], $mt_placeholder ) ) ) {
-						$doc['head'] = substr_replace( $doc['head'], '<!-- wpsso ssm preserved block begin -->' . "\n" .
-							$doc['mt_html'] . "\n" . '<!-- wpsso ssm preserved block end -->', $doc['mt_pos'], strlen( $mt_placeholder ) );
+					if ( false !== ( $doc[ 'mt_pos' ] = strpos( $doc[ 'head' ], $mt_placeholder ) ) ) {
+						$doc[ 'head' ] = substr_replace( $doc[ 'head' ], '<!-- wpsso ssm preserved block begin -->' . "\n" .
+							$doc[ 'mt_html' ] . "\n" . '<!-- wpsso ssm preserved block end -->', $doc[ 'mt_pos' ], strlen( $mt_placeholder ) );
 					}
 				}
 
 				$mtime_total = microtime( true ) - $mtime_start;
 
 				if ( ! SucomUtil::get_const( 'WPSSOSSM_INFO_COMMENT_DISABLE' ) ) {
-					return $doc['head'].$doc['body'].
-						'<!-- '.$log_prefix.' = '.$total_count.' matches removed in '.
-							$loop_iter.' interations and '.sprintf( '%f secs', $mtime_total ).' -->';
+					return $doc[ 'head' ] . $doc[ 'body' ] . 
+						'<!-- ' . $log_prefix . ' = ' . $total_count . ' matches removed in ' . 
+							$loop_iter . ' interations and ' . sprintf( '%f secs', $mtime_total ) . ' -->';
 				} else {
-					return $doc['head'].$doc['body'];
+					return $doc[ 'head' ] . $doc[ 'body' ];
 				}
 			}
 		}
@@ -250,7 +272,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					if ( isset( $section ) ) {	// just in case
 						$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.',
-							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
 					}
 
 					break;
@@ -260,7 +282,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					if ( isset( $section ) ) {	// just in case
 						$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.',
-							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
 					}
 
 					break;
@@ -270,7 +292,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					if ( isset( $section ) ) {	// just in case
 						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
-							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;'.$section.'&amp;gt;</code>' );
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
 					}
 
 					break;
