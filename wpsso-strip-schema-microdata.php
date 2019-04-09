@@ -13,7 +13,7 @@
  * Description: WPSSO Core add-on to remove outdated or incomplete Schema Microdata to use Google's preferred Schema JSON-LD / Rich Card markup.
  * Requires At Least: 3.8
  * Tested Up To: 5.1.1
- * Version: 1.4.2
+ * Version: 1.4.3
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
