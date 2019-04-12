@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 1.4.1\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 1.4.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2018-12-21 19:14-0600\n"
-"PO-Revision-Date: 2018-12-21 19:15-0600\n"
+"POT-Creation-Date: 2019-04-12 11:42-0700\n"
+"PO-Revision-Date: 2019-04-12 11:42-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,15 +14,15 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: lib/filters.php:252
+#: lib/filters.php:274
 msgid "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr "Supprimer les balises méta HTML connu en double / en conflit dans la section %1$s de la page Web."
 
-#: lib/filters.php:262
+#: lib/filters.php:284
 msgid "Remove <code>application/ld+json</code> scripts from the webpage %1$s section."
 msgstr "Supprimer les scripts <code>application/ld+json</code> de la section %1$s de la page Web."
 
-#: lib/filters.php:272
+#: lib/filters.php:294
 msgid "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section."
 msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, itemprop, etc.) de la section %1$s de la page Web."
 
@@ -66,15 +66,15 @@ msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr "Attributs HTML de Schéma"
 
-#: wpsso-strip-schema-microdata.php:101
+#: wpsso-strip-schema-microdata.php:100
 msgid "%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est un ajout pour l'extension %2$s &mdash; SVP installer et activer l'extension %3$s avant d'activer %4$s."
 
-#: wpsso-strip-schema-microdata.php:103
+#: wpsso-strip-schema-microdata.php:102
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension %3$s ou <a href=\"%4$s\">désactiver l'ajout %5$s</a>."
 
-#: wpsso-strip-schema-microdata.php:203
+#: wpsso-strip-schema-microdata.php:202
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 

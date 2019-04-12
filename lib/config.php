@@ -42,7 +42,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						),
 						'pro' => array(
 						),
-						'submenu' => array(	// Note that submenu elements must have unique keys.
+						'submenu' => array(
 							'ssm-general' => 'Strip Microdata',
 						),
 					),
