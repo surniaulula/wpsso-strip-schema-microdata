@@ -38,12 +38,12 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						'submenu' => array(	// Note that submenu elements must have unique keys.
-							'ssm-general' => 'Strip Microdata',
-						),
 						'gpl' => array(
 						),
 						'pro' => array(
+						),
+						'submenu' => array(	// Note that submenu elements must have unique keys.
+							'ssm-general' => 'Strip Microdata',
 						),
 					),
 				),
