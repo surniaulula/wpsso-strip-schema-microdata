@@ -38,8 +38,8 @@ msgstr ""
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on to remove outdated or incomplete Schema Microdata to use "
-"Google's preferred Schema JSON-LD / Rich Card markup."
+"WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use "
+"Google's preferred Schema JSON-LD for Rich Results and SEO."
 msgstr ""
 
 #: lib/submenu/ssm-general.php:36
@@ -100,8 +100,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on to remove outdated or incomplete Schema Microdata to use "
-"Google's preferred Schema JSON-LD / Rich Card markup."
+"WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use "
+"Google's preferred Schema JSON-LD for Rich Results and SEO."
 msgstr ""
 
 #. Author of the plugin/theme
