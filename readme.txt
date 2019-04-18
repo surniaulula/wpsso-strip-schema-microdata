@@ -1,4 +1,4 @@
-=== WPSSO Strip Schema Microdata for better Google Rich Cards and Pinterest Rich Pins ===
+=== WPSSO Strip Schema Microdata for better Google Rich Results and Pinterest Rich Pins ===
 Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
@@ -12,7 +12,7 @@ Requires At Least: 3.8
 Tested Up To: 5.1.1
 Stable Tag: 1.4.3
 
-WPSSO Core add-on to remove outdated or incomplete Schema Microdata to use Google's preferred Schema JSON-LD / Rich Card markup.
+WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use Google's preferred Schema JSON-LD for Rich Results and SEO.
 
 == Description ==
 
