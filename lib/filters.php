@@ -197,6 +197,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					}
 
 					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_schema_attr' ] ) ) {
+
 						$pattern[] = '/[\s\n]*<(link|meta)(\s|[^>]+\s)itemprop=[\'"][^\'"]*[\'"][^>]*>[\s\n]*/imS';
 						$replace[] = '';
 
@@ -205,7 +206,16 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					}
 
 					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_json_scripts' ] ) ) {
-						$pattern[] = '/<script type="application\/ld\+json">.*<\/script>/UimS';	// Ungreedy.
+
+						/**
+						 * U = Inverts the "greediness" of quantifiers so that they are not greedy by default.
+						 * i = Letters in the pattern match both upper and lower case letters. 
+						 * s = A dot metacharacter in the pattern matches all characters, including newlines.
+						 * S = When a pattern is used several times, spend more time analyzing it to speed up matching.
+						 *
+						 * See http://php.net/manual/en/reference.pcre.pattern.modifiers.php.
+						 */
+						$pattern[] = '/<script\b[^>]*type=["\']application\/ld\+json["\'][^>]*>.*<\/script>/UisS';
 						$replace[] = '';
 					}
 
