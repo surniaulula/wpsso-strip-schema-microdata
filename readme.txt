@@ -73,6 +73,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.4.4-rc.1 (2019/04/19)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* Fixed the Schema JSON-LD <code>&lt;script&gt;lt;script&gt;</code> matching pattern to allow for script tag attributes.
+* *Developer Notes*
+	* None.
+
 **Version 1.4.3 (2019/04/09)**
 
 * *New Features*
@@ -85,6 +96,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Maintenance release for WPSSO Core v4.27.2 config array updates.
 
 == Upgrade Notice ==
+
+= 1.4.4-rc.1 =
+
+(2019/04/19) Fixed the Schema JSON-LD <code>&lt;script&gt;lt;script&gt;</code> matching pattern to allow for script tag attributes.
 
 = 1.4.3 =
 
