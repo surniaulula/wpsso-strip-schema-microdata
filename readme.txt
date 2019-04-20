@@ -73,7 +73,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.4.4-rc.1 (2019/04/19)**
+**Version 1.4.4-rc.2 (2019/04/20)**
 
 * *New Features*
 	* None.
@@ -97,9 +97,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.4.4-rc.1 =
+= 1.4.4-rc.2 =
 
-(2019/04/19) Fixed the Schema JSON-LD <code>&lt;script&gt;lt;script&gt;</code> matching pattern to allow for script tag attributes.
+(2019/04/20) Fixed the Schema JSON-LD <code>&lt;script&gt;lt;script&gt;</code> matching pattern to allow for script tag attributes.
 
 = 1.4.3 =
 
