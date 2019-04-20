@@ -13,7 +13,7 @@
  * Description: WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use Google's preferred Schema JSON-LD for Rich Results and SEO.
  * Requires At Least: 3.8
  * Tested Up To: 5.1.1
- * Version: 1.4.4-rc.1
+ * Version: 1.4.4-rc.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
