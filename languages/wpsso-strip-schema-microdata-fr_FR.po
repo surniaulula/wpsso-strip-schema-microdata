@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata 1.4.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2019-04-19 16:33-0700\n"
-"PO-Revision-Date: 2019-04-19 16:33-0700\n"
+"POT-Creation-Date: 2019-04-23 15:35-0700\n"
+"PO-Revision-Date: 2019-04-23 15:35-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -33,8 +33,8 @@ msgstr "Supprimer microdonnées"
 
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
-msgid "WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use Google's preferred Schema JSON-LD for Rich Results and SEO."
-msgstr "Ajout WPSSO Core pour supprimer les microdonnées de Schéma obsolètes / incomplètes afin d’utiliser le balisage Schema JSON-LD / résultats riches préféré par Google."
+msgid "WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use Google's preferred Schema JSON-LD for Rich Results SEO."
+msgstr "Ajout WPSSO Core pour supprimer les microdonnées de Schéma obsolètes / incomplètes afin d'utiliser le balisage Schéma JSON-LD préféré par Google."
 
 #: lib/submenu/ssm-general.php:36
 msgctxt "metabox title"
@@ -87,8 +87,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/"
 
 #. Description of the plugin/theme
-msgid "WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use Google's preferred Schema JSON-LD for Rich Results and SEO."
-msgstr "Ajout WPSSO Core pour supprimer les microdonnées de Schéma obsolètes / incomplètes afin d’utiliser le balisage Schema JSON-LD / résultats riches préféré par Google."
+msgid "WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use Google's preferred Schema JSON-LD for Rich Results SEO."
+msgstr "Ajout WPSSO Core pour supprimer les microdonnées de Schéma obsolètes / incomplètes afin d'utiliser le balisage Schéma JSON-LD préféré par Google."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
