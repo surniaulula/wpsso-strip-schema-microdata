@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use Google's preferred Schema JSON-LD for Rich Results SEO.
  * Requires At Least: 3.8
- * Tested Up To: 5.2
+ * Tested Up To: 5.2.1
  * Version: 1.4.4
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
