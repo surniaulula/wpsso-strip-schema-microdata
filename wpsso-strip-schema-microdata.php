@@ -128,6 +128,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		}
 
 		public static function wpsso_init_textdomain() {
+
 			load_plugin_textdomain( 'wpsso-strip-schema-microdata', false, 'wpsso-strip-schema-microdata/languages/' );
 		}
 
@@ -139,7 +140,9 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			$info = WpssoSsmConfig::$cf[ 'plugin' ][ 'wpssossm' ];
 
 			if ( version_compare( $plugin_version, $info[ 'req' ][ 'min_version' ], '<' ) ) {
+
 				$this->have_req_min = false;
+
 				return $cf;
 			}
 
@@ -149,11 +152,13 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		public function wpsso_get_avail( $avail ) {
 
 			if ( ! $this->have_req_min ) {
-				$avail['p_ext']['ssm'] = false;	// Signal that this extension / add-on is not available.
+
+				$avail[ 'p_ext' ][ 'ssm' ] = false;	// Signal that this extension / add-on is not available.
+
 				return $avail;
 			}
 
-			$avail['p_ext']['ssm'] = true;		// Signal that this extension / add-on is available.
+			$avail[ 'p_ext' ][ 'ssm' ] = true;		// Signal that this extension / add-on is available.
 
 			return $avail;
 		}
