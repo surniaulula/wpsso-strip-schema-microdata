@@ -13,8 +13,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 	class WpssoSsmFilters {
 
-		protected $p;
-		protected $body_str = '<body ';
+		private $p;
+
+		private $body_str = '<body ';
 
 		public function __construct( &$plugin ) {
 
