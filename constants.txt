@@ -10,9 +10,9 @@ WPSSOSSM_URLPATH
 WPSSOSSM_VERSION
 
 /**
- * Undefined constants. Define to control specific plugin behaviors.
+ * Define in your wp-config.php file to change the default value.
  */
-WPSSOSSM_INFO_COMMENT_DISABLE	= (not defined)
-WPSSOSSM_ERROR_COMMENT_DISABLE	= (not defined)
-WPSSOSSM_ERROR_LOG_DISABLE	= (not defined)
+WPSSOSSM_INFO_COMMENT_DISABLE	= false
+WPSSOSSM_ERROR_COMMENT_DISABLE	= false
+WPSSOSSM_ERROR_LOG_DISABLE	= false
 
