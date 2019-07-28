@@ -38,7 +38,7 @@ WPSSO SSM filters are *very* fast &mdash; generally running in under 0.003 secon
 
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Fantastic tool and necessary if you want proper schema markup on your website. Many themes come with markup that is unnecessary and conflicts. This handles that perfectly." - [krisfannin](https://wordpress.org/support/topic/necessary-plugin-for-proper-schema-markup/)
 
-<h3>WPSSO Core Plugin Prerequisite</h3>
+<h3>WPSSO Core Plugin Required</h3>
 
 WPSSO Strip Schema Microdata (aka WPSSO SSM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
