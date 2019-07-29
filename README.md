@@ -1,4 +1,4 @@
-<h1>WPSSO Strip Schema Microdata for better Google Rich Results and Pinterest Rich Pins</h1>
+<h1>WPSSO Strip Schema Microdata</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Strip Schema Microdata</td></tr>

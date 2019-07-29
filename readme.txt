@@ -1,4 +1,4 @@
-=== WPSSO Strip Schema Microdata for better Google Rich Results and Pinterest Rich Pins ===
+=== WPSSO Strip Schema Microdata ===
 Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
