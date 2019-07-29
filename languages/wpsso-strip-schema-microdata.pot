@@ -39,7 +39,7 @@ msgstr ""
 msgctxt "plugin description"
 msgid ""
 "WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use "
-"Google's preferred Schema JSON-LD for Rich Results SEO."
+"Google's preferred Schema JSON-LD for SEO Rich Results."
 msgstr ""
 
 #: lib/submenu/ssm-general.php:36
@@ -101,7 +101,7 @@ msgstr ""
 #. Description of the plugin/theme
 msgid ""
 "WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use "
-"Google's preferred Schema JSON-LD for Rich Results SEO."
+"Google's preferred Schema JSON-LD for SEO Rich Results."
 msgstr ""
 
 #. Author of the plugin/theme
