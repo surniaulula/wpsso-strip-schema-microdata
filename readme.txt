@@ -1,4 +1,4 @@
-=== WPSSO Strip Schema Microdata ===
+=== Strip Schema Microdata | WPSSO Add-on ===
 Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
@@ -12,7 +12,7 @@ Requires At Least: 3.8
 Tested Up To: 5.2.2
 Stable Tag: 2.0.0
 
-WPSSO Core add-on to remove outdated / incomplete Schema Microdata to use Google's preferred Schema JSON-LD for SEO Rich Results.
+Remove outdated Schema microdata from theme templates to use Schema JSON-LD for better Google SEO Rich Results.
 
 == Description ==
 
