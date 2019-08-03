@@ -38,8 +38,8 @@ msgstr ""
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid ""
-"Remove outdated Schema microdata from theme templates to use Schema JSON-LD "
-"for better Google SEO Rich Results."
+"Removes outdated Schema microdata from theme templates and leaves Schema "
+"JSON-LD untouched for better Google SEO Rich Results."
 msgstr ""
 
 #: lib/submenu/ssm-general.php:36
@@ -100,8 +100,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Remove outdated Schema microdata from theme templates to use Schema JSON-LD "
-"for better Google SEO Rich Results."
+"Removes outdated Schema microdata from theme templates and leaves Schema "
+"JSON-LD untouched for better Google SEO Rich Results."
 msgstr ""
 
 #. Author of the plugin/theme
