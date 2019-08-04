@@ -80,19 +80,19 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 				case 'ssm-general-head_section':
 				case 'ssm-general-body_section':
 
-					$opt_prefix = 'ssm_' . preg_replace( '/_section$/', '', $tab_key );
+					$opt_pre = 'ssm_' . preg_replace( '/_section$/', '', $tab_key );
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Duplicate HTML Meta Tags',
-						'option label', 'wpsso-strip-schema-microdata' ), '', $opt_prefix . '_meta_tags' ) . 
-					'<td>' . $this->form->get_checkbox( $opt_prefix . '_meta_tags' ) . '</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', $opt_pre . '_meta_tags' ) . 
+					'<td>' . $this->form->get_checkbox( $opt_pre . '_meta_tags' ) . '</td>';
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Application/LD+JSON Scripts',
-						'option label', 'wpsso-strip-schema-microdata' ), '', $opt_prefix . '_json_scripts' ) . 
-					'<td>' . $this->form->get_checkbox( $opt_prefix . '_json_scripts' ) . '</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', $opt_pre . '_json_scripts' ) . 
+					'<td>' . $this->form->get_checkbox( $opt_pre . '_json_scripts' ) . '</td>';
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Schema HTML Attributes',
-						'option label', 'wpsso-strip-schema-microdata' ), '', $opt_prefix . '_schema_attr' ) . 
-					'<td>' . $this->form->get_checkbox( $opt_prefix . '_schema_attr' ) . '</td>';
+						'option label', 'wpsso-strip-schema-microdata' ), '', $opt_pre . '_schema_attr' ) . 
+					'<td>' . $this->form->get_checkbox( $opt_pre . '_schema_attr' ) . '</td>';
 
 					break;
 			}
