@@ -13,7 +13,7 @@
  * Description: Removes outdated Schema microdata from theme templates and leaves Schema JSON-LD untouched for better Google SEO Rich Results.
  * Requires At Least: 3.8
  * Tested Up To: 5.2.2
- * Version: 2.0.0
+ * Version: 2.0.1-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
