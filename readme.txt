@@ -73,6 +73,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.0.1-dev.1 (2019/08/05)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Minor update for "fr_FR" translations.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+
 **Version 2.0.0 (2019/06/24)**
 
 * **New Features**
@@ -84,18 +95,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Maintenance release for WPSSO Core v5.0.0.
 
-**Version 1.4.4 (2019/04/21)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed the Schema JSON-LD <code>&lt;script&gt;lt;script&gt;</code> matching pattern to allow for script tag attributes.
-* **Developer Notes**
-	* None.
-
 == Upgrade Notice ==
+
+= 2.0.1-dev.1 =
+
+(2019/08/05) Minor update for "fr_FR" translations.
 
 = 2.0.0 =
 
