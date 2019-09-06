@@ -105,9 +105,6 @@ if ( ! class_exists( 'WpssoSsmRegister' ) ) {
 
 					WpssoUtil::save_all_times( 'wpssossm', $version );
 				}
-
-			} else {
-				WpssoSsm::required_notice( $deactivate = true );
 			}
 		}
 
