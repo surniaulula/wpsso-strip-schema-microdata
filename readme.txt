@@ -10,7 +10,7 @@ Tags: structured data, rich snippets, schema, microdata, duplicate, remove, stri
 Contributors: jsmoriss
 Requires At Least: 3.9
 Tested Up To: 5.2.3
-Stable Tag: 2.0.1
+Stable Tag: 2.0.2
 
 Removes outdated Schema microdata from theme templates and leaves Schema JSON-LD untouched for better Google SEO Rich Results.
 
