@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: Removes outdated Schema microdata from theme templates and leaves Schema JSON-LD untouched for better Google SEO Rich Results.
+ * Description: Removes outdated Schema microdata from theme templates and leaves Schema JSON-LD untouched for better Google Rich Results.
  * Requires At Least: 3.9
  * Tested Up To: 5.3
  * Version: 2.0.2
