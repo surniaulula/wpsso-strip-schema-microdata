@@ -88,8 +88,8 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once WPSSOSSM_PLUGINDIR . 'lib/register.php';
 			require_once WPSSOSSM_PLUGINDIR . 'lib/filters.php';
+			require_once WPSSOSSM_PLUGINDIR . 'lib/register.php';
 
 			add_filter( 'wpssossm_load_lib', array( 'WpssoSsmConfig', 'load_lib' ), 10, 3 );
 		}
