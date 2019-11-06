@@ -23,13 +23,13 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'desc'        => 'Removes outdated Schema microdata from theme templates and leaves Schema JSON-LD untouched for better Google Rich Results.',
 					'slug'        => 'wpsso-strip-schema-microdata',
 					'base'        => 'wpsso-strip-schema-microdata/wpsso-strip-schema-microdata.php',
-					'update_auth' => '',
+					'update_auth' => '',		// No premium version.
 					'text_domain' => 'wpsso-strip-schema-microdata',
 					'domain_path' => '/languages',
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '6.11.0',
+						'min_version' => '6.11.1',
 					),
 					'assets' => array(
 						'icons' => array(
