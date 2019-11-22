@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(			// Plugin acronym.
-					'version'     => '2.0.3-dev.2',	// Plugin version.
+					'version'     => '2.0.3-dev.3',	// Plugin version.
 					'opt_version' => '3',		// Increment when changing default option values.
 					'short'       => 'WPSSO SSM',	// Short plugin name.
 					'name'        => 'WPSSO Strip Schema Microdata',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '6.13.0-dev.2',
+						'min_version' => '6.13.0-dev.3',
 					),
 					'assets' => array(
 						'icons' => array(
