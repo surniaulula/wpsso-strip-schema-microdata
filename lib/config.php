@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '6.13.2',
+						'min_version' => '6.14.0',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					),
 				),
 			),
-			'opt' => array(						// options
+			'opt' => array(
 				'defaults' => array(
 					'ssm_head_meta_tags'    => 0,
 					'ssm_head_json_scripts' => 0,
