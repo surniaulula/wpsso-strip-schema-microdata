@@ -10,7 +10,7 @@ Tags: structured data, rich snippets, schema, microdata, duplicate, remove, stri
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.9
-Tested Up To: 5.3
+Tested Up To: 5.3.1
 Stable Tag: 2.0.3
 
 Removes outdated Schema microdata from theme templates and leaves Schema JSON-LD untouched for better Google Rich Results.
@@ -54,7 +54,7 @@ WPSSO Strip Schema Microdata (aka WPSSO SSM) is an add-on for the [WPSSO Core pl
 
 == Screenshots ==
 
-01. WPSSO SSM settings page &mdash; manage options to remove of duplicate / conflicting meta tags, application/ld+json scripts, and/or Schema HTML attributes.
+01. WPSSO SSM settings page with options to remove of duplicate / conflicting meta tags, application/ld+json scripts, and/or Schema HTML attributes.
 
 == Changelog ==
 
