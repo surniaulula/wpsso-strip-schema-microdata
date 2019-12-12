@@ -42,32 +42,32 @@ msgid ""
 "JSON-LD untouched for better Google Rich Results."
 msgstr ""
 
-#: lib/submenu/ssm-general.php:36
+#: lib/submenu/ssm-general.php:55
 msgctxt "metabox title"
 msgid "Strip Schema Microdata"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:55
+#: lib/submenu/ssm-general.php:74
 msgctxt "metabox tab"
 msgid "Body Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:56
+#: lib/submenu/ssm-general.php:75
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:85
+#: lib/submenu/ssm-general.php:104
 msgctxt "option label"
 msgid "Duplicate HTML Meta Tags"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:89
+#: lib/submenu/ssm-general.php:108
 msgctxt "option label"
 msgid "Application/LD+JSON Scripts"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:93
+#: lib/submenu/ssm-general.php:112
 msgctxt "option label"
 msgid "Schema HTML Attributes"
 msgstr ""
