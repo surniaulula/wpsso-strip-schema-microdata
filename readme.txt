@@ -10,7 +10,7 @@ Tags: structured data, rich snippets, schema, microdata, duplicate, remove, stri
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.9
-Tested Up To: 5.3.1
+Tested Up To: 5.3.2
 Stable Tag: 2.0.3
 
 Removes outdated Schema microdata from theme templates and leaves Schema JSON-LD untouched for better Google Rich Results.
