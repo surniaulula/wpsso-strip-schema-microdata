@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata 2.0.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
 "POT-Creation-Date: 2019-11-23 11:20-0800\n"
-"PO-Revision-Date: 2019-11-23 11:20-0800\n"
+"PO-Revision-Date: 2020-01-06 12:45-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -29,7 +29,7 @@ msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, itemprop, 
 #: lib/gettext-config.php:6
 msgctxt "lib file description"
 msgid "Strip Microdata"
-msgstr "Supprimer microdonnées"
+msgstr "Supprimer les microdonnées"
 
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
@@ -39,7 +39,7 @@ msgstr "Supprime les microdonnées de Schéma obsolètes des modèles de thème 
 #: lib/submenu/ssm-general.php:36
 msgctxt "metabox title"
 msgid "Strip Schema Microdata"
-msgstr "Supprimer microdonnées de Schéma"
+msgstr "Supprimer les microdonnées de Schéma"
 
 #: lib/submenu/ssm-general.php:55
 msgctxt "metabox tab"
