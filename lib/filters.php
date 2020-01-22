@@ -32,6 +32,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 			$this->p =& $plugin;
 
+			$min_int = SucomUtil::get_min_int();
+
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
@@ -67,7 +69,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					$this->p->debug->log( 'adding template_redirect action for output_buffer_start' );
 				}
 
-				add_action( 'template_redirect', array( $this, 'output_buffer_start' ), -1000000000 );
+				add_action( 'template_redirect', array( $this, 'output_buffer_start' ), $min_int );
 			}
 		}
 
