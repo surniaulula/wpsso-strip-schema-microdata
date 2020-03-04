@@ -11,7 +11,7 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Removes outdated Schema microdata from theme templates and leaves Schema JSON-LD untouched for better Google Rich Results.
- * Requires PHP: 5.5
+ * Requires PHP: 5.6
  * Requires At Least: 4.0
  * Tested Up To: 5.4
  * Version: 2.0.3
