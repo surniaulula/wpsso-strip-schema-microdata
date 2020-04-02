@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(			// Plugin acronym.
-					'version'     => '2.0.3',	// Plugin version.
+					'version'     => '2.1.0-dev.1',	// Plugin version.
 					'opt_version' => '3',		// Increment when changing default option values.
 					'short'       => 'WPSSO SSM',	// Short plugin name.
 					'name'        => 'WPSSO Strip Schema Microdata',
@@ -26,17 +26,31 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'update_auth' => '',		// No premium version.
 					'text_domain' => 'wpsso-strip-schema-microdata',
 					'domain_path' => '/languages',
-					'req'         => array(
-						'short'       => 'WPSSO Core',
-						'name'        => 'WPSSO Core',
-						'min_version' => '6.27.1',
+
+					/**
+					 * Required plugin and its version.
+					 */
+					'req' => array(
+						'wpsso' => array(
+							'class'       => 'Wpsso',
+							'name'        => 'WPSSO Core',
+							'min_version' => '6.27.1',
+						),
 					),
+
+					/**
+					 * Relative paths to asset images.
+					 */
 					'assets' => array(
 						'icons' => array(
 							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
 						),
 					),
+
+					/**
+					 * Library files loaded and instantiated by WPSSO.
+					 */
 					'lib' => array(
 						'pro' => array(
 						),
@@ -48,6 +62,10 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					),
 				),
 			),
+
+			/**
+			 * Additional add-on setting options.
+			 */
 			'opt' => array(
 				'defaults' => array(
 					'ssm_head_meta_tags'    => 0,
