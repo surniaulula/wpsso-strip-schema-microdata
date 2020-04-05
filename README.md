@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Strip Schema Microdata</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>Removes outdated Schema microdata from theme templates and leaves Schema JSON-LD untouched for better Google Rich Results.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>Remove Outdated / Incorrect Microdata from Theme Templates for Better Google Rich Results with Schema JSON-LD Markup.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.3</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.6 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.2 or newer</td></tr>
