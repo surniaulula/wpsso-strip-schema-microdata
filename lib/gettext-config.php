@@ -4,4 +4,4 @@
  * Extract of translatable text strings from the static config array.
  */
 _x( 'Strip Microdata', 'lib file description', 'wpsso-strip-schema-microdata' );
-_x( 'Removes outdated Schema microdata from theme templates and leaves Schema JSON-LD untouched for better Google Rich Results.', 'plugin description', 'wpsso-strip-schema-microdata' );
+_x( 'Remove Outdated / Incorrect Microdata from Theme Templates for Better Google Rich Results with Schema JSON-LD Markup.', 'plugin description', 'wpsso-strip-schema-microdata' );
