@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Strip Schema Microdata package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 2.1.0-rc.3\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 2.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -78,7 +78,7 @@ msgid ""
 "plugin or <a href=\"%3$s\">deactivate this add-on</a>."
 msgstr ""
 
-#: wpsso-strip-schema-microdata.php:218
+#: wpsso-strip-schema-microdata.php:223
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
