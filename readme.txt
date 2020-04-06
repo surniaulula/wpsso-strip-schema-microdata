@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.2
 Tested Up To: 5.4
-Stable Tag: 2.0.3
+Stable Tag: 2.1.0
 
 Remove Outdated / Incorrect Microdata from Theme Templates for Better Google Rich Results with Schema JSON-LD Markup.
 
