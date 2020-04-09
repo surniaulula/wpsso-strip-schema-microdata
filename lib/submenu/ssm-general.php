@@ -71,8 +71,8 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 			$filter_name = SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_tabs' );
 
 			$tabs = apply_filters( $filter_name, array(
-				'body_section' => _x( 'Body Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
-				'head_section' => _x( 'Head Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
+				'html_body' => _x( 'Document Body', 'metabox tab', 'wpsso-strip-schema-microdata' ),
+				'html_head' => _x( 'Document Head', 'metabox tab', 'wpsso-strip-schema-microdata' ),
 			) );
 
 			$table_rows = array();
@@ -96,10 +96,10 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 
 			switch ( $metabox_id . '-' . $tab_key ) {
 
-				case 'ssm-general-head_section':
-				case 'ssm-general-body_section':
+				case 'ssm-general-html_head':
+				case 'ssm-general-html_body':
 
-					$opt_pre = 'ssm_' . preg_replace( '/_section$/', '', $tab_key );
+					$opt_pre = 'ssm_' . preg_replace( '/^html_/', '', $tab_key );
 
 					$table_rows[] = $this->form->get_th_html( _x( 'Duplicate HTML Meta Tags',
 						'option label', 'wpsso-strip-schema-microdata' ), '', $opt_pre . '_meta_tags' ) . 

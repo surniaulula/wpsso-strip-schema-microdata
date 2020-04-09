@@ -49,12 +49,12 @@ msgstr ""
 
 #: lib/submenu/ssm-general.php:74
 msgctxt "metabox tab"
-msgid "Body Section"
+msgid "Document Body"
 msgstr ""
 
 #: lib/submenu/ssm-general.php:75
 msgctxt "metabox tab"
-msgid "Head Section"
+msgid "Document Head"
 msgstr ""
 
 #: lib/submenu/ssm-general.php:104
