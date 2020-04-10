@@ -74,6 +74,27 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.2.0-dev.1 (TBD)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Updated the SSO &gt; Strip Microdata settings tab labels:
+		* Document Body
+		* Document Head
+	* Updated the SSO &gt; Strip Microdata settings option labels:
+		* Strip Duplicate HTML Meta Tags
+		* Strip "application/ld+json" Scripts
+		* Strip Schema Microdata Attributes
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.2.
+	* WPSSO Core v6.28.0.
+
 **Version 2.1.0 (2020/04/06)**
 
 * **New Features**
