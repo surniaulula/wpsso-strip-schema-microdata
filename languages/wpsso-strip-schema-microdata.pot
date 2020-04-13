@@ -49,25 +49,25 @@ msgstr ""
 
 #: lib/submenu/ssm-general.php:74
 msgctxt "metabox tab"
-msgid "Document Body"
+msgid "Body Section"
 msgstr ""
 
 #: lib/submenu/ssm-general.php:75
 msgctxt "metabox tab"
-msgid "Document Head"
+msgid "Head Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:105
+#: lib/submenu/ssm-general.php:104
 msgctxt "option label"
 msgid "Strip Duplicate HTML Meta Tags"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:110
+#: lib/submenu/ssm-general.php:113
 msgctxt "option label"
 msgid "Strip \"application/ld+json\" Scripts"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:115
+#: lib/submenu/ssm-general.php:118
 msgctxt "option label"
 msgid "Strip Schema Microdata Attributes"
 msgstr ""
