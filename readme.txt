@@ -80,8 +80,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * **Improvements**
 	* Updated the SSO &gt; Strip Microdata settings tab labels:
-		* Document Body
-		* Document Head
+		* Body Section
+		* Head Section
 	* Updated the SSO &gt; Strip Microdata settings option labels:
 		* Strip Duplicate HTML Meta Tags
 		* Strip "application/ld+json" Scripts
