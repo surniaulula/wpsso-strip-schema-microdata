@@ -52,7 +52,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 		protected function add_meta_boxes() {
 
 			$metabox_id      = 'general';
-			$metabox_title   = _x( 'Strip Schema Microdata', 'metabox title', 'wpsso-strip-schema-microdata' );
+			$metabox_title   = _x( 'Strip Schema Microdata and More', 'metabox title', 'wpsso-strip-schema-microdata' );
 			$metabox_screen  = $this->pagehook;
 			$metabox_context = 'normal';
 			$metabox_prio    = 'default';
@@ -71,8 +71,8 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 			$filter_name = SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_tabs' );
 
 			$tabs = apply_filters( $filter_name, array(
-				'body_section' => _x( 'Body Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
 				'head_section' => _x( 'Head Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
+				'body_section' => _x( 'Body Section', 'metabox tab', 'wpsso-strip-schema-microdata' ),
 			) );
 
 			$table_rows = array();

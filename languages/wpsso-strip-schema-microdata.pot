@@ -44,17 +44,17 @@ msgstr ""
 
 #: lib/submenu/ssm-general.php:55
 msgctxt "metabox title"
-msgid "Strip Schema Microdata"
+msgid "Strip Schema Microdata and More"
 msgstr ""
 
 #: lib/submenu/ssm-general.php:74
 msgctxt "metabox tab"
-msgid "Body Section"
+msgid "Head Section"
 msgstr ""
 
 #: lib/submenu/ssm-general.php:75
 msgctxt "metabox tab"
-msgid "Head Section"
+msgid "Body Section"
 msgstr ""
 
 #: lib/submenu/ssm-general.php:104

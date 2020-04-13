@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata 2.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2020-04-05 15:51-0700\n"
-"PO-Revision-Date: 2020-04-05 15:51-0700\n"
+"POT-Creation-Date: 2020-04-12 18:02-0700\n"
+"PO-Revision-Date: 2020-04-12 18:02-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -38,39 +38,39 @@ msgstr "Supprimez les microdonnées obsolètes / incorrectes des modèles de th�
 
 #: lib/submenu/ssm-general.php:55
 msgctxt "metabox title"
-msgid "Strip Schema Microdata"
-msgstr "Supprimer les microdonnées de Schéma"
+msgid "Strip Schema Microdata and More"
+msgstr "Supprimer microdonnées de Schéma et plus"
 
 #: lib/submenu/ssm-general.php:74
-msgctxt "metabox tab"
-msgid "Body Section"
-msgstr "Section de corps"
-
-#: lib/submenu/ssm-general.php:75
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr "Section d'entête"
 
+#: lib/submenu/ssm-general.php:75
+msgctxt "metabox tab"
+msgid "Body Section"
+msgstr "Section de corps"
+
 #: lib/submenu/ssm-general.php:104
 msgctxt "option label"
-msgid "Duplicate HTML Meta Tags"
-msgstr "Doublons de balises méta HTML"
+msgid "Strip Duplicate HTML Meta Tags"
+msgstr "Supprimer balises méta HTML en double"
 
-#: lib/submenu/ssm-general.php:108
+#: lib/submenu/ssm-general.php:113
 msgctxt "option label"
-msgid "Application/LD+JSON Scripts"
-msgstr "Scripts application/ld+json"
+msgid "Strip \"application/ld+json\" Scripts"
+msgstr "Supprimer scripts \"application/ld+json\""
 
-#: lib/submenu/ssm-general.php:112
+#: lib/submenu/ssm-general.php:118
 msgctxt "option label"
-msgid "Schema HTML Attributes"
-msgstr "Attributs HTML de Schéma"
+msgid "Strip Schema Microdata Attributes"
+msgstr "Supprimer attributs de microdonnées"
 
-#: wpsso-strip-schema-microdata.php:119
+#: wpsso-strip-schema-microdata.php:118
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the plugin or <a href=\"%3$s\">deactivate this add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension ou <a href=\"%3$s\">désactiver cet ajout</a>."
 
-#: wpsso-strip-schema-microdata.php:225
+#: wpsso-strip-schema-microdata.php:223
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
