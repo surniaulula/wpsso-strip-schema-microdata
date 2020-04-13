@@ -44,7 +44,7 @@ msgstr ""
 
 #: lib/submenu/ssm-general.php:55
 msgctxt "metabox title"
-msgid "Strip Schema Microdata and More"
+msgid "Strip Schema Microdata Settings"
 msgstr ""
 
 #: lib/submenu/ssm-general.php:74
