@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 2.1.0\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 2.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2020-04-12 18:02-0700\n"
-"PO-Revision-Date: 2020-04-12 18:02-0700\n"
+"POT-Creation-Date: 2020-04-16 07:00-0700\n"
+"PO-Revision-Date: 2020-04-16 07:03-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -38,8 +38,8 @@ msgstr "Supprimez les microdonnées obsolètes / incorrectes des modèles de th�
 
 #: lib/submenu/ssm-general.php:55
 msgctxt "metabox title"
-msgid "Strip Schema Microdata and More"
-msgstr "Supprimer microdonnées de Schéma et plus"
+msgid "Strip Schema Microdata Settings"
+msgstr "Réglages supprimer microdonnées de Schéma"
 
 #: lib/submenu/ssm-general.php:74
 msgctxt "metabox tab"
