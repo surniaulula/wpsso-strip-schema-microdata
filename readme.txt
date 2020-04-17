@@ -74,15 +74,15 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-rc.1 (2020/04/16)**
+**Version 2.2.0 (2020/04/17)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Updated the SSO &gt; Strip Microdata settings tab labels:
+	* Updated the SSO &gt; Strip Microdata settings page tab labels:
 		* Body Section
 		* Head Section
-	* Updated the SSO &gt; Strip Microdata settings option labels:
+	* Updated the SSO &gt; Strip Microdata settings page option labels:
 		* Strip Duplicate HTML Meta Tags
 		* Strip "application/ld+json" Scripts
 		* Strip Schema Microdata Attributes
@@ -93,7 +93,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.0.0-rc.1.
+	* WPSSO Core v7.0.0.
 
 **Version 2.1.0 (2020/04/06)**
 
@@ -127,9 +127,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.2.0-rc.1 =
+= 2.2.0 =
 
-(2020/04/16) Updated the SSO &gt; Strip Microdata settings tab and option labels.
+(2020/04/17) Updated the SSO &gt; Strip Microdata settings page tab and option labels.
 
 = 2.1.0 =
 
