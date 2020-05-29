@@ -74,7 +74,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.3.1-rc.2 (2020/05/09)**
+**Version 2.3.1 (2020/05/09)**
 
 * **New Features**
 	* None.
@@ -87,7 +87,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.7.0-rc.2.
+	* WPSSO Core v7.7.0.
 
 **Version 2.3.0 (2020/05/09)**
 
@@ -157,7 +157,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.3.1-rc.2 =
+= 2.3.1 =
 
 (2020/05/30) Fixed the missing help popup in the Strip Microdata settings page.
 
