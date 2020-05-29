@@ -74,6 +74,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.3.1-rc.2 (2020/05/09)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed the missing help popup in the Strip Microdata settings page.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.2.
+	* WPSSO Core v7.7.0-rc.2.
+
 **Version 2.3.0 (2020/05/09)**
 
 * **New Features**
@@ -141,6 +156,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v6.27.1.
 
 == Upgrade Notice ==
+
+= 2.3.1-rc.2 =
+
+(2020/05/30) Fixed the missing help popup in the Strip Microdata settings page.
 
 = 2.3.0 =
 
