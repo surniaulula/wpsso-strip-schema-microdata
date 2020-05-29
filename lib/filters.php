@@ -291,8 +291,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 			switch ( $msg_key ) {
 
-				case 'tooltip-ssm_head_meta_tags':
-				case 'tooltip-ssm_body_meta_tags':
+				case 'tooltip-ssm_head_section_meta_tags':
+				case 'tooltip-ssm_body_section_meta_tags':
 
 					if ( isset( $section ) ) {	// just in case
 						$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.',
@@ -301,8 +301,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					break;
 
-				case 'tooltip-ssm_head_json_scripts':
-				case 'tooltip-ssm_body_json_scripts':
+				case 'tooltip-ssm_head_section_json_scripts':
+				case 'tooltip-ssm_body_section_json_scripts':
 
 					if ( isset( $section ) ) {	// just in case
 						$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.',
@@ -311,8 +311,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					break;
 
-				case 'tooltip-ssm_head_schema_attr':
-				case 'tooltip-ssm_body_schema_attr':
+				case 'tooltip-ssm_head_section_schema_attr':
+				case 'tooltip-ssm_body_section_schema_attr':
 
 					if ( isset( $section ) ) {	// just in case
 						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
