@@ -13,25 +13,19 @@ Requires At Least: 4.2
 Tested Up To: 5.4.2
 Stable Tag: 2.3.1
 
-Remove Outdated / Incorrect Microdata from Theme Templates for Better Google Rich Results with Schema JSON-LD Markup.
+Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
 
 == Description ==
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png"></p>
 
-**Want to remove incorrect or incomplete Schema Microdata from your webpages and/or theme templates?**
+**Are Google and Pinterest picking up incorrect Schema from your theme templates?**
 
-**Want to remove incorrect Microdata added by 3rd party plugins from your content?**
+**Want to remove old Schema Microdata and RDFa markup from your theme templates?**
 
-**Want to remove duplicate social or SEO meta tags from the webpage head section?**
+**Want to remove duplicate social and SEO meta tags from the webpage head section?**
 
-**Is Pinterest picking up duplicate or incorrect Schema from your theme templates?**
-
-The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes Schema Microdata markup from the webpage body section, leaving Schema JSON-LD markup and Schema meta tags in the head section untouched. A Strip Microdata settings page also allows you to enable the removal of duplicate / conflicting meta tags from the webpage head section.
-
-WPSSO SSM filters the webpage content dynamically, allowing you to activate / deactivate the add-on as desired to enable / disable the removal of Schema Microdata.
-
-WPSSO SSM filters are *very* fast &mdash; generally running in under 0.003 seconds!
+The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes old Schema Microdata and RDFa markup from the webpage. The settings page also provides for the removal of duplicate / conflicting social and SEO meta tags. WPSSO SSM filters the webpage dynamically, allowing you to activate / deactivate the add-on to easily enable / disable the removal of old Schema Midata, RDFa, and duplicate meta tags. WPSSO SSM filters are *very* fast &mdash; generally running in under 0.003 seconds!
 
 <h3>Users Love the WPSSO SSM Add-on</h3>
 
@@ -74,6 +68,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.4.0-dev.2 (2020/06/16)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added removal of the "vocab" and "typeof" HTML tag attributes.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.2.
+	* WPSSO Core v7.10.0-dev.2.
+
 **Version 2.3.1 (2020/05/09)**
 
 * **New Features**
@@ -104,76 +113,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.2.
 	* WPSSO Core v7.5.0.
 
-**Version 2.2.0 (2020/04/17)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the SSO &gt; Strip Microdata settings page tab labels:
-		* Body Section
-		* Head Section
-	* Updated the SSO &gt; Strip Microdata settings page option labels:
-		* Strip Duplicate HTML Meta Tags
-		* Strip "application/ld+json" Scripts
-		* Strip Schema Microdata Attributes
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.3.0.
-
-**Version 2.1.0 (2020/04/06)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated "Requires At Least" to WordPress v4.2.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored WPSSO Core active and minimum version dependency checks.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v6.28.0.
-
-**Version 2.0.3 (2019/11/23)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated `WpssoSsmRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.0.
-	* WPSSO Core v6.27.1.
-
 == Upgrade Notice ==
+
+= 2.4.0-dev.2 =
+
+(2020/06/16) Added removal of the "vocab" and "typeof" HTML tag attributes.
 
 = 2.3.1 =
 
 (2020/05/30) Fixed the missing help popup in the Strip Microdata settings page.
-
-= 2.3.0 =
-
-(2020/05/09) Refactored the required plugin check to (optionally) check the class name and a version constant.
-
-= 2.2.0 =
-
-(2020/04/17) Updated the SSO &gt; Strip Microdata settings page tab and option labels.
-
-= 2.1.0 =
-
-(2020/04/06) Updated "Requires At Least" to WordPress v4.2. Refactored WPSSO Core active and minimum version dependency checks.
-
-= 2.0.3 =
-
-(2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core.
 
