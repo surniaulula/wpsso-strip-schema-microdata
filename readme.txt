@@ -68,7 +68,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.4.0-b.1 (2020/06/18)**
+**Version 2.4.0-rc.1 (2020/06/19)**
 
 * **New Features**
 	* None.
@@ -81,7 +81,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.10.0-b.1.
+	* WPSSO Core v7.10.0-rc.1.
 
 **Version 2.3.1 (2020/05/09)**
 
@@ -115,9 +115,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.4.0-b.1 =
+= 2.4.0-rc.1 =
 
-(2020/06/18) Added removal of the "vocab" and "typeof" HTML tag attributes.
+(2020/06/19) Added removal of the "vocab" and "typeof" HTML tag attributes.
 
 = 2.3.1 =
 
