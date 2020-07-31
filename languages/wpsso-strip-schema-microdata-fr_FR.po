@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata 2.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2020-05-29 07:29-0700\n"
-"PO-Revision-Date: 2020-05-29 07:29-0700\n"
+"POT-Creation-Date: 2020-07-31 07:13-0700\n"
+"PO-Revision-Date: 2020-07-31 07:13-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,15 +14,15 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: lib/filters.php:298
+#: lib/filters.php:314
 msgid "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr "Supprimer les balises méta HTML connu en double / en conflit dans la section %1$s de la page Web."
 
-#: lib/filters.php:308
+#: lib/filters.php:324
 msgid "Remove <code>application/ld+json</code> scripts from the webpage %1$s section."
 msgstr "Supprimer les scripts <code>application/ld+json</code> de la section %1$s de la page Web."
 
-#: lib/filters.php:318
+#: lib/filters.php:334
 msgid "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section."
 msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, itemprop, etc.) de la section %1$s de la page Web."
 
@@ -36,32 +36,32 @@ msgctxt "plugin description"
 msgid "Remove Outdated / Incorrect Microdata from Theme Templates for Better Google Rich Results with Schema JSON-LD Markup."
 msgstr "Supprimez les microdonnées obsolètes / incorrectes des modèles de thème pour de meilleurs résultats riches de Google avec le balisage de Schéma JSON-LD."
 
-#: lib/submenu/ssm-general.php:55
+#: lib/submenu/ssm-general.php:60
 msgctxt "metabox title"
 msgid "Strip Schema Microdata Settings"
 msgstr "Réglages supprimer microdonnées de Schéma"
 
-#: lib/submenu/ssm-general.php:74
+#: lib/submenu/ssm-general.php:79
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr "Section d'entête"
 
-#: lib/submenu/ssm-general.php:75
+#: lib/submenu/ssm-general.php:80
 msgctxt "metabox tab"
 msgid "Body Section"
 msgstr "Section de corps"
 
-#: lib/submenu/ssm-general.php:104
+#: lib/submenu/ssm-general.php:109
 msgctxt "option label"
 msgid "Strip Duplicate HTML Meta Tags"
 msgstr "Supprimer balises méta HTML en double"
 
-#: lib/submenu/ssm-general.php:113
+#: lib/submenu/ssm-general.php:118
 msgctxt "option label"
 msgid "Strip \"application/ld+json\" Scripts"
 msgstr "Supprimer scripts \"application/ld+json\""
 
-#: lib/submenu/ssm-general.php:118
+#: lib/submenu/ssm-general.php:123
 msgctxt "option label"
 msgid "Strip Schema Microdata Attributes"
 msgstr "Supprimer attributs de microdonnées"
