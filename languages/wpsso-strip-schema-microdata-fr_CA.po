@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 2.3.1\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 2.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2020-07-31 07:13-0700\n"
-"PO-Revision-Date: 2020-07-31 07:13-0700\n"
+"POT-Creation-Date: 2020-08-02 10:43-0700\n"
+"PO-Revision-Date: 2020-08-02 10:43-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -66,11 +66,11 @@ msgctxt "option label"
 msgid "Strip Schema Microdata Attributes"
 msgstr "Supprimer attributs de microdonnées"
 
-#: wpsso-strip-schema-microdata.php:241
+#: wpsso-strip-schema-microdata.php:249
 msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
 msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s &mdash; veuillez activer l'extension manquante."
 
-#: wpsso-strip-schema-microdata.php:244
+#: wpsso-strip-schema-microdata.php:252
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
