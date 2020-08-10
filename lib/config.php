@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -16,7 +17,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(			// Plugin acronym.
-					'version'     => '2.6.0-dev.10',	// Plugin version.
+					'version'     => '2.6.0-b.1',	// Plugin version.
 					'opt_version' => '3',		// Increment when changing default option values.
 					'short'       => 'WPSSO SSM',	// Short plugin name.
 					'name'        => 'WPSSO Strip Schema Microdata',
@@ -36,7 +37,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.0.0-dev.10',
+							'min_version'   => '8.0.0-b.1',
 						),
 					),
 
@@ -90,6 +91,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static function set_constants( $plugin_file_path ) { 
 
 			if ( defined( 'WPSSOSSM_VERSION' ) ) {	// Define constants only once.
+
 				return;
 			}
 
