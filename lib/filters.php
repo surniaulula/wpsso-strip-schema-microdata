@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -19,12 +20,10 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 		public function __construct( &$plugin ) {
 
-			/**
-			 * Just in case - prevent filters from being hooked and executed more than once.
-			 */
 			static $do_once = null;
 
 			if ( true === $do_once ) {
+
 				return;	// Stop here.
 			}
 
@@ -35,6 +34,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			$min_int = SucomUtil::get_min_int();
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -47,6 +47,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			} else {
 
 				if ( is_admin() ) {
+
 					$this->p->util->add_plugin_filters( $this, array( 
 						'messages_tooltip' => 2,	// Tooltip messages filter.
 					) );
@@ -66,6 +67,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				}
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'adding template_redirect action for output_buffer_start' );
 				}
 
@@ -76,6 +78,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 		public function output_buffer_start() {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->log( 'output buffering started' );
 			}
 
@@ -85,6 +88,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 		public function strip_schema_microdata( $buffer ) {
 
 			if ( empty( $buffer ) || is_feed() ) {
+
 				return $buffer;
 			}
 
@@ -156,6 +160,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					$mt_mark_matched = preg_match( $this->p->head->get_mt_mark( 'preg' ), $doc[ 'head' ], $matches, PREG_OFFSET_CAPTURE );
 	
 					if ( $mt_mark_matched ) {
+
 						$doc[ 'mt_html' ] = $matches[0][0];
 						$doc[ 'mt_pos' ]  = $matches[0][1];
 						$doc[ 'head' ]    = substr_replace( $doc[ 'head' ], $mt_placeholder, $doc[ 'mt_pos' ], strlen( $doc[ 'mt_html' ] ) );
@@ -192,6 +197,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 										$this->p->options, false, '' ) as $name => $value ) {
 
 										if ( ! empty( $value ) && $name !== 'generator' ) {
+
 											$names[] = $name;
 										}
 									}
@@ -277,16 +283,16 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					return $doc[ 'head' ] . $doc[ 'body' ] . 
 						'<!-- ' . $log_prefix . ' = ' . $total_count . ' matches removed in ' . 
 							$loop_iter . ' interations and ' . sprintf( '%f secs', $mtime_total ) . ' -->';
-				} else {
-
-					return $doc[ 'head' ] . $doc[ 'body' ];
 				}
+
+				return $doc[ 'head' ] . $doc[ 'body' ];
 			}
 		}
 
 		public function filter_messages_tooltip( $text, $msg_key ) {
 
 			if ( strpos( $msg_key, 'tooltip-ssm_' ) !== 0 ) {
+
 				return $text;
 			}
 
@@ -310,7 +316,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				case 'tooltip-ssm_head_section_meta_tags':
 				case 'tooltip-ssm_body_section_meta_tags':
 
-					if ( isset( $section ) ) {	// just in case
+					if ( isset( $section ) ) {	// Just in case.
+
 						$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.',
 							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
 					}
@@ -320,7 +327,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				case 'tooltip-ssm_head_section_json_scripts':
 				case 'tooltip-ssm_body_section_json_scripts':
 
-					if ( isset( $section ) ) {	// just in case
+					if ( isset( $section ) ) {	// Just in case.
+
 						$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.',
 							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
 					}
@@ -330,7 +338,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				case 'tooltip-ssm_head_section_schema_attr':
 				case 'tooltip-ssm_body_section_schema_attr':
 
-					if ( isset( $section ) ) {	// just in case
+					if ( isset( $section ) ) {	// Just in case.
+
 						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
 							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
 					}
