@@ -13,6 +13,18 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
+#: gettext/gettext-config.php:6 lib/gettext-config.php:6
+msgctxt "lib file description"
+msgid "Strip Microdata"
+msgstr ""
+
+#: gettext/gettext-config.php:7 lib/gettext-config.php:7
+msgctxt "plugin description"
+msgid ""
+"Remove Outdated / Incorrect Microdata from Theme Templates for Better Google "
+"Rich Results with Schema JSON-LD Markup."
+msgstr ""
+
 #: lib/filters.php:321
 msgid ""
 "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
@@ -28,18 +40,6 @@ msgstr ""
 msgid ""
 "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the "
 "webpage %1$s section."
-msgstr ""
-
-#: lib/gettext-config.php:6
-msgctxt "lib file description"
-msgid "Strip Microdata"
-msgstr ""
-
-#: lib/gettext-config.php:7
-msgctxt "plugin description"
-msgid ""
-"Remove Outdated / Incorrect Microdata from Theme Templates for Better Google "
-"Rich Results with Schema JSON-LD Markup."
 msgstr ""
 
 #: lib/submenu/ssm-general.php:60
