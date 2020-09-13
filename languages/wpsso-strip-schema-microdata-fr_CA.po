@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata 2.6.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2020-08-11 12:10-0700\n"
-"PO-Revision-Date: 2020-08-11 12:10-0700\n"
+"POT-Creation-Date: 2020-09-13 12:23-0700\n"
+"PO-Revision-Date: 2020-09-13 12:23-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,27 +14,27 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: lib/filters.php:314
-msgid "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
-msgstr "Supprimer les balises méta HTML connu en double / en conflit dans la section %1$s de la page Web."
-
-#: lib/filters.php:324
-msgid "Remove <code>application/ld+json</code> scripts from the webpage %1$s section."
-msgstr "Supprimer les scripts <code>application/ld+json</code> de la section %1$s de la page Web."
-
-#: lib/filters.php:334
-msgid "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section."
-msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, itemprop, etc.) de la section %1$s de la page Web."
-
-#: lib/gettext-config.php:6
+#: gettext/gettext-config.php:6 lib/gettext-config.php:6
 msgctxt "lib file description"
 msgid "Strip Microdata"
 msgstr "Supprimer les microdonnées"
 
-#: lib/gettext-config.php:7
+#: gettext/gettext-config.php:7 lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid "Remove Outdated / Incorrect Microdata from Theme Templates for Better Google Rich Results with Schema JSON-LD Markup."
 msgstr "Supprimez les microdonnées obsolètes / incorrectes des modèles de thème pour de meilleurs résultats riches de Google avec le balisage de Schéma JSON-LD."
+
+#: lib/filters.php:321
+msgid "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
+msgstr "Supprimer les balises méta HTML connu en double / en conflit dans la section %1$s de la page Web."
+
+#: lib/filters.php:332
+msgid "Remove <code>application/ld+json</code> scripts from the webpage %1$s section."
+msgstr "Supprimer les scripts <code>application/ld+json</code> de la section %1$s de la page Web."
+
+#: lib/filters.php:343
+msgid "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section."
+msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, itemprop, etc.) de la section %1$s de la page Web."
 
 #: lib/submenu/ssm-general.php:60
 msgctxt "metabox title"
