@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 2.6.0\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 2.6.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2020-09-14 11:18-0700\n"
-"PO-Revision-Date: 2020-09-15 09:02-0700\n"
+"POT-Creation-Date: 2020-09-15 11:07-0700\n"
+"PO-Revision-Date: 2020-09-15 11:07-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -20,6 +20,11 @@ msgid "Strip Microdata"
 msgstr "Supprimer les microdonnées"
 
 #: gettext/gettext-lib-config.php:7
+msgctxt "plugin name"
+msgid "WPSSO Strip Schema Microdata"
+msgstr "WPSSO supprimer microdonnées de Schéma"
+
+#: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
 msgid "Remove Outdated / Incorrect Microdata from Theme Templates for Better Google Rich Results with Schema JSON-LD Markup."
 msgstr "Supprimez les microdonnées obsolètes / incorrectes des modèles de thème pour de meilleurs résultats riches de Google avec le balisage de Schéma JSON-LD."
