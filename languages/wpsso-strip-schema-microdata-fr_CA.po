@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata 2.6.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
 "POT-Creation-Date: 2020-09-14 11:18-0700\n"
-"PO-Revision-Date: 2020-09-14 11:18-0700\n"
+"PO-Revision-Date: 2020-09-15 09:02-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -76,7 +76,7 @@ msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente 
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Strip Schema Microdata"
-msgstr "WPSSO Strip Schema Microdata"
+msgstr "WPSSO supprimer microdonnées de Schéma"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/"

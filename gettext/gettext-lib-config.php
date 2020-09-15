@@ -4,4 +4,5 @@
  * Extract of translatable strings from lib/config.php.
  */
 _x( 'Strip Microdata', 'lib file description', 'wpsso-strip-schema-microdata' );
+_x( 'WPSSO Strip Schema Microdata', 'plugin name', 'wpsso-strip-schema-microdata' );
 _x( 'Remove Outdated / Incorrect Microdata from Theme Templates for Better Google Rich Results with Schema JSON-LD Markup.', 'plugin description', 'wpsso-strip-schema-microdata' );
