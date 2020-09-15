@@ -13,7 +13,7 @@
  * Description: Remove Outdated / Incorrect Microdata from Theme Templates for Better Google Rich Results with Schema JSON-LD Markup.
  * Requires PHP: 5.6
  * Requires At Least: 4.2
- * Tested Up To: 5.5
+ * Tested Up To: 5.5.1
  * Version: 2.6.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
