@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Remove Outdated / Incorrect Microdata from Theme Templates for Better Google Rich Results with Schema JSON-LD Markup.
  * Requires PHP: 5.6
- * Requires At Least: 4.2
+ * Requires At Least: 4.4
  * Tested Up To: 5.5.1
  * Version: 2.6.1
  * 
