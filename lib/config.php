@@ -88,7 +88,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_file_path ) { 
+		public static function set_constants( $plugin_file ) { 
 
 			if ( defined( 'WPSSOSSM_VERSION' ) ) {	// Define constants only once.
 
@@ -100,15 +100,15 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOSSM_FILEPATH', $plugin_file_path );						
+			define( 'WPSSOSSM_FILEPATH', $plugin_file );						
 			define( 'WPSSOSSM_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-strip-schema-microdata/wpsso-strip-schema-microdata.php.
-			define( 'WPSSOSSM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file_path ) ) ) );
+			define( 'WPSSOSSM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file ) ) ) );
 			define( 'WPSSOSSM_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-strip-schema-microdata.
-			define( 'WPSSOSSM_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
+			define( 'WPSSOSSM_URLPATH', trailingslashit( plugins_url( '', $plugin_file ) ) );
 			define( 'WPSSOSSM_VERSION', $info[ 'version' ] );						
 		}
 
-		public static function require_libs( $plugin_file_path ) {
+		public static function require_libs( $plugin_file ) {
 
 			require_once WPSSOSSM_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOSSM_PLUGINDIR . 'lib/register.php';
