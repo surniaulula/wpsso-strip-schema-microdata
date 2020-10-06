@@ -41,7 +41,6 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 	class WpssoSsm extends WpssoAddOn {
 
 		public $filters;	// WpssoSsmFilters class.
-		public $reg;		// WpssoSsmRegister class.
 
 		protected $p;
 
