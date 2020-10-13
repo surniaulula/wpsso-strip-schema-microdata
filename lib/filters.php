@@ -15,7 +15,6 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 	class WpssoSsmFilters {
 
 		private $p;
-
 		private $body_str = '<body ';	// A body HTML tag followed by a space (assuming one or more attributes).
 
 		public function __construct( &$plugin ) {
