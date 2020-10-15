@@ -109,7 +109,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 							'string not found in WordPress \'template_redirect\' buffer for ' . 
 								$_SERVER[ 'SERVER_NAME' ] . $_SERVER[ 'REQUEST_URI' ] );
 					}
-	
+
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
 
 						$buffer += '<!-- ' . $log_prefix . ' = nothing to do: "' . $this->body_str . '" ' . 
@@ -157,7 +157,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					$mt_placeholder = '<!-- placeholder for ' . $this->p->lca . ' meta tags -->';
 					$mt_mark_matched = preg_match( $this->p->head->get_mt_mark( 'preg' ), $doc[ 'head' ], $matches, PREG_OFFSET_CAPTURE );
-	
+
 					if ( $mt_mark_matched ) {
 
 						$doc[ 'mt_html' ] = $matches[0][0];
