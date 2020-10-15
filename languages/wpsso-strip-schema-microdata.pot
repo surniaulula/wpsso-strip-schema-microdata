@@ -38,8 +38,8 @@ msgstr ""
 #: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
 msgid ""
-"Remove Outdated / Incorrect Microdata from Theme Templates for Better Google "
-"Rich Results with Schema JSON-LD Markup."
+"Remove Schema Microdata and RDFa from the webpage for better Google Rich "
+"Results using Schema JSON-LD markup."
 msgstr ""
 
 #: lib/filters.php:320
@@ -99,8 +99,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Remove Outdated / Incorrect Microdata from Theme Templates for Better Google "
-"Rich Results with Schema JSON-LD Markup."
+"Remove Schema Microdata and RDFa from the webpage for better Google Rich "
+"Results using Schema JSON-LD markup."
 msgstr ""
 
 #. Author of the plugin/theme
