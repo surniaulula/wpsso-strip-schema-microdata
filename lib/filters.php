@@ -106,14 +106,13 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
 
 						error_log( $log_prefix . ' = nothing to do: "' . $this->body_str . '" ' . 
-							'string not found in WordPress \'template_redirect\' buffer for ' . 
+							'string not found in WordPress \'template_redirect\' buffer for ' .
 								$_SERVER[ 'SERVER_NAME' ] . $_SERVER[ 'REQUEST_URI' ] );
 					}
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
 
-						$buffer += '<!-- ' . $log_prefix . ' = nothing to do: "' . $this->body_str . '" ' . 
-							'string not found in webpage -->';
+						$buffer .= '<!-- ' . $log_prefix . ' = nothing to do: "' . $this->body_str . '" string not found in webpage -->';
 					}
 				}
 
