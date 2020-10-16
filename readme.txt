@@ -70,7 +70,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.7.0-b.2 (2020/10/16)**
+**Version 2.7.0 (2020/10/16)**
 
 * **New Features**
 	* None.
@@ -84,30 +84,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.4.
-	* WPSSO Core v8.8.0-b.2.
-
-**Version 2.6.1 (2020/09/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the French plugin translations.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Moved extracted translation strings from lib/gettext-*.php files to a new gettext/ folder.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.4.
-	* WPSSO Core v8.5.0.
+	* WPSSO Core v8.7.1.
 
 == Upgrade Notice ==
 
-= 2.7.0-b.2 =
+= 2.7.0 =
 
 (2020/10/16) Refactored the add-on class to extend a new WpssoAddOn abstract class.
-
-= 2.6.1 =
-
-(2020/09/15) Updated the French plugin translations.
 
