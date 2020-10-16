@@ -77,7 +77,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Improvements**
 	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
 * **Bugfixes**
-	* None.
+	* Fixed a syntax error when appending a warning message for an invalid body tag (props @swissspidy).
 * **Developer Notes**
 	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
 	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
@@ -90,5 +90,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.7.0 =
 
-(2020/10/16) Refactored the add-on class to extend a new WpssoAddOn abstract class.
+(2020/10/16) Refactored the add-on class to extend a new WpssoAddOn abstract class. Fixed a syntax error when appending a warning message for an invalid body tag.
 
