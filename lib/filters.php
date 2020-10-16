@@ -112,7 +112,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
 
-						$buffer .= '<!-- ' . $log_prefix . ' = nothing to do: "' . $this->body_str . '" string not found in webpage -->';
+						$buffer .= '<!-- ' . $log_prefix . ' = nothing to do: "' . $this->body_str . '" ' .
+							'string not found in webpage -->';
 					}
 				}
 
