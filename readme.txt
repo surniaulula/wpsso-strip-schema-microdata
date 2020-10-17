@@ -78,7 +78,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
 * **Bugfixes**
 	* Fixed a syntax error when appending a warning message for an invalid body tag (props @swissspidy).
-	* Fixed backwards compatibility with WPSSO Core v8.7.1 'init_objects' and 'init_plugin' action arguments.
+	* Fixed backwards compatibility with older 'init_objects' and 'init_plugin' action arguments.
 * **Developer Notes**
 	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
 	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
