@@ -66,7 +66,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 			load_plugin_textdomain( 'wpsso-strip-schema-microdata', false, 'wpsso-strip-schema-microdata/languages/' );
 		}
 
-		public function init_objects( $is_admin, $doing_ajax, $doing_cron ) {
+		public function init_objects( $is_admin ) {
 
 			$this->p =& Wpsso::get_instance();
 
