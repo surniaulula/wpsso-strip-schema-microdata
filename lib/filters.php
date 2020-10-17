@@ -15,7 +15,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 	class WpssoSsmFilters {
 
 		private $p;
-		private $body_str = '<body ';	// A body HTML tag followed by a space (assuming one or more attributes).
+		private $body_start_tag = '<body ';	// A body HTML tag followed by a space (assuming one or more attributes).
+		private $msgs;				// WpssoSsmFiltersMessages class object.
+		private $upg;				// WpssoSsmFiltersUpgrade class object.
 
 		public function __construct( &$plugin ) {
 
@@ -30,26 +32,38 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 			$this->p =& $plugin;
 
-			$min_int = SucomUtil::get_min_int();
+			$min_int    = SucomUtil::get_min_int();
+			$is_admin   = is_admin() ? true : false;
+			$doing_ajax = defined( 'DOING_AJAX' ) ? DOING_AJAX : false;
 
 			if ( $this->p->debug->enabled ) {
 
 				$this->p->debug->mark();
 			}
 
-			if ( SucomUtil::get_const( 'DOING_AJAX' ) ) {
+			/**
+			 * Instantiate the WpssoSsmFiltersUpgrade class object.
+			 */
+			if ( ! class_exists( 'WpssoSsmFiltersUpgrade' ) ) {
 
-				/**
-				 * Nothing to do.
-				 */
+				require_once WPSSOSSM_PLUGINDIR . 'lib/filters-upgrade.php';
+			}
 
-			} else {
+			$this->upg = new WpssoSsmFiltersUpgrade( $plugin );
 
-				if ( is_admin() ) {
+			if ( ! $doing_ajax ) {
 
-					$this->p->util->add_plugin_filters( $this, array( 
-						'messages_tooltip' => 2,	// Tooltip messages filter.
-					) );
+				if ( $is_admin ) {
+
+					/**
+					 * Instantiate the WpssoSsmFiltersMessages class object.
+					 */
+					if ( ! class_exists( 'WpssoSsmFiltersMessages' ) ) {
+
+						require_once WPSSOSSM_PLUGINDIR . 'lib/filters-messages.php';
+					}
+
+					$this->msgs = new WpssoSsmFiltersMessages( $plugin );
 				}
 
 				/**
@@ -94,9 +108,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			$log_prefix = __METHOD__ . ' v' . WpssoSsmConfig::get_version();
 
 			/**
-			 * Return early if there's no <body> tag.
+			 * Return early if there's no "<body " start tag.
 			 */
-			if ( ( $body_pos = stripos( $buffer, $this->body_str ) ) === false ) {
+			if ( ( $body_start_pos = stripos( $buffer, $this->body_start_tag ) ) === false ) {
 
 				/**
 				 * We have an <html> tag, but no <body> tag - log an error.
@@ -105,14 +119,14 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
 
-						error_log( $log_prefix . ' = nothing to do: "' . $this->body_str . '" ' . 
+						error_log( $log_prefix . ' = nothing to do: "' . $this->body_start_tag . '" ' . 
 							'string not found in WordPress \'template_redirect\' buffer for ' .
 								$_SERVER[ 'SERVER_NAME' ] . $_SERVER[ 'REQUEST_URI' ] );
 					}
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
 
-						$buffer .= '<!-- ' . $log_prefix . ' = nothing to do: "' . $this->body_str . '" ' .
+						$buffer .= '<!-- ' . $log_prefix . ' = nothing to do: "' . $this->body_start_tag . '" ' .
 							'string not found in webpage -->';
 					}
 				}
@@ -130,22 +144,22 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				 * Split the buffer to work on the head and body separately.
 				 */
 				$doc = array(
-					'head' => substr( $buffer, 0, $body_pos ),
-					'body' => substr( $buffer, $body_pos ),
+					'head' => substr( $buffer, 0, $body_start_pos ),
+					'body' => substr( $buffer, $body_start_pos ),
 				);
 
-				if ( false !== stripos( substr( $doc[ 'body' ], strlen( $this->body_str ) ), $this->body_str ) ) {
+				if ( false !== stripos( substr( $doc[ 'body' ], strlen( $this->body_start_tag ) ), $this->body_start_tag ) ) {
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
 
-						error_log( $log_prefix . ' = exiting early: duplicate "' . $this->body_str . '"' . 
+						error_log( $log_prefix . ' = exiting early: duplicate "' . $this->body_start_tag . '"' . 
 							'string found in WordPress \'template_redirect\' buffer for ' . 
 								$_SERVER[ 'SERVER_NAME' ] . $_SERVER[ 'REQUEST_URI' ] );
 					}
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
 
-						return $buffer . '<!-- ' . $log_prefix . ' = exiting early: duplicate "' . $this->body_str . '" ' . 
+						return $buffer . '<!-- ' . $log_prefix . ' = exiting early: duplicate "' . $this->body_start_tag . '" ' . 
 							'string found in webpage -->';
 					}
 				}
@@ -286,67 +300,6 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 				return $doc[ 'head' ] . $doc[ 'body' ];
 			}
-		}
-
-		public function filter_messages_tooltip( $text, $msg_key ) {
-
-			if ( strpos( $msg_key, 'tooltip-ssm_' ) !== 0 ) {
-
-				return $text;
-			}
-
-			switch ( $msg_key ) {
-
-				case ( strpos( $msg_key, 'tooltip-ssm_head_' ) === 0 ? true : false ):
-
-					$section = 'head';
-
-					break;
-
-				case ( strpos( $msg_key, 'tooltip-ssm_body_' ) === 0 ? true : false ):
-
-					$section = 'body';
-
-					break;
-			}
-
-			switch ( $msg_key ) {
-
-				case 'tooltip-ssm_head_section_meta_tags':
-				case 'tooltip-ssm_body_section_meta_tags':
-
-					if ( isset( $section ) ) {	// Just in case.
-
-						$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.',
-							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
-					}
-
-					break;
-
-				case 'tooltip-ssm_head_section_json_scripts':
-				case 'tooltip-ssm_body_section_json_scripts':
-
-					if ( isset( $section ) ) {	// Just in case.
-
-						$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.',
-							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
-					}
-
-					break;
-
-				case 'tooltip-ssm_head_section_schema_attr':
-				case 'tooltip-ssm_body_section_schema_attr':
-
-					if ( isset( $section ) ) {	// Just in case.
-
-						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
-							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
-					}
-
-					break;
-			}
-
-			return $text;
 		}
 	}
 }

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Strip Schema Microdata package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 2.8.0-rc.1\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 2.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -42,18 +42,18 @@ msgid ""
 "Results using Schema JSON-LD markup."
 msgstr ""
 
-#: lib/filters.php:320
+#: lib/filters-messages.php:77
 msgid ""
 "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr ""
 
-#: lib/filters.php:331
+#: lib/filters-messages.php:88
 msgid ""
 "Remove <code>application/ld+json</code> scripts from the webpage %1$s "
 "section."
 msgstr ""
 
-#: lib/filters.php:342
+#: lib/filters-messages.php:99
 msgid ""
 "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the "
 "webpage %1$s section."
@@ -66,25 +66,25 @@ msgstr ""
 
 #: lib/submenu/ssm-general.php:79
 msgctxt "metabox tab"
-msgid "Head Section"
+msgid "Body Section"
 msgstr ""
 
 #: lib/submenu/ssm-general.php:80
 msgctxt "metabox tab"
-msgid "Body Section"
+msgid "Head Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:109
+#: lib/submenu/ssm-general.php:107
 msgctxt "option label"
 msgid "Strip Duplicate HTML Meta Tags"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:118
+#: lib/submenu/ssm-general.php:116
 msgctxt "option label"
 msgid "Strip \"application/ld+json\" Scripts"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:123
+#: lib/submenu/ssm-general.php:121
 msgctxt "option label"
 msgid "Strip Schema Microdata Attributes"
 msgstr ""

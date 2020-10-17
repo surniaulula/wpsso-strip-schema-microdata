@@ -17,8 +17,8 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(			// Plugin acronym.
-					'version'     => '2.8.0-rc.1',	// Plugin version.
-					'opt_version' => '3',		// Increment when changing default option values.
+					'version'     => '2.8.0',	// Plugin version.
+					'opt_version' => '5',		// Increment when changing default option values.
 					'short'       => 'WPSSO SSM',	// Short plugin name.
 					'name'        => 'WPSSO Strip Schema Microdata',
 					'desc'        => 'Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.8.0-rc.1',
+							'min_version'   => '8.8.0',
 						),
 					),
 
@@ -71,12 +71,20 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 			 */
 			'opt' => array(
 				'defaults' => array(
-					'ssm_head_meta_tags'    => 0,
-					'ssm_head_json_scripts' => 0,
-					'ssm_head_schema_attr'  => 0,
-					'ssm_body_meta_tags'    => 0,
-					'ssm_body_json_scripts' => 1,
-					'ssm_body_schema_attr'  => 1,
+
+					/**
+					 * Body section.
+					 */
+					'ssm_body_section_meta_tags'    => 0,
+					'ssm_body_section_json_scripts' => 1,
+					'ssm_body_section_schema_attr'  => 1,
+
+					/**
+					 * Head section.
+					 */
+					'ssm_head_section_meta_tags'    => 0,
+					'ssm_head_section_json_scripts' => 0,
+					'ssm_head_section_schema_attr'  => 0,
 				),
 			),
 		);
