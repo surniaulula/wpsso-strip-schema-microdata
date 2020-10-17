@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.4
 Tested Up To: 5.5.1
-Stable Tag: 2.8.0
+Stable Tag: 2.8.1
 
 Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
 
@@ -70,7 +70,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.8.0 (2020/10/17)**
+**Version 2.8.1 (2020/10/17)**
 
 * **New Features**
 	* None.
@@ -78,6 +78,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
 * **Bugfixes**
 	* Fixed a syntax error when appending a warning message for an invalid body tag (props @swissspidy).
+	* Fixed backwards compatibility with WPSSO Core v8.7.1 'init_objects' and 'init_plugin' action arguments.
 * **Developer Notes**
 	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
 	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
@@ -88,7 +89,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.8.0 =
+= 2.8.1 =
 
 (2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class. Fixed a syntax error when appending a warning message for an invalid body tag.
 
