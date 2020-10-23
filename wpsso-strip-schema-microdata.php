@@ -40,11 +40,11 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 
 	class WpssoSsm extends WpssoAddOn {
 
-		public $filters;	// WpssoSsmFilters class.
+		public $filters;	// WpssoSsmFilters class object.
 
-		protected $p;
+		protected $p;	// Wpsso class object.
 
-		private static $instance = null;
+		private static $instance = null;	// WpssoSsm class object.
 
 		public function __construct() {
 

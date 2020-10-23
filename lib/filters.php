@@ -14,7 +14,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 	class WpssoSsmFilters {
 
-		private $p;
+		private $p;	// Wpsso class object.
+
 		private $body_start_tag = '<body ';	// A body HTML tag followed by a space (assuming one or more attributes).
 		private $msgs;				// WpssoSsmFiltersMessages class object.
 		private $upg;				// WpssoSsmFiltersUpgrade class object.
