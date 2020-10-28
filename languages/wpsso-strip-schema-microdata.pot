@@ -59,32 +59,32 @@ msgid ""
 "webpage %1$s section."
 msgstr ""
 
-#: lib/submenu/ssm-general.php:60
+#: lib/submenu/ssm-general.php:63
 msgctxt "metabox title"
 msgid "Strip Schema Microdata Settings"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:82
+#: lib/submenu/ssm-general.php:85
 msgctxt "metabox tab"
 msgid "Body Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:83
+#: lib/submenu/ssm-general.php:86
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:110
+#: lib/submenu/ssm-general.php:113
 msgctxt "option label"
 msgid "Strip Duplicate HTML Meta Tags"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:119
+#: lib/submenu/ssm-general.php:122
 msgctxt "option label"
 msgid "Strip \"application/ld+json\" Scripts"
 msgstr ""
 
-#: lib/submenu/ssm-general.php:124
+#: lib/submenu/ssm-general.php:127
 msgctxt "option label"
 msgid "Strip Schema Microdata Attributes"
 msgstr ""
