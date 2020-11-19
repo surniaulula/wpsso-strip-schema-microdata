@@ -1,4 +1,4 @@
-=== Strip Schema Microdata | WPSSO Add-on ===
+=== WPSSO Strip Schema Microdata ===
 Plugin Name: WPSSO Strip Schema Microdata
 Plugin Slug: wpsso-strip-schema-microdata
 Text Domain: wpsso-strip-schema-microdata
