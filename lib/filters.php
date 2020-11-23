@@ -170,7 +170,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				 */
 				if ( ! empty( $this->p->options[ 'ssm_head_meta_tags' ] ) ) {
 
-					$mt_placeholder = '<!-- placeholder for ' . $this->p->lca . ' meta tags -->';
+					$mt_placeholder = '<!-- placeholder for wpsso meta tags -->';
+
 					$mt_mark_matched = preg_match( $this->p->head->get_mt_mark( 'preg' ), $doc[ 'head' ], $matches, PREG_OFFSET_CAPTURE );
 
 					if ( $mt_mark_matched ) {
