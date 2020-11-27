@@ -42,18 +42,18 @@ msgid ""
 "Results using Schema JSON-LD markup."
 msgstr ""
 
-#: lib/filters-messages.php:77
+#: lib/filters-messages.php:68
 msgid ""
 "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr ""
 
-#: lib/filters-messages.php:88
+#: lib/filters-messages.php:79
 msgid ""
 "Remove <code>application/ld+json</code> scripts from the webpage %1$s "
 "section."
 msgstr ""
 
-#: lib/filters-messages.php:99
+#: lib/filters-messages.php:90
 msgid ""
 "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the "
 "webpage %1$s section."
