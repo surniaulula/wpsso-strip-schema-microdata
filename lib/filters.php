@@ -15,12 +15,16 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 	class WpssoSsmFilters {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoSsm class object.
 
 		private $body_start_tag = '<body ';	// A body HTML tag followed by a space (assuming one or more attributes).
 		private $msgs;				// WpssoSsmFiltersMessages class object.
 		private $upg;				// WpssoSsmFiltersUpgrade class object.
 
-		public function __construct( &$plugin ) {
+		/**
+		 * Instantiated by WpssoSsm->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			static $do_once = null;
 
@@ -32,19 +36,15 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			$do_once = true;
 
 			$this->p =& $plugin;
+			$this->a =& $addon;
 
 			$min_int    = SucomUtil::get_min_int();
 			$is_admin   = is_admin() ? true : false;
 			$doing_ajax = defined( 'DOING_AJAX' ) ? DOING_AJAX : false;
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			require_once WPSSOSSM_PLUGINDIR . 'lib/filters-upgrade.php';
 
-			$this->upg = new WpssoSsmFiltersUpgrade( $plugin );
+			$this->upg = new WpssoSsmFiltersUpgrade( $plugin, $addon );
 
 			if ( ! $doing_ajax ) {
 
@@ -52,7 +52,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					require_once WPSSOSSM_PLUGINDIR . 'lib/filters-messages.php';
 
-					$this->msgs = new WpssoSsmFiltersMessages( $plugin );
+					$this->msgs = new WpssoSsmFiltersMessages( $plugin, $addon );
 				}
 
 				/**

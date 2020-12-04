@@ -15,25 +15,19 @@ if ( ! class_exists( 'WpssoSsmFiltersMessages' ) ) {
 	class WpssoSsmFiltersMessages {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoSsm class object.
 
 		/**
 		 * Instantiated by WpssoSsmFilters->__construct().
 		 */
-		public function __construct( &$plugin ) {
+		public function __construct( &$plugin, &$addon ) {
 
 			$this->p =& $plugin;
+			$this->a =& $addon;
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
-			if ( is_admin() ) {
-
-				$this->p->util->add_plugin_filters( $this, array( 
-					'messages_tooltip' => 2,
-				) );
-			}
+			$this->p->util->add_plugin_filters( $this, array( 
+				'messages_tooltip' => 2,
+			) );
 		}
 
 		public function filter_messages_tooltip( $text, $msg_key ) {
