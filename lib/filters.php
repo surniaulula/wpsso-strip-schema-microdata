@@ -56,14 +56,24 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				}
 
 				/**
-				 * If we're stripping the head section of meta tags, make sure the wpsso mark meta tags
-				 * are enabled and the duplicate check feature is disabled (no use checking if we're
-				 * removing duplicates).
+				 * If we're stripping the head section of meta tags, disable the duplicate check feature (no use
+				 * checking if we're removing duplicates).
 				 */
-				if ( ! empty( $this->p->options[ 'ssm_head_meta_tags' ] ) ) {
+				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) ) {
 
 					$this->p->util->add_plugin_filters( $this, array( 
-						'check_post_head'          => '__return_false',	// Redundant since we are removing duplicates.
+						'check_post_head' => '__return_false',
+					) );
+				}
+
+				/**
+				 * If we're stripping the head section of meta tags or json scripts, make sure the wpsso mark meta
+				 * tags are enabled.
+				 */
+				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) ||
+					! empty( $this->p->options[ 'ssm_head_section_json_scripts' ] ) ) {
+
+					$this->p->util->add_plugin_filters( $this, array( 
 						'add_meta_name_wpsso:mark' => '__return_true',
 					) );
 				}
@@ -156,7 +166,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				/**
 				 * Protect the wpsso meta tag code block.
 				 */
-				if ( ! empty( $this->p->options[ 'ssm_head_meta_tags' ] ) ) {
+				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) ) {
 
 					$mt_placeholder = '<!-- placeholder for wpsso meta tags -->';
 
