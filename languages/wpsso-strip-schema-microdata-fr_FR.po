@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 2.9.0\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 2.10.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2020-12-08 06:23-0800\n"
-"PO-Revision-Date: 2020-12-08 06:23-0800\n"
+"POT-Creation-Date: 2020-12-10 10:59-0800\n"
+"PO-Revision-Date: 2020-12-10 10:59-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -37,15 +37,23 @@ msgctxt "plugin description"
 msgid "Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup."
 msgstr "Supprimez les microdonnées de Schéma et RDFa de la page Web pour de meilleurs résultats enrichis Google à l'aide du balisage de Schéma JSON-LD."
 
-#: lib/filters-messages.php:62
+#: lib/filters-messages.php:59
+msgid "This option is checked by default."
+msgstr "Cette option est cochée par défaut."
+
+#: lib/filters-messages.php:60
+msgid "This option is unchecked by default."
+msgstr "Cette option n'est pas cochée par défaut."
+
+#: lib/filters-messages.php:67
 msgid "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
 msgstr "Supprimer les balises méta HTML connu en double / en conflit dans la section %1$s de la page Web."
 
-#: lib/filters-messages.php:73
+#: lib/filters-messages.php:77
 msgid "Remove <code>application/ld+json</code> scripts from the webpage %1$s section."
 msgstr "Supprimer les scripts <code>application/ld+json</code> de la section %1$s de la page Web."
 
-#: lib/filters-messages.php:84
+#: lib/filters-messages.php:87
 msgid "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section."
 msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, itemprop, etc.) de la section %1$s de la page Web."
 
