@@ -70,6 +70,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.10.0-b.2 (2020/12/10)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Updated the SSO &gt; Strip Microdata settings page tooltip messages.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.5.
+	* WPSSO Core v8.16.0.
+
 **Version 2.9.0 (2020/12/04)**
 
 * **New Features**
@@ -103,6 +118,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.13.0.
 
 == Upgrade Notice ==
+
+= 2.10.0-b.2 =
+
+(2020/12/10) Updated the SSO &gt; Strip Microdata settings page tooltip messages.
 
 = 2.9.0 =
 
