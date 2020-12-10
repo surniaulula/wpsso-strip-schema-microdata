@@ -164,8 +164,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					if ( $mt_mark_matched ) {
 
-						$doc[ 'mt_html' ] = $matches[0][0];
-						$doc[ 'mt_pos' ]  = $matches[0][1];
+						$doc[ 'mt_html' ] = $matches[ 0 ][ 0 ];
+						$doc[ 'mt_pos' ]  = $matches[ 0 ][ 1 ];
 						$doc[ 'head' ]    = substr_replace( $doc[ 'head' ], $mt_placeholder, $doc[ 'mt_pos' ], strlen( $doc[ 'mt_html' ] ) );
 					}
 				}
@@ -275,7 +275,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					if ( false !== ( $doc[ 'mt_pos' ] = strpos( $doc[ 'head' ], $mt_placeholder ) ) ) {
 
 						$doc[ 'head' ] = substr_replace( $doc[ 'head' ], '<!-- wpsso ssm preserved block begin -->' . "\n" .
-							$doc[ 'mt_html' ] . "\n" . '<!-- wpsso ssm preserved block end -->', $doc[ 'mt_pos' ], strlen( $mt_placeholder ) );
+							$doc[ 'mt_html' ] . "\n" . '<!-- wpsso ssm preserved block end -->', $doc[ 'mt_pos' ],
+								strlen( $mt_placeholder ) );
 					}
 				}
 
@@ -285,7 +286,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					return $doc[ 'head' ] . $doc[ 'body' ] . 
 						'<!-- ' . $log_prefix . ' = ' . $total_count . ' matches removed in ' . 
-							$loop_iter . ' interations and ' . sprintf( '%f secs', $mtime_total ) . ' -->';
+							$loop_iter . ' iterations and ' . sprintf( '%f secs', $mtime_total ) . ' -->';
 				}
 
 				return $doc[ 'head' ] . $doc[ 'body' ];

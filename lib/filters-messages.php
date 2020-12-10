@@ -52,40 +52,45 @@ if ( ! class_exists( 'WpssoSsmFiltersMessages' ) ) {
 					break;
 			}
 
-			switch ( $msg_key ) {
+			if ( isset( $section ) ) {	// Just in case.
 
-				case 'tooltip-ssm_body_section_meta_tags':
-				case 'tooltip-ssm_head_section_meta_tags':
+				$opt_key = substr( $msg_key, strlen( 'tooltip-' ) );
+				$def_val = $this->p->opt->get_defaults( $opt_key );
+				$def_msg = $def_val ? __( 'This option is checked by default.', 'wpsso-strip-schema-microdata' ) :
+					__( 'This option is unchecked by default.', 'wpsso-strip-schema-microdata' );
 
-					if ( isset( $section ) ) {	// Just in case.
+				switch ( $msg_key ) {
 
+					case 'tooltip-ssm_body_section_meta_tags':
+					case 'tooltip-ssm_head_section_meta_tags':
+	
 						$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.',
-							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
-					}
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' ) . ' ';
 
-					break;
-
-				case 'tooltip-ssm_body_section_json_scripts':
-				case 'tooltip-ssm_head_section_json_scripts':
-
-					if ( isset( $section ) ) {	// Just in case.
-
+						$text .= $def_msg;
+	
+						break;
+	
+					case 'tooltip-ssm_body_section_json_scripts':
+					case 'tooltip-ssm_head_section_json_scripts':
+	
 						$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.',
-							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
-					}
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' ) . ' ';
+	
+						$text .= $def_msg;
 
-					break;
-
-				case 'tooltip-ssm_body_section_schema_attr':
-				case 'tooltip-ssm_head_section_schema_attr':
-
-					if ( isset( $section ) ) {	// Just in case.
-
+						break;
+	
+					case 'tooltip-ssm_body_section_schema_attr':
+					case 'tooltip-ssm_head_section_schema_attr':
+	
 						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
-							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' );
-					}
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' ) . ' ';
+	
+						$text .= $def_msg;
 
-					break;
+						break;
+				}
 			}
 
 			return $text;
