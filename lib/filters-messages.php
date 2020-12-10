@@ -44,37 +44,55 @@ if ( ! class_exists( 'WpssoSsmFiltersMessages' ) ) {
 
 			switch ( $msg_key ) {
 
-				case 'tooltip-ssm_body_section_meta_tags':
-				case 'tooltip-ssm_head_section_meta_tags':
+				case ( strpos( $msg_key, 'tooltip-ssm_head_' ) === 0 ? true : false ):
 
-					$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.',
-						'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' ) . ' ';
-
-					$text .= $def_msg;
+					$section = 'head';
 
 					break;
 
-				case 'tooltip-ssm_body_section_json_scripts':
-				case 'tooltip-ssm_head_section_json_scripts':
+				case ( strpos( $msg_key, 'tooltip-ssm_body_' ) === 0 ? true : false ):
 
-					$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.',
-						'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' ) . ' ';
-
-					$text .= $def_msg;
-
-					break;
-
-				case 'tooltip-ssm_body_section_schema_attr':
-				case 'tooltip-ssm_head_section_schema_attr':
-
-					$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
-						'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' ) . ' ';
-
-					$text .= $def_msg;
+					$section = 'body';
 
 					break;
 			}
 
+			if ( isset( $section ) ) {	// Just in case.
+
+				switch ( $msg_key ) {
+	
+					case 'tooltip-ssm_body_section_meta_tags':
+					case 'tooltip-ssm_head_section_meta_tags':
+	
+						$text = sprintf( __( 'Remove known duplicate / conflicting meta tags from the webpage %1$s section.',
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' ) . ' ';
+	
+						$text .= $def_msg;
+	
+						break;
+	
+					case 'tooltip-ssm_body_section_json_scripts':
+					case 'tooltip-ssm_head_section_json_scripts':
+	
+						$text = sprintf( __( 'Remove <code>application/ld+json</code> scripts from the webpage %1$s section.',
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' ) . ' ';
+	
+						$text .= $def_msg;
+	
+						break;
+	
+					case 'tooltip-ssm_body_section_schema_attr':
+					case 'tooltip-ssm_head_section_schema_attr':
+	
+						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
+							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' ) . ' ';
+	
+						$text .= $def_msg;
+	
+						break;
+				}
+			}
+	
 			return $text;
 		}
 	}
