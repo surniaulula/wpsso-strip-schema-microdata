@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.5
 Tested Up To: 5.6
-Stable Tag: 2.10.0
+Stable Tag: 2.11.0
 
 Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
 
