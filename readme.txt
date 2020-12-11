@@ -70,7 +70,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.11.0 (2020/12/10)**
+**Version 2.11.0 (2020/12/11)**
 
 * **New Features**
 	* None.
@@ -121,7 +121,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.11.0 =
 
-(2020/12/10) Fixed an incorrectly named option key for the removal of Schema microdata attributes.
+(2020/12/11) Fixed an incorrectly named option key for the removal of Schema microdata attributes.
 
 = 2.9.0 =
 
