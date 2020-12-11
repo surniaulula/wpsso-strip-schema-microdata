@@ -166,7 +166,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				/**
 				 * Protect the wpsso meta tag code block.
 				 */
-				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) ) {
+				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) ||
+					! empty( $this->p->options[ 'ssm_head_section_json_scripts' ] ) ) {
 
 					$mt_placeholder = '<!-- placeholder for wpsso meta tags -->';
 
@@ -190,7 +191,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					 *
 					 * Check first as this initializes new pattern / replace arrays.
 					 */
-					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_meta_tags' ] ) ) {
+					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_section_meta_tags' ] ) ) {
 
 						if ( null === $mt_pattern_cache ) {	// Build this array once.
 
@@ -238,7 +239,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					/**
 					 * Remove Schema Microdata and RDFa Markup.
 					 */
-					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_schema_attr' ] ) ) {
+					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_section_schema_attr' ] ) ) {
 
 						$pattern[] = '/[\s\n]*<(link|meta)(\s|[^>]+\s)itemprop=[\'"][^\'"]*[\'"][^>]*>[\s\n]*/imS';
 						$replace[] = '';
@@ -250,7 +251,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					/**
 					 * Remove JSON Scripts.
 					 */
-					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_json_scripts' ] ) ) {
+					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_section_json_scripts' ] ) ) {
 
 						/**
 						 * U = Inverts the "greediness" of quantifiers so that they are not greedy by default.
