@@ -70,14 +70,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.10.0 (2020/12/10)**
+**Version 2.11.0 (2020/12/10)**
 
 * **New Features**
 	* None.
 * **Improvements**
 	* Updated the SSO &gt; Strip Microdata settings page tooltip messages.
 * **Bugfixes**
-	* None.
+	* Fixed an incorrectly named option key for the removal of Schema microdata attributes.
 * **Developer Notes**
 	* Fixed a missing 'add_meta_name_wpsso:mark' filter hook when stripping application/ld+json scripts is enabled.
 * **Requires At Least**
@@ -119,9 +119,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.10.0 =
+= 2.11.0 =
 
-(2020/12/10) Updated the SSO &gt; Strip Microdata settings page tooltip messages.
+(2020/12/10) Fixed an incorrectly named option key for the removal of Schema microdata attributes.
 
 = 2.9.0 =
 
