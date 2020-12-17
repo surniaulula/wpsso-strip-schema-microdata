@@ -134,7 +134,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 			} else {
 
-				$mtime_start      = microtime( true );
+				$mtime_start      = microtime( $get_float = true );
 				$mt_mark_matched  = 0;
 				$mt_pattern_cache = null;
 				$mt_replace_cache = null;
@@ -291,7 +291,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					}
 				}
 
-				$mtime_total = microtime( true ) - $mtime_start;
+				$mtime_total = microtime( $get_float = true ) - $mtime_start;
 
 				if ( ! SucomUtil::get_const( 'WPSSOSSM_INFO_COMMENT_DISABLE' ) ) {
 
