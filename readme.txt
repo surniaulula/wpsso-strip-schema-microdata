@@ -37,7 +37,7 @@ The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes old Schema Micro
 
 WPSSO Strip Schema Microdata (aka WPSSO SSM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
-WPSSO Core and its add-ons make sure your content looks best on social sites and in search results, no matter how your webpages are shared, re-shared, messaged, posted, embedded, or crawled.
+WPSSO Core and its add-ons make sure your content looks best on social sites and in search results, no matter how webpages are shared, re-shared, messaged, posted, embedded, or crawled.
 
 == Installation ==
 
