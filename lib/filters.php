@@ -166,12 +166,11 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				/**
 				 * Protect the wpsso meta tag code block.
 				 */
-				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) ||
-					! empty( $this->p->options[ 'ssm_head_section_json_scripts' ] ) ) {
+				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) || ! empty( $this->p->options[ 'ssm_head_section_json_scripts' ] ) ) {
 
 					$mt_placeholder = '<!-- placeholder for wpsso meta tags -->';
 
-					$mt_mark_preg = $this->p->head->get_mt_mark( 'preg' );
+					$mt_mark_preg = $this->p->head->get_mt_mark( 'preg' );	// Includes a modifier to handle UTF-8 in subject strings.
 
 					$mt_mark_matched = preg_match( $mt_mark_preg, $doc[ 'head' ], $matches, PREG_OFFSET_CAPTURE );
 
