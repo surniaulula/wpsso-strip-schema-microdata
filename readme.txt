@@ -17,9 +17,7 @@ Remove Schema Microdata and RDFa from the webpage for better Google Rich Results
 
 == Description ==
 
-<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png"></p>
-
-**Are Google and Pinterest picking up incorrect Schema from your theme templates?**
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png"> <strong>Are Google and Pinterest picking up incorrect Schema from your theme templates?</strong></p>
 
 **Want to remove old Schema Microdata and RDFa markup from your theme templates?**
 
