@@ -10,7 +10,7 @@ Tags: structured data, rich snippets, schema, microdata, duplicate, remove, stri
 Contributors: jsmoriss
 Requires PHP: 7.0
 Requires At Least: 4.5
-Tested Up To: 5.6
+Tested Up To: 5.6.1
 Stable Tag: 2.11.0
 
 Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
