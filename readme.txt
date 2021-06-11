@@ -23,13 +23,13 @@ Remove Schema Microdata and RDFa from the webpage for better Google Rich Results
 
 <p><strong>Do you need to remove duplicate social or SEO meta tags from your webpage?</strong></p>
 
-The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes old Schema Microdata and RDFa markup from the webpage. The settings page also provides for the removal of duplicate / conflicting social and SEO meta tags. WPSSO SSM filters the webpage dynamically, allowing you to activate / deactivate the add-on to easily enable / disable the removal of old Schema Midata, RDFa, and duplicate meta tags. WPSSO SSM filters are *very* fast &mdash; generally running in under 0.003 seconds!
+The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes old Schema Microdata and RDFa markup from the webpage. The settings page also provides for the removal of duplicate / conflicting social and SEO meta tags. WPSSO SSM filters the webpage dynamically, allowing you to activate / deactivate the add-on to easily enable / disable the removal of old Schema Midata, RDFa, and duplicate meta tags. WPSSO SSM filters are *very* fast - generally running in under 0.003 seconds!
 
 <h3>Users Love the WPSSO SSM Add-on</h3>
 
-&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "This worked great to automatically remove almost 100 invalid microdata markup hentry entries from a divi/woocommerce project, bringing the error count to 0 in Google webmaster tools. The WPSSO plugin suite is the best out of many SSO solutions I've tried. Thank you!" - [marvtech](https://wordpress.org/support/topic/works-great-where-other-solutions-fail/)
+&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; - "This worked great to automatically remove almost 100 invalid microdata markup hentry entries from a divi/woocommerce project, bringing the error count to 0 in Google webmaster tools. The WPSSO plugin suite is the best out of many SSO solutions I've tried. Thank you!" - [marvtech](https://wordpress.org/support/topic/works-great-where-other-solutions-fail/)
 
-&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "Fantastic tool and necessary if you want proper schema markup on your website. Many themes come with markup that is unnecessary and conflicts. This handles that perfectly." - [krisfannin](https://wordpress.org/support/topic/necessary-plugin-for-proper-schema-markup/)
+&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; - "Fantastic tool and necessary if you want proper schema markup on your website. Many themes come with markup that is unnecessary and conflicts. This handles that perfectly." - [krisfannin](https://wordpress.org/support/topic/necessary-plugin-for-proper-schema-markup/)
 
 <h3>WPSSO Core Plugin Required</h3>
 
