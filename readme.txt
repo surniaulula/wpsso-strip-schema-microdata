@@ -23,7 +23,7 @@ Remove Schema Microdata and RDFa from the webpage for better Google Rich Results
 
 <p><strong>Do you need to remove duplicate social or SEO meta tags from your webpage?</strong></p>
 
-The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes old Schema Microdata and RDFa markup from the webpage. The settings page also provides for the removal of duplicate / conflicting social and SEO meta tags. WPSSO SSM filters the webpage dynamically, allowing you to activate / deactivate the add-on to easily enable / disable the removal of old Schema Midata, RDFa, and duplicate meta tags. WPSSO SSM filters are *very* fast - generally running in under 0.003 seconds!
+The WPSSO Strip Schema Microdata (WPSSO SSM) add-on removes old Schema Microdata and RDFa markup from the webpage. The settings page also provides for the removal of duplicate / conflicting social and SEO meta tags. WPSSO SSM filters the webpage dynamically, allowing you to activate / deactivate the add-on to easily enable / disable the removal of old Schema Midata, RDFa, and duplicate meta tags. WPSSO SSM filters are *very* fast - generally running in under 0.003 seconds!
 
 <h3>Users Love the WPSSO SSM Add-on</h3>
 
@@ -31,9 +31,9 @@ The WPSSO Strip Schema Microdata (aka WPSSO SSM) add-on removes old Schema Micro
 
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; - "Fantastic tool and necessary if you want proper schema markup on your website. Many themes come with markup that is unnecessary and conflicts. This handles that perfectly." - [krisfannin](https://wordpress.org/support/topic/necessary-plugin-for-proper-schema-markup/)
 
-<h3>WPSSO Core Plugin Required</h3>
+<h3>WPSSO Core Required</h3>
 
-WPSSO Strip Schema Microdata (aka WPSSO SSM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/). WPSSO Core and its add-ons make sure your content looks best on social sites and in search results, no matter how webpages are shared, re-shared, messaged, posted, embedded, or crawled.
+WPSSO Strip Schema Microdata (WPSSO SSM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
 == Installation ==
 
