@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
  * Requires PHP: 7.0
- * Requires At Least: 4.5
+ * Requires At Least: 5.0
  * Tested Up To: 5.7.2
  * Version: 2.11.1
  * 
