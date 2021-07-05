@@ -168,9 +168,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				 */
 				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) || ! empty( $this->p->options[ 'ssm_head_section_json_scripts' ] ) ) {
 
-					$mt_placeholder = '<!-- placeholder for wpsso meta tags -->';
+					$mt_placeholder = '<!-- placeholder for ' . WPSSO_DATA_ID . ' -->';	// Since WPSSO Core v8.35.0.
 
-					$mt_mark_preg = $this->p->head->get_mt_mark( 'preg' );	// Includes a modifier to handle UTF-8 in subject strings.
+					$mt_mark_preg = $this->p->head->get_mt_data( 'begin-end-preg' );	// Since WPSSO Core v8.35.0.
 
 					$mt_mark_matched = preg_match( $mt_mark_preg, $doc[ 'head' ], $matches, PREG_OFFSET_CAPTURE );
 
@@ -286,8 +286,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					if ( false !== ( $doc[ 'mt_pos' ] = strpos( $doc[ 'head' ], $mt_placeholder ) ) ) {
 
-						$doc[ 'head' ] = substr_replace( $doc[ 'head' ], '<!-- wpsso ssm preserved block begin -->' . "\n" .
-							$doc[ 'mt_html' ] . "\n" . '<!-- wpsso ssm preserved block end -->', $doc[ 'mt_pos' ],
+						$doc[ 'head' ] = substr_replace( $doc[ 'head' ], '<!-- wpsso ssm preserved markup begin -->' . "\n" .
+							$doc[ 'mt_html' ] . "\n" . '<!-- wpsso ssm preserved markup end -->', $doc[ 'mt_pos' ],
 								strlen( $mt_placeholder ) );
 					}
 				}
