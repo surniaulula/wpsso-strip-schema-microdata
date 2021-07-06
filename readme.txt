@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.11.2-dev.4 (2021/07/06)**
+**Version 2.11.2-b.1 (2021/07/06)**
 
 * **New Features**
 	* None.
@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
-	* WPSSO Core v8.34.1-dev.4.
+	* WPSSO Core v8.34.1-b.1.
 
 **Version 2.11.1 (2021/02/25)**
 
@@ -145,7 +145,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.11.2-dev.4 =
+= 2.11.2-b.1 =
 
 (2021/07/06) Renamed the `WpssoHead->get_mt_mark()` method call to `get_mt_data()` for WPSSO Core v8.35.0.
 
