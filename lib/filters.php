@@ -170,7 +170,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					$mt_placeholder = '<!-- placeholder for ' . WPSSO_DATA_ID . ' -->';	// Since WPSSO Core v8.35.0.
 
-					$mt_mark_preg = $this->p->head->get_mt_data( 'begin-end-preg' );	// Since WPSSO Core v8.35.0.
+					$mt_mark_preg = $this->p->head->get_mt_data( 'preg' );	// Since WPSSO Core v8.35.0.
 
 					$mt_mark_matched = preg_match( $mt_mark_preg, $doc[ 'head' ], $matches, PREG_OFFSET_CAPTURE );
 
