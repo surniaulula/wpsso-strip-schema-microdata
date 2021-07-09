@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 2.10.0\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 2.11.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2020-12-10 10:59-0800\n"
-"PO-Revision-Date: 2021-06-11 11:49-0700\n"
+"POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-07-09 09:59-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -37,11 +37,11 @@ msgctxt "plugin description"
 msgid "Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup."
 msgstr "Supprimez les microdonnées de Schéma et RDFa de la page Web pour de meilleurs résultats enrichis Google à l'aide du balisage de Schéma JSON-LD."
 
-#: lib/filters-messages.php:59
+#: lib/filters-messages.php:42
 msgid "This option is checked by default."
 msgstr "Cette option est cochée par défaut."
 
-#: lib/filters-messages.php:60
+#: lib/filters-messages.php:43
 msgid "This option is unchecked by default."
 msgstr "Cette option n'est pas cochée par défaut."
 
