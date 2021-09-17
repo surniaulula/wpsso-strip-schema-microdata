@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.12.0-dev.1 (TBD)**
+**Version 2.12.0-dev.1 (2021/09/17)**
 
 * **New Features**
 	* None.
@@ -162,7 +162,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.12.0-dev.1 =
 
-(TBD) Removed the 'add_meta_name_wpsso:mark' filter hook for WPSSO Core v9.0.0.
+(2021/09/17) Removed the 'add_meta_name_wpsso:mark' filter hook for WPSSO Core v9.0.0.
 
 = 2.11.2 =
 
