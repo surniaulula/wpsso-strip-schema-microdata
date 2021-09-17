@@ -56,25 +56,13 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				}
 
 				/**
-				 * If we're stripping the head section of meta tags, disable the duplicate check feature (no use
-				 * checking if we're removing duplicates).
+				 * If we're stripping the head section of meta tags, disable the duplicate check feature of WPSSO
+				 * Core - no use checking for duplicates if we're removing them.
 				 */
 				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) ) {
 
 					$this->p->util->add_plugin_filters( $this, array( 
 						'check_post_head' => '__return_false',
-					) );
-				}
-
-				/**
-				 * If we're stripping the head section of meta tags or json scripts, make sure the wpsso mark meta
-				 * tags are enabled.
-				 */
-				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) ||
-					! empty( $this->p->options[ 'ssm_head_section_json_scripts' ] ) ) {
-
-					$this->p->util->add_plugin_filters( $this, array( 
-						'add_meta_name_wpsso:mark' => '__return_true',
 					) );
 				}
 
