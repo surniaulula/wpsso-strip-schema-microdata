@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.12.0-dev.7 (2021/09/20)**
+**Version 2.12.0-dev.8 (2021/09/21)**
 
 * **New Features**
 	* None.
@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v5.0.
-	* WPSSO Core v9.0.0-dev.7.
+	* WPSSO Core v9.0.0-dev.8.
 
 **Version 2.11.2 (2021/07/10)**
 
@@ -160,9 +160,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.12.0-dev.7 =
+= 2.12.0-dev.8 =
 
-(2021/09/20) Removed the 'add_meta_name_wpsso:mark' filter hook for WPSSO Core v9.0.0.
+(2021/09/21) Removed the 'add_meta_name_wpsso:mark' filter hook for WPSSO Core v9.0.0.
 
 = 2.11.2 =
 
