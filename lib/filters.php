@@ -197,7 +197,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 									$names = array();
 
 									foreach ( SucomUtil::preg_grep_keys( '/^add_' . $tag . '_' . $type . '_/',
-										$this->p->options, false, '' ) as $name => $value ) {
+										$this->p->options, $invert = false, '' ) as $name => $value ) {
 
 										if ( ! empty( $value ) && $name !== 'generator' ) {
 
