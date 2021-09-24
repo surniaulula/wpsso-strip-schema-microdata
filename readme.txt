@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 7.0
 Requires At Least: 5.0
 Tested Up To: 5.8.1
-Stable Tag: 2.11.2
+Stable Tag: 2.12.0
 
 Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
 
@@ -126,38 +126,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.5.
 	* WPSSO Core v8.16.0.
 
-**Version 2.9.0 (2020/12/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Included the `$addon` argument for library class constructors.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.5.
-	* WPSSO Core v8.16.0.
-
-**Version 2.8.1 (2020/10/17)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
-* **Bugfixes**
-	* Fixed a syntax error when appending a warning message for an invalid body tag (props @swissspidy).
-	* Fixed backwards compatibility with older 'init_objects' and 'init_plugin' action arguments.
-* **Developer Notes**
-	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
-	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.4.
-	* WPSSO Core v8.13.0.
-
 == Upgrade Notice ==
 
 = 2.12.0 =
@@ -175,12 +143,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 2.11.0 =
 
 (2020/12/10) Fixed an incorrectly named option key for the removal of Schema microdata attributes.
-
-= 2.9.0 =
-
-(2020/12/04) Included the `$addon` argument for library class constructors.
-
-= 2.8.1 =
-
-(2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class. Fixed a syntax error when appending a warning message for an invalid body tag.
 
