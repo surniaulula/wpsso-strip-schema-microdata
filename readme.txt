@@ -23,7 +23,11 @@ Remove Schema Microdata and RDFa from the webpage for better Google Rich Results
 
 <p><strong>Do you need to remove duplicate social or SEO meta tags from your webpage?</strong></p>
 
+<!-- about -->
+
 The WPSSO Strip Schema Microdata (WPSSO SSM) add-on removes old Schema Microdata and RDFa markup from the webpage. The settings page also provides for the removal of duplicate / conflicting social and SEO meta tags. WPSSO SSM filters the webpage dynamically, allowing you to activate / deactivate the add-on to easily enable / disable the removal of old Schema Midata, RDFa, and duplicate meta tags. WPSSO SSM filters are *very* fast - generally running in under 0.003 seconds!
+
+<!-- /about -->
 
 <h3>Users Love the WPSSO SSM Add-on</h3>
 
