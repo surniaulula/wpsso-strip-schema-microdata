@@ -14,7 +14,7 @@
 
 <h2>Description</h2>
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/icon-256x256.png"><strong>Is Google Search picking up incorrect or invalid Schema from your theme templates?</strong></p>
+<p><strong>Is Google Search picking up incorrect or invalid Schema from your theme templates?</strong></p>
 
 <p><strong>Do you need to remove old <em>Microdata</em> and <em>RDFa</em> markup from your theme templates?</strong></p>
 
