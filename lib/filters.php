@@ -38,9 +38,9 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			$min_int    = SucomUtil::get_min_int();
-			$is_admin   = is_admin() ? true : false;
+			$is_admin   = is_admin();
 			$doing_ajax = defined( 'DOING_AJAX' ) ? DOING_AJAX : false;
+			$min_int    = SucomUtil::get_min_int();
 
 			require_once WPSSOSSM_PLUGINDIR . 'lib/filters-upgrade.php';
 
