@@ -76,7 +76,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.12.2 (2021/11/15)**
+**Version 2.12.2 (2021/11/16)**
 
 * **New Features**
 	* None.
@@ -170,7 +170,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.12.2 =
 
-(2021/11/15) Refactored the `SucomAddOn->get_missing_requirements()` method.
+(2021/11/16) Refactored the `SucomAddOn->get_missing_requirements()` method.
 
 = 2.12.1 =
 
