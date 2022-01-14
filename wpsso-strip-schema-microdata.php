@@ -14,7 +14,7 @@
  * Requires PHP: 7.2
  * Requires At Least: 5.2
  * Tested Up To: 5.8.3
- * Version: 2.12.2
+ * Version: 2.13.0-dev.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -31,14 +31,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
-if ( ! class_exists( 'WpssoAddOn' ) ) {
+if ( ! class_exists( 'WpssoAbstractAddOn' ) ) {
 
-	require_once dirname( __FILE__ ) . '/lib/abstracts/add-on.php';	// WpssoAddOn class.
+	require_once dirname( __FILE__ ) . '/lib/abstract/add-on.php';
 }
 
 if ( ! class_exists( 'WpssoSsm' ) ) {
 
-	class WpssoSsm extends WpssoAddOn {
+	class WpssoSsm extends WpssoAbstractAddOn {
 
 		public $filters;	// WpssoSsmFilters class object.
 
