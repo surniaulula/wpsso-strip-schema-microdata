@@ -60,7 +60,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 		protected function add_meta_boxes() {
 
 			$metabox_id      = 'general';
-			$metabox_title   = _x( 'Strip Schema Microdata Settings', 'metabox title', 'wpsso-strip-schema-microdata' );
+			$metabox_title   = _x( 'Strip Schema Microdata', 'metabox title', 'wpsso-strip-schema-microdata' );
 			$metabox_screen  = $this->pagehook;
 			$metabox_context = 'normal';
 			$metabox_prio    = 'default';

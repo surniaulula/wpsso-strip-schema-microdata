@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Strip Schema Microdata package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 2.13.0-dev.2\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 2.13.0-dev.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2022-MO-DA HO:MI+ZONE\n"
@@ -72,7 +72,7 @@ msgstr ""
 
 #: lib/submenu/ssm-general.php:63
 msgctxt "metabox title"
-msgid "Strip Schema Microdata Settings"
+msgid "Strip Schema Microdata"
 msgstr ""
 
 #: lib/submenu/ssm-general.php:85
