@@ -106,7 +106,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 
 			switch ( $metabox_id . '-' . $tab_key ) {
 
-				case 'ssm-general-head_section':	// List first to fall through (ie. no break).
+				case 'ssm-general-head_section':
 
 					$table_rows[] = '' .
 					$this->form->get_th_html( _x( 'Strip Duplicate HTML Meta Tags', 'option label', 'wpsso-strip-schema-microdata' ),
