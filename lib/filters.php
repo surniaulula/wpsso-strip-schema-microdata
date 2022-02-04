@@ -40,7 +40,6 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 			$is_admin   = is_admin();
 			$doing_ajax = defined( 'DOING_AJAX' ) ? DOING_AJAX : false;
-			$min_int    = SucomUtil::get_min_int();
 
 			require_once WPSSOSSM_PLUGINDIR . 'lib/filters-upgrade.php';
 
@@ -71,7 +70,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					$this->p->debug->log( 'adding template_redirect action for output_buffer_start' );
 				}
 
-				add_action( 'template_redirect', array( $this, 'output_buffer_start' ), $min_int );
+				add_action( 'template_redirect', array( $this, 'output_buffer_start' ), PHP_INT_MIN );
 			}
 		}
 
