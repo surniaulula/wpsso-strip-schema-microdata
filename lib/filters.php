@@ -259,6 +259,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 						 * Recurse to remove multiple attributes from the same HTML tag.
 						 */
 						do {
+							$count = null;
+
 							$doc[ $section ] = preg_replace( $pattern, $replace, $doc[ $section ], -1, $count );
 
 							$total_count += $count;
