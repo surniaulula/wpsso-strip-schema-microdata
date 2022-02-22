@@ -13,7 +13,7 @@
  * Description: Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
  * Requires PHP: 7.2
  * Requires At Least: 5.2
- * Tested Up To: 5.9.0
+ * Tested Up To: 5.9.1
  * Version: 2.13.0
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
