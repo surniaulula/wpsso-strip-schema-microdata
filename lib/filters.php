@@ -60,7 +60,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				 */
 				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) ) {
 
-					$this->p->util->add_plugin_filters( $this, array( 
+					$this->p->util->add_plugin_filters( $this, array(
 						'check_post_head' => '__return_false',
 					) );
 				}
@@ -105,7 +105,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
 
-						error_log( $log_prefix . ' = nothing to do: "' . $this->body_start_tag . '" ' . 
+						error_log( $log_prefix . ' = nothing to do: "' . $this->body_start_tag . '" ' .
 							'string not found in WordPress \'template_redirect\' buffer for ' .
 								$_SERVER[ 'SERVER_NAME' ] . $_SERVER[ 'REQUEST_URI' ] );
 					}
@@ -138,14 +138,14 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_LOG_DISABLE' ) ) {
 
-						error_log( $log_prefix . ' = exiting early: duplicate "' . $this->body_start_tag . '"' . 
-							'string found in WordPress \'template_redirect\' buffer for ' . 
+						error_log( $log_prefix . ' = exiting early: duplicate "' . $this->body_start_tag . '"' .
+							'string found in WordPress \'template_redirect\' buffer for ' .
 								$_SERVER[ 'SERVER_NAME' ] . $_SERVER[ 'REQUEST_URI' ] );
 					}
 
 					if ( ! SucomUtil::get_const( 'WPSSOSSM_ERROR_COMMENT_DISABLE' ) ) {
 
-						return $buffer . '<!-- ' . $log_prefix . ' = exiting early: duplicate "' . $this->body_start_tag . '" ' . 
+						return $buffer . '<!-- ' . $log_prefix . ' = exiting early: duplicate "' . $this->body_start_tag . '" ' .
 							'string found in webpage -->';
 					}
 				}
@@ -206,7 +206,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 									if ( ! empty( $names ) ) {
 
-										$mt_pattern_cache[] = '/[\s\n]*<' . $tag . '(\s|[^>]+\s)' . 
+										$mt_pattern_cache[] = '/[\s\n]*<' . $tag . '(\s|[^>]+\s)' .
 											$type . '=[\'"](' . implode( '|', $names ) . ')[\'"][^>]*>[\s\n]*/imS';
 
 										$mt_replace_cache[] = '';
@@ -243,7 +243,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 						/**
 						 * U = Inverts the "greediness" of quantifiers so that they are not greedy by default.
-						 * i = Letters in the pattern match both upper and lower case letters. 
+						 * i = Letters in the pattern match both upper and lower case letters.
 						 * s = A dot metacharacter in the pattern matches all characters, including newlines.
 						 * S = When a pattern is used several times, spend more time analyzing it to speed up matching.
 						 *
@@ -285,8 +285,8 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 				if ( ! SucomUtil::get_const( 'WPSSOSSM_INFO_COMMENT_DISABLE' ) ) {
 
-					return $doc[ 'head' ] . $doc[ 'body' ] . 
-						'<!-- ' . $log_prefix . ' = ' . $total_count . ' matches removed in ' . 
+					return $doc[ 'head' ] . $doc[ 'body' ] .
+						'<!-- ' . $log_prefix . ' = ' . $total_count . ' matches removed in ' .
 							$loop_iter . ' iterations and ' . sprintf( '%f secs', $mtime_total ) . ' -->';
 				}
 

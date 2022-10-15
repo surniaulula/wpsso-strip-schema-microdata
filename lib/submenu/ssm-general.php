@@ -110,7 +110,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 
 					$table_rows[] = '' .
 					$this->form->get_th_html( _x( 'Strip Duplicate HTML Meta Tags', 'option label', 'wpsso-strip-schema-microdata' ),
-						$css_class = '', $css_id = 'ssm_' . $tab_key . '_meta_tags' ) . 
+						$css_class = '', $css_id = 'ssm_' . $tab_key . '_meta_tags' ) .
 					'<td>' . $this->form->get_checkbox( 'ssm_' . $tab_key . '_meta_tags' ) . '</td>';
 
 					// No break.
@@ -119,12 +119,12 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 
 					$table_rows[] = '' .
 					$this->form->get_th_html( _x( 'Strip "application/ld+json" Scripts', 'option label', 'wpsso-strip-schema-microdata' ),
-						$css_class = '', $css_id = 'ssm_' . $tab_key . '_json_scripts' ) . 
+						$css_class = '', $css_id = 'ssm_' . $tab_key . '_json_scripts' ) .
 					'<td>' . $this->form->get_checkbox( 'ssm_' . $tab_key . '_json_scripts' ) . '</td>';
 
 					$table_rows[] = '' .
 					$this->form->get_th_html( _x( 'Strip Schema Microdata Attributes', 'option label', 'wpsso-strip-schema-microdata' ),
-						$css_class = '', $css_id = 'ssm_' . $tab_key . '_schema_attr' ) . 
+						$css_class = '', $css_id = 'ssm_' . $tab_key . '_schema_attr' ) .
 					'<td>' . $this->form->get_checkbox( 'ssm_' . $tab_key . '_schema_attr' ) . '</td>';
 
 					break;
