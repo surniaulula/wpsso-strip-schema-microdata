@@ -8,6 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
 Tags: structured data, rich snippets, schema, microdata, duplicate, remove, strip, fix, json-ld, ld+json, json, markup, meta tags, schema.org
 Contributors: jsmoriss
+Requires Plugins: wpsso
 Requires PHP: 7.2
 Requires At Least: 5.2
 Tested Up To: 6.1.0
