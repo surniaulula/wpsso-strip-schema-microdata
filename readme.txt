@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires Plugins: wpsso
 Requires PHP: 7.2
 Requires At Least: 5.2
-Tested Up To: 6.1.0
+Tested Up To: 6.1.1
 Stable Tag: 2.13.1
 
 Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
