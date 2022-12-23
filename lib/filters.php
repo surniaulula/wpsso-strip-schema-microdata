@@ -261,7 +261,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 						do {
 							$count = null;
 
-							$doc[ $section ] = preg_replace( $pattern, $replace, $doc[ $section ], -1, $count );
+							$doc[ $section ] = preg_replace( $pattern, $replace, $doc[ $section ], $limit = -1, $count );
 
 							$total_count += $count;
 
