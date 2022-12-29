@@ -81,6 +81,14 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				$this->p->debug->log( 'output buffering started' );
 			}
 
+			if ( function_exists( 'is_sitemap_stylesheet' ) ) {
+
+				if ( is_sitemap_stylesheet() ) {
+
+					return;
+				}
+			}
+
 			ob_start( array( $this, 'strip_schema_microdata' ) );
 		}
 
