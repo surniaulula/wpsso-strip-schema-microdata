@@ -77,6 +77,23 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.14.0 (2022/12/29)**
+
+Maintenance release.
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added a check for `is_sitemap_stylesheet()` to exclude sitemaps stylesheets.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v11.5.0.
+
 **Version 2.13.1 (2022/03/07)**
 
 Maintenance release.
@@ -203,6 +220,10 @@ Maintenance release.
 	* WPSSO Core v8.16.0.
 
 == Upgrade Notice ==
+
+= 2.14.0 =
+
+(2022/12/29) Added a check for `is_sitemap_stylesheet()` to exclude sitemaps stylesheets.
 
 = 2.13.1 =
 
