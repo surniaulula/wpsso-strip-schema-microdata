@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Strip Schema Microdata</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.13.1</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.14.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>7.2 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>5.2 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>6.1.1</td></tr>

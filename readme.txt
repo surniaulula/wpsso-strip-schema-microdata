@@ -12,7 +12,7 @@ Requires Plugins: wpsso
 Requires PHP: 7.2
 Requires At Least: 5.2
 Tested Up To: 6.1.1
-Stable Tag: 2.13.1
+Stable Tag: 2.14.0
 
 Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
 
@@ -79,8 +79,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 **Version 2.14.0 (2022/12/29)**
 
-Maintenance release.
-
 * **New Features**
 	* None.
 * **Improvements**
@@ -92,7 +90,7 @@ Maintenance release.
 * **Requires At Least**
 	* PHP v7.2.
 	* WordPress v5.2.
-	* WPSSO Core v11.5.0.
+	* WPSSO Core v14.1.0.
 
 **Version 2.13.1 (2022/03/07)**
 
