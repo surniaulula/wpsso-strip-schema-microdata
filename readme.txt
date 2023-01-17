@@ -18,7 +18,7 @@ Remove Schema Microdata and RDFa from the webpage for better Google Rich Results
 
 == Description ==
 
-<p><strong>Is Google Search picking up incorrect or invalid Schema from your theme templates?</strong></p>
+<p><strong>Is Google Search reporting invalid Schema markup from your theme templates?</strong></p>
 
 <p><strong>Do you need to remove old <em>Microdata</em> and <em>RDFa</em> markup from your theme templates?</strong></p>
 
