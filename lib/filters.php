@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2016-2023 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -21,7 +21,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 		private $msgs;				// WpssoSsmFiltersMessages class object.
 		private $upg;				// WpssoSsmFiltersUpgrade class object.
 
-		/**
+		/*
 		 * Instantiated by WpssoSsm->init_objects().
 		 */
 		public function __construct( &$plugin, &$addon ) {
@@ -54,7 +54,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					$this->msgs = new WpssoSsmFiltersMessages( $plugin, $addon );
 				}
 
-				/**
+				/*
 				 * If we're stripping the head section of meta tags, disable the duplicate check feature of WPSSO
 				 * Core - no use checking for duplicates if we're removing them.
 				 */
@@ -101,12 +101,12 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 			$log_prefix = __METHOD__ . ' v' . WpssoSsmConfig::get_version();
 
-			/**
+			/*
 			 * Return early if there's no "<body " start tag.
 			 */
 			if ( ( $body_start_pos = stripos( $buffer, $this->body_start_tag ) ) === false ) {
 
-				/**
+				/*
 				 * We have an <html> tag, but no <body> tag - log an error.
 				 */
 				if ( false !== stripos( $buffer, '<html' ) ) {
@@ -134,7 +134,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 				$mt_pattern_cache = null;
 				$mt_replace_cache = null;
 
-				/**
+				/*
 				 * Split the buffer to work on the head and body separately.
 				 */
 				$doc = array(
@@ -158,7 +158,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 					}
 				}
 
-				/**
+				/*
 				 * Protect the wpsso meta tag code block.
 				 */
 				if ( ! empty( $this->p->options[ 'ssm_head_section_meta_tags' ] ) || ! empty( $this->p->options[ 'ssm_head_section_json_scripts' ] ) ) {
@@ -182,7 +182,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 				foreach ( array( 'head', 'body' ) as $section ) {
 
-					/**
+					/*
 					 * Remove Meta Tags.
 					 *
 					 * Check first as this initializes new pattern / replace arrays.
@@ -232,7 +232,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 						$replace = array();
 					}
 
-					/**
+					/*
 					 * Remove Schema Microdata and RDFa Markup.
 					 */
 					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_section_schema_attr' ] ) ) {
@@ -244,12 +244,12 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 						$replace[] = '$1$4';
 					}
 
-					/**
+					/*
 					 * Remove JSON Scripts.
 					 */
 					if ( ! empty( $this->p->options[ 'ssm_' . $section . '_section_json_scripts' ] ) ) {
 
-						/**
+						/*
 						 * U = Inverts the "greediness" of quantifiers so that they are not greedy by default.
 						 * i = Letters in the pattern match both upper and lower case letters.
 						 * s = A dot metacharacter in the pattern matches all characters, including newlines.
@@ -263,7 +263,7 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 					if ( ! empty( $pattern ) ) {	// Just in case.
 
-						/**
+						/*
 						 * Recurse to remove multiple attributes from the same HTML tag.
 						 */
 						do {

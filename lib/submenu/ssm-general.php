@@ -1,8 +1,8 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Copyright 2014-2023 Jean-Sebastien Morisset (https://wpsso.com/)
+ * Copyright 2016-2023 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 			$this->menu_ext  = $ext;
 		}
 
-		/**
+		/*
 		 * Called by WpssoAdmin->load_setting_page() after the 'wpsso-action' query is handled.
 		 *
 		 * Add settings page filter and action hooks.
@@ -41,7 +41,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 			) );
 		}
 
-		/**
+		/*
 		 * Remove the "Change to View" button from this settings page.
 		 */
 		public function filter_form_button_rows( $form_button_rows ) {
@@ -54,7 +54,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 			return $form_button_rows;
 		}
 
-		/**
+		/*
 		 * Called by the extended WpssoAdmin class.
 		 */
 		protected function add_meta_boxes() {
@@ -78,7 +78,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuSsmGeneral' ) && class_exists( 'WpssoAdmin'
 
 			$filter_name = SucomUtil::sanitize_hookname( 'wpsso_' . $metabox_id . '_tabs' );
 
-			/**
+			/*
 			 * Note that the tab key is used in the options key as well.
 			 */
 			$tabs = apply_filters( $filter_name, array(

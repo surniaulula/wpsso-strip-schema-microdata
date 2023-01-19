@@ -1,5 +1,5 @@
 
-/**
+/*
  * Hard-coded / fixed constants. These values cannot be modified.
  */
 WPSSOSSM_FILEPATH
@@ -9,7 +9,7 @@ WPSSOSSM_PLUGINSLUG
 WPSSOSSM_URLPATH
 WPSSOSSM_VERSION
 
-/**
+/*
  * Define in your wp-config.php file to change the default value.
  */
 WPSSOSSM_INFO_COMMENT_DISABLE	= false
