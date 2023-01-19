@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2016-2022 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssossm' => array(			// Plugin acronym.
-					'version'     => '2.15.0-rc.1',	// Plugin version.
+					'version'     => '2.15.0-rc.2',	// Plugin version.
 					'opt_version' => '6',		// Increment when changing default option values.
 					'short'       => 'WPSSO SSM',	// Short plugin name.
 					'name'        => 'WPSSO Strip Schema Microdata',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					'text_domain' => 'wpsso-strip-schema-microdata',
 					'domain_path' => '/languages',
 
-					/**
+					/*
 					 * Required plugin and its version.
 					 */
 					'req' => array(
@@ -37,16 +37,16 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '14.5.0-rc.1',
+							'min_version'   => '14.5.0-rc.2',
 						),
 					),
 
-					/**
+					/*
 					 * URLs or relative paths to plugin banners and icons.
 					 */
 					'assets' => array(
 
-						/**
+						/*
 						 * Icon image array keys are '1x' and '2x'.
 						 */
 						'icons' => array(
@@ -55,7 +55,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 						),
 					),
 
-					/**
+					/*
 					 * Library files loaded and instantiated by WPSSO.
 					 */
 					'lib' => array(
@@ -66,20 +66,20 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 				),
 			),
 
-			/**
+			/*
 			 * Additional add-on setting options.
 			 */
 			'opt' => array(
 				'defaults' => array(
 
-					/**
+					/*
 					 * Body section.
 					 */
 					'ssm_body_section_meta_tags'    => 0,
 					'ssm_body_section_json_scripts' => 1,
 					'ssm_body_section_schema_attr'  => 1,
 
-					/**
+					/*
 					 * Head section.
 					 */
 					'ssm_head_section_meta_tags'    => 0,
@@ -105,7 +105,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 
 			$info =& self::$cf[ 'plugin' ][ 'wpssossm' ];
 
-			/**
+			/*
 			 * Define fixed constants.
 			 */
 			define( 'WPSSOSSM_FILEPATH', $plugin_file );
