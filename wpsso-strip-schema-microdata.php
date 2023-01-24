@@ -13,7 +13,7 @@
  * Description: Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
  * Requires Plugins: wpsso
  * Requires PHP: 7.2
- * Requires At Least: 5.2
+ * Requires At Least: 5.4
  * Tested Up To: 6.1.1
  * Version: 2.15.1-dev.3
  *
