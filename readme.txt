@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
 Tags: structured data, rich snippets, schema, microdata, duplicate, remove, strip, fix, json-ld, ld+json, json, markup, meta tags, schema.org
 Contributors: jsmoriss
 Requires Plugins: wpsso
-Requires PHP: 7.2
+Requires PHP: 7.2.5
 Requires At Least: 5.5
 Tested Up To: 6.2.0
 Stable Tag: 2.15.1
@@ -90,7 +90,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Updated the `WpssoAbstractAddOn` library class.
 * **Requires At Least**
-	* PHP v7.2.
+	* PHP v7.2.5.
 	* WordPress v5.5.
 	* WPSSO Core v14.7.0.
 
