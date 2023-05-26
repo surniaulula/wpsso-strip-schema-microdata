@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata 2.15.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2022-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-01-18 12:13-0800\n"
+"POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-05-26 04:14-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,33 +11,33 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 "X-Poedit-Basepath: .\n"
 
-#: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:207
+#: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:209
 msgid "The %1$s add-on requires the %2$s plugin."
 msgstr "L'ajout %1$s requiert l'extension %2$s."
 
-#: gettext/gettext-lib-abstract-com.php:7 lib/abstract/com/add-on.php:221
+#: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:223
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est installée actuellement)."
 
-#: gettext/gettext-lib-config.php:6
+#: gettext/gettext-lib-config.php:5
 msgctxt "lib file description"
 msgid "Strip Microdata"
 msgstr "Supprimer les microdonnées"
 
-#: gettext/gettext-lib-config.php:7
+#: gettext/gettext-lib-config.php:6
 msgctxt "plugin name"
 msgid "WPSSO Strip Schema Microdata"
-msgstr "WPSSO supprimer microdonnées de Schéma"
+msgstr "WPSSO Supprimer microdonnées de Schéma"
 
-#: gettext/gettext-lib-config.php:8
+#: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
 msgid "Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup."
 msgstr "Supprimez les microdonnées de Schéma et RDFa de la page Web pour de meilleurs résultats enrichis Google à l'aide du balisage de Schéma JSON-LD."
 
-#: gettext/gettext-lib-config.php:9
+#: gettext/gettext-lib-config.php:8
 msgctxt "plugin name"
 msgid "WPSSO Core"
 msgstr "WPSSO Core"
@@ -94,7 +94,7 @@ msgstr "Supprimer attributs de microdonnées"
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Strip Schema Microdata"
-msgstr "WPSSO supprimer microdonnées de Schéma"
+msgstr "WPSSO Supprimer microdonnées de Schéma"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wpsso.com/extend/plugins/wpsso-strip-schema-microdata/"
