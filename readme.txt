@@ -90,7 +90,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Updated the `WpssoAbstractAddOn` library class.
 * **Requires At Least**
-	* PHP v7.2.5.
+	* PHP v7.2.34.
 	* WordPress v5.5.
 	* WPSSO Core v14.7.0.
 
