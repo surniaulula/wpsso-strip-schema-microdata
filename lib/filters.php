@@ -201,21 +201,21 @@ if ( ! class_exists( 'WpssoSsmFilters' ) ) {
 
 								foreach( $types as $type ) {
 
-									$names = array();
+									$mt_names = array();
 
 									foreach ( SucomUtil::preg_grep_keys( '/^add_' . $tag . '_' . $type . '_/',
 										$this->p->options, $invert = false, '' ) as $name => $value ) {
 
 										if ( ! empty( $value ) && $name !== 'generator' ) {
 
-											$names[] = $name;
+											$mt_names[] = $name;
 										}
 									}
 
-									if ( ! empty( $names ) ) {
+									if ( ! empty( $mt_names ) ) {
 
 										$mt_pattern_cache[] = '/[\s\n]*<' . $tag . '(\s|[^>]+\s)' .
-											$type . '=[\'"](' . implode( '|', $names ) . ')[\'"][^>]*>[\s\n]*/imS';
+											$type . '=[\'"](' . implode( '|', $mt_names ) . ')[\'"][^>]*>[\s\n]*/imS';
 
 										$mt_replace_cache[] = '';
 									}
