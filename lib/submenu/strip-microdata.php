@@ -33,27 +33,10 @@ if ( ! class_exists( 'WpssoSsmSubmenuStripMicrodata' ) && class_exists( 'WpssoAd
 			);
 		}
 
-		protected function add_settings_page_callbacks() {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
-			$this->p->util->add_plugin_filters( $this, array( 'form_button_rows' => 1 ) );
-		}
-
-		public function filter_form_button_rows( $form_button_rows ) {
-
-			/*
-			 * Remove the "Change to View" button from this settings page.
-			 */
-			if ( isset( $form_button_rows[ 0 ] ) ) {
-
-				$form_button_rows[ 0 ] = SucomUtil::preg_grep_keys( '/^change_show_options/', $form_button_rows[ 0 ], $invert = true );
-			}
-
-			return $form_button_rows;
+		/*
+		 * Remove the "Change to View" button from this settings page.
+		 */
+		protected function add_form_buttons_change_show_options( &$form_button_rows ) {
 		}
 
 		public function show_metabox_settings( $obj, $mb ) {
