@@ -30,9 +30,9 @@ if ( ! class_exists( 'WpssoSsmFiltersUpgrade' ) ) {
 			) );
 		}
 
-		public function filter_rename_options_keys( $options_keys ) {
+		public function filter_rename_options_keys( $rename_options ) {
 
-			$options_keys[ 'wpssossm' ] = array(
+			$rename_options[ 'wpssossm' ] = array(
 				5 => array(
 					'ssm_body_meta_tags'    => 'ssm_body_section_meta_tags',
 					'ssm_body_json_scripts' => 'ssm_body_section_json_scripts',
@@ -43,7 +43,7 @@ if ( ! class_exists( 'WpssoSsmFiltersUpgrade' ) ) {
 				),
 			);
 
-			return $options_keys;
+			return $rename_options;
 		}
 	}
 }
