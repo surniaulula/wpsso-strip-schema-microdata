@@ -27,7 +27,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuStripMicrodata' ) && class_exists( 'WpssoAd
 			$this->menu_name = $name;
 			$this->menu_lib  = $lib;
 			$this->menu_ext  = $ext;
-				
+
 			$this->menu_metaboxes = array(
 				'settings' => _x( 'Strip Schema Microdata', 'metabox title', 'wpsso-strip-schema-microdata' ),
 			);
