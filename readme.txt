@@ -26,7 +26,7 @@ Remove Schema Microdata and RDFa from the webpage for better Google Rich Results
 
 <!-- about -->
 
-The WPSSO Strip Schema Microdata (WPSSO SSM) add-on removes old Schema Microdata and RDFa markup from the webpage. The settings page also allows for the optional removal of duplicate / conflicting Schema markup and meta tags from the webpage head or body sections.
+By default, the WPSSO Strip Schema Microdata (WPSSO SSM) add-on can remove old Schema Microdata and RDFa markup from the webpage. The settings page also allows for the optional removal of duplicate / conflicting Schema markup and meta tags from the webpage head or body sections.
 
 WPSSO SSM filters the webpage *dynamically*, allowing you to activate or deactivate the add-on to enable or disable the removal of old Schema Microdata, RDFa, and duplicate meta tags. The WPSSO SSM webpage filter is *very* fast - generally run in under 0.003 seconds.
 
