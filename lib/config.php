@@ -75,8 +75,7 @@ if ( ! class_exists( 'WpssoSsmConfig' ) ) {
 					/*
 					 * Body section.
 					 */
-					'ssm_body_section_meta_tags'    => 0,
-					'ssm_body_section_json_scripts' => 1,
+					'ssm_body_section_json_scripts' => 0,
 					'ssm_body_section_schema_attr'  => 1,
 
 					/*
