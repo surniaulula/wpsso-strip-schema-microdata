@@ -47,7 +47,7 @@ WPSSO Strip Schema Microdata (WPSSO SSM) is an add-on for the [WPSSO Core plugin
 
 == Screenshots ==
 
-01. WPSSO SSM settings page with options to remove of duplicate / conflicting meta tags, application/ld+json scripts, and/or Schema HTML attributes.
+01. WPSSO SSM settings page with options to remove of duplicate / conflicting meta tags, application/ld+json scripts, and/or Schema microdata attributes.
 
 == Changelog ==
 
