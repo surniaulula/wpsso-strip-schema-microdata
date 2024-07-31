@@ -66,8 +66,8 @@ msgstr ""
 
 #: lib/filters-messages.php:87
 msgid ""
-"Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the "
-"webpage %1$s section."
+"Remove Schema microdata attributes (itemscope, itemtype, itemprop, etc.) "
+"from the webpage %1$s section."
 msgstr ""
 
 #: lib/submenu/strip-microdata.php:32

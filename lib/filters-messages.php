@@ -84,7 +84,7 @@ if ( ! class_exists( 'WpssoSsmFiltersMessages' ) ) {
 					case 'tooltip-ssm_body_section_schema_attr':
 					case 'tooltip-ssm_head_section_schema_attr':
 
-						$text = sprintf( __( 'Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
+						$text = sprintf( __( 'Remove Schema microdata attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section.',
 							'wpsso-strip-schema-microdata' ), '<code>&amp;lt;' . $section . '&amp;gt;</code>' ) . ' ';
 
 						$text .= $def_msg;
