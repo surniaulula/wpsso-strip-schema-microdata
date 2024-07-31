@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 3.0.0\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 3.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-11-06 07:00-0800\n"
+"POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2024-07-31 09:43-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,14 +11,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: .\n"
 
-#: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:209
+#: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:243
 msgid "The %1$s add-on requires the %2$s plugin."
 msgstr "L'ajout %1$s requiert l'extension %2$s."
 
-#: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:223
+#: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:262
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est installée actuellement)."
 
@@ -59,35 +59,35 @@ msgid "Remove <code>application/ld+json</code> scripts from the webpage %1$s sec
 msgstr "Supprimer les scripts <code>application/ld+json</code> de la section %1$s de la page Web."
 
 #: lib/filters-messages.php:87
-msgid "Remove Schema HTML attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section."
-msgstr "Supprimer les attributs HTML de Schéma (itemscope, itemtype, itemprop, etc.) de la section %1$s de la page Web."
+msgid "Remove Schema microdata attributes (itemscope, itemtype, itemprop, etc.) from the webpage %1$s section."
+msgstr "Supprimer les attributs microdonnées de Schéma (itemscope, itemtype, itemprop, etc.) de la section %1$s de la page Web."
 
 #: lib/submenu/strip-microdata.php:32
 msgctxt "metabox title"
 msgid "Strip Schema Microdata"
 msgstr "Supprimer les microdonnées de Schéma"
 
-#: lib/submenu/strip-microdata.php:57
+#: lib/submenu/strip-microdata.php:45
 msgctxt "metabox tab"
 msgid "Body Section"
 msgstr "Section de corps"
 
-#: lib/submenu/strip-microdata.php:58
+#: lib/submenu/strip-microdata.php:46
 msgctxt "metabox tab"
 msgid "Head Section"
 msgstr "Section d'entête"
 
-#: lib/submenu/strip-microdata.php:74
+#: lib/submenu/strip-microdata.php:62
 msgctxt "option label"
 msgid "Strip Duplicate HTML Meta Tags"
 msgstr "Supprimer balises méta HTML en double"
 
-#: lib/submenu/strip-microdata.php:83
+#: lib/submenu/strip-microdata.php:71
 msgctxt "option label"
 msgid "Strip \"application/ld+json\" Scripts"
 msgstr "Supprimer scripts \"application/ld+json\""
 
-#: lib/submenu/strip-microdata.php:88
+#: lib/submenu/strip-microdata.php:76
 msgctxt "option label"
 msgid "Strip Schema Microdata Attributes"
 msgstr "Supprimer attributs de microdonnées"
