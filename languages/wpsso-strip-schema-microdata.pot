@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Strip Schema Microdata package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 3.1.0\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 3.2.0-b.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-"
 "schema-microdata\n"
 "POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
@@ -46,11 +46,11 @@ msgid "WPSSO Core"
 msgstr ""
 
 #: lib/filters-messages.php:42
-msgid "This option is checked by default."
+msgid "This option is enabled by default."
 msgstr ""
 
 #: lib/filters-messages.php:43
-msgid "This option is unchecked by default."
+msgid "This option is disabled by default."
 msgstr ""
 
 #: lib/filters-messages.php:67

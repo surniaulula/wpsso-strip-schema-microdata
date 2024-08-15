@@ -39,8 +39,8 @@ if ( ! class_exists( 'WpssoSsmFiltersMessages' ) ) {
 
 			$opt_key = substr( $msg_key, strlen( 'tooltip-' ) );
 			$def_val = $this->p->opt->get_defaults( $opt_key );
-			$def_msg = $def_val ? __( 'This option is checked by default.', 'wpsso-strip-schema-microdata' ) :
-				__( 'This option is unchecked by default.', 'wpsso-strip-schema-microdata' );
+			$def_msg = $def_val ? __( 'This option is enabled by default.', 'wpsso-strip-schema-microdata' ) :
+				__( 'This option is disabled by default.', 'wpsso-strip-schema-microdata' );
 
 			switch ( $msg_key ) {
 
