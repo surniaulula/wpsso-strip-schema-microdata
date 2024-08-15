@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Strip Schema Microdata 3.1.0\n"
+"Project-Id-Version: WPSSO Strip Schema Microdata 3.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
 "POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-07-31 09:43-0700\n"
+"PO-Revision-Date: 2024-08-15 08:38-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -43,12 +43,12 @@ msgid "WPSSO Core"
 msgstr "WPSSO Core"
 
 #: lib/filters-messages.php:42
-msgid "This option is checked by default."
-msgstr "Cette option est cochée par défaut."
+msgid "This option is enabled by default."
+msgstr "Cette option est activée par défaut."
 
 #: lib/filters-messages.php:43
-msgid "This option is unchecked by default."
-msgstr "Cette option n'est pas cochée par défaut."
+msgid "This option is disabled by default."
+msgstr "Cette option est désactivée par défaut."
 
 #: lib/filters-messages.php:67
 msgid "Remove known duplicate / conflicting meta tags from the webpage %1$s section."
