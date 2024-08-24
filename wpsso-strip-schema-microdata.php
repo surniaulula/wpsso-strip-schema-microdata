@@ -15,7 +15,7 @@
  * Requires PHP: 7.2.34
  * Requires At Least: 5.8
  * Tested Up To: 6.6.1
- * Version: 3.2.0
+ * Version: 3.3.0-dev.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -40,8 +40,6 @@ if ( ! class_exists( 'WpssoAbstractAddOn' ) ) {
 if ( ! class_exists( 'WpssoSsm' ) ) {
 
 	class WpssoSsm extends WpssoAbstractAddOn {
-
-		public $filters;	// WpssoSsmFilters class object.
 
 		protected $p;	// Wpsso class object.
 
@@ -70,7 +68,7 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 		/*
 		 * Called by Wpsso->set_objects() which runs at init priority 10.
 		 */
-		public function init_objects() {
+		public function init_objects_preloader() {
 
 			$this->p =& Wpsso::get_instance();
 
@@ -84,11 +82,9 @@ if ( ! class_exists( 'WpssoSsm' ) ) {
 				return;	// Stop here.
 			}
 
-			$this->filters = new WpssoSsmFilters( $this->p, $this );
+			new WpssoSsmFilters( $this->p, $this );
 		}
 	}
 
-        global $wpssossm;
-
-	$wpssossm =& WpssoSsm::get_instance();
+	WpssoSsm::get_instance();
 }
