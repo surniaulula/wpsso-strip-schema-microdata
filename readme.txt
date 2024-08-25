@@ -12,7 +12,7 @@ Requires Plugins: wpsso
 Requires PHP: 7.2.34
 Requires At Least: 5.8
 Tested Up To: 6.6.1
-Stable Tag: 3.2.0
+Stable Tag: 3.3.0
 
 Remove Schema Microdata and RDFa from the webpage for better Google Rich Results using Schema JSON-LD markup.
 
@@ -135,21 +135,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.8.
 	* WPSSO Core v17.18.0.
 
-**Version 2.15.1 (2023/01/26)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the minimum WordPress version from v5.2 to v5.5.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated the `WpssoAbstractAddOn` library class.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.5.
-	* WPSSO Core v14.7.0.
-
 == Upgrade Notice ==
 
 = 3.3.0 =
@@ -167,8 +152,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 3.0.0 =
 
 (2023/11/08) Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
-
-= 2.15.1 =
-
-(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.5.
 
