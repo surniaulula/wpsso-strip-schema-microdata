@@ -9,8 +9,8 @@ Assets URI: https://surniaulula.github.io/wpsso-strip-schema-microdata/assets/
 Tags: structured data, rich snippets, schema, microdata, json-ld
 Contributors: jsmoriss
 Requires Plugins: wpsso
-Requires PHP: 7.2.34
-Requires At Least: 5.8
+Requires PHP: 7.4.33
+Requires At Least: 5.9
 Tested Up To: 6.6.2
 Stable Tag: 3.3.0
 
@@ -86,70 +86,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Changed the main instantiation action hook from 'init_objects' to 'init_objects_preloader'.
 * **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v18.5.0.
-
-**Version 3.2.0 (2024/08/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Update for checked/unchecked translation strings.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v18.0.0.
-
-**Version 3.1.0 (2024/07/31)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Minor update to readme and help text.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v17.21.0.
-
-**Version 3.0.0 (2023/11/08)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v17.18.0.
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v18.7.3.
 
 == Upgrade Notice ==
 
 = 3.3.0 =
 
 (2024/08/25) Changed the main instantiation action hook from 'init_objects' to 'init_objects_preloader'.
-
-= 3.2.0 =
-
-(2024/08/15) Update for checked/unchecked translation strings.
-
-= 3.1.0 =
-
-(2024/07/31) Minor update to readme and help text.
-
-= 3.0.0 =
-
-(2023/11/08) Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
 
