@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Strip Schema Microdata 3.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-strip-schema-microdata\n"
-"POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-08-15 08:38-0700\n"
+"POT-Creation-Date: 2025-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-08-26 10:27-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,14 +11,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.7\n"
 "X-Poedit-Basepath: .\n"
 
-#: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:243
+#: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:235
 msgid "The %1$s add-on requires the %2$s plugin."
 msgstr "L'ajout %1$s requiert l'extension %2$s."
 
-#: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:262
+#: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:254
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est installée actuellement)."
 
@@ -84,8 +84,8 @@ msgstr "Supprimer balises méta HTML en double"
 
 #: lib/submenu/strip-microdata.php:71
 msgctxt "option label"
-msgid "Strip \"application/ld+json\" Scripts"
-msgstr "Supprimer scripts \"application/ld+json\""
+msgid "Strip %s Scripts"
+msgstr "Supprimer scripts %s"
 
 #: lib/submenu/strip-microdata.php:76
 msgctxt "option label"
