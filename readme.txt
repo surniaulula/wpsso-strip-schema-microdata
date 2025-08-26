@@ -75,6 +75,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.4.0-rc.1 (2025/08/26)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Updated option labels and French translations.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v18.20.0.
+
 **Version 3.3.0 (2024/08/25)**
 
 * **New Features**
@@ -91,6 +106,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v18.20.0.
 
 == Upgrade Notice ==
+
+= 3.4.0-rc.1 =
+
+(2025/08/26) Updated option labels and French translations.
 
 = 3.3.0 =
 
