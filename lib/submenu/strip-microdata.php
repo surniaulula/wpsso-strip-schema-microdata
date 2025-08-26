@@ -68,7 +68,7 @@ if ( ! class_exists( 'WpssoSsmSubmenuStripMicrodata' ) && class_exists( 'WpssoAd
 				case 'strip-microdata-settings-body_section':
 
 					$table_rows[] = '' .
-					$this->form->get_th_html( _x( 'Strip "application/ld+json" Scripts', 'option label', 'wpsso-strip-schema-microdata' ),
+					$this->form->get_th_html( sprintf( _x( 'Strip %s Scripts', 'option label', 'wpsso-strip-schema-microdata' ), 'Application/LD+JSON' ),
 						$css_class = '', $css_id = 'ssm_' . $tab_key . '_json_scripts' ) .
 					'<td>' . $this->form->get_checkbox( 'ssm_' . $tab_key . '_json_scripts' ) . '</td>';
 

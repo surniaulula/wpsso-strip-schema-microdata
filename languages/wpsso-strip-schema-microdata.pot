@@ -92,7 +92,7 @@ msgstr ""
 
 #: lib/submenu/strip-microdata.php:71
 msgctxt "option label"
-msgid "Strip \"application/ld+json\" Scripts"
+msgid "Strip %s Scripts"
 msgstr ""
 
 #: lib/submenu/strip-microdata.php:76
