@@ -10,7 +10,7 @@ Tags: structured data, rich snippets, schema, microdata, json-ld
 Contributors: jsmoriss
 Requires Plugins: wpsso
 Requires PHP: 7.4.33
-Requires At Least: 5.9
+Requires At Least: 6.0
 Tested Up To: 6.9
 Stable Tag: 3.4.0
 
@@ -87,7 +87,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * **Requires At Least**
 	* PHP v7.4.33.
-	* WordPress v5.9.
+	* WordPress v6.0.
 	* WPSSO Core v21.5.1.
 
 == Upgrade Notice ==
